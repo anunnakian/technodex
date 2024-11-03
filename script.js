@@ -33,7 +33,7 @@ const regions = {
     start: 252,
     end: 386,
   },
-  sinnoh: {
+  test: {
     start: 387,
     end: 493,
   },
