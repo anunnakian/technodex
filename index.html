@@ -10,6 +10,52 @@
     />
     <link rel="icon" href="./Icons/default/icon.png" type="image/x-icon">
     <title>Pokedex</title>
+    <style>
+      .badge {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.375rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.badge-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.65rem;
+}
+
+.badge-active {
+    background-color: #198754;
+    color: #fff;
+}
+
+.badge-deprecated {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.badge-maintenance-only {
+    background-color: #fd7e14;
+    color: #fff;
+}
+
+.badge-outline {
+    background-color: transparent;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+}
+
+.badge-tag {
+    font-size: 0.7rem;
+    margin: 0.125rem;
+}
+    </style>
   </head>
   <body>
     <div id="page">
@@ -20,39 +66,39 @@
         </div>
 
         <div class="box">
-          <input
-            id="searchbar"
-            onkeyup="search_pokemon()"
-            type="text"
-            placeholder="Search"
-          />
+<!--          <input-->
+<!--            id="searchbar"-->
+<!--            onkeyup="search_pokemon()"-->
+<!--            type="text"-->
+<!--            placeholder="Search"-->
+<!--          />-->
         </div>
 
         <div class="features">
           <div class="darkmode-container">
               <div class="darkmode-content">
-                <span class="darkmode-text">Dark Mode</span>
-                <i class="fa-solid fa-toggle-off" id="dark"></i>
+<!--                <span class="darkmode-text">Dark Mode</span>-->
+<!--                <i class="fa-solid fa-toggle-off" id="dark"></i>-->
               </div>
           </div>
         </div>
 
         </div>
 
-      <div class="select-wrapper">
-        <div class="regions" id="regionSelect">
-          <span data-value="kanto" class="active regionvalue">Software</span>
-          <span data-value="johto" class="regionvalue">Devops</span>
-          <span data-value="hoenn" class="regionvalue">Framework</span>
-          <span data-value="test" class="regionvalue">Programming Langage</span>
-          <span data-value="unova" class="regionvalue">Cloud</span>
-          <span data-value="kalos" class="regionvalue">Tools</span>
-          <span data-value="alola" class="regionvalue">Alola</span>
-          <span data-value="galar" class="regionvalue">Galar</span>
-          <span data-value="hisui" class="regionvalue">Hisui</span>
-          <span data-value="paldea" class="regionvalue">Paldea</span>
-        </div> 
-      </div>
+<!--      <div class="select-wrapper">-->
+<!--        <div class="regions" id="regionSelect">-->
+<!--          <span data-value="kanto" class="active regionvalue">Software</span>-->
+<!--          <span data-value="johto" class="regionvalue">Devops</span>-->
+<!--          <span data-value="hoenn" class="regionvalue">Framework</span>-->
+<!--          <span data-value="test" class="regionvalue">Programming Langage</span>-->
+<!--          <span data-value="unova" class="regionvalue">Cloud</span>-->
+<!--          <span data-value="kalos" class="regionvalue">Tools</span>-->
+<!--          <span data-value="alola" class="regionvalue">Alola</span>-->
+<!--          <span data-value="galar" class="regionvalue">Galar</span>-->
+<!--          <span data-value="hisui" class="regionvalue">Hisui</span>-->
+<!--          <span data-value="paldea" class="regionvalue">Paldea</span>-->
+<!--        </div> -->
+<!--      </div>-->
 
       <div class="poke-container" id="poke-container"></div>
       <div class="lds-ring">

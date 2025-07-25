@@ -69,16 +69,17 @@ const fetchPokemons = async (region) => {
 
   loader.classList.add("ring-active");
   
-  for (let i = start; i <= end; i++) {
-    const pokemonName = i.toString();
-    const url = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
+  // 1. Fetch the local JSON **once** (e.g. public/pokemon.json)
+  const res = await fetch('/pokemon.json');   // path relative to your site root
+  const allPokemon = await res.json();        // array of Pokémon objects
+  loader.classList.remove('ring-active');     // hide loader immediately after the file is read
 
-    let res = await fetch(url);
-    let data = await res.json();
-    loader.classList.remove('ring-active')
+  // 2. Loop through the slice you need
+  for (let i = start; i <= end; i++) {
+    const data = allPokemon[i - 1];           // JSON is zero‑based; API IDs start at 1
+    if (!data) break;                         // safety guard if end > file length
     createPokemonCard(data);
-    setTimeout(() => {
-    }, "150");
+    await new Promise(r => setTimeout(r, 150)); // keep your pacing if needed
   }
 };
 
@@ -98,98 +99,92 @@ const main_types = Object.keys(colors);
 //   createPokemonCard(data);
 // };
 
-const createPokemonCard = (pokemon) => {
+const createPokemonCard = (fw) => {
 
-  const pokemonEl = document.createElement("div");
-  pokemonEl.classList.add("card");
-  pokemonEl.id = pokemon.id;
+  const card = document.createElement('div');
+    card.className = 'card';
+    card.id = fw.slug || fw.name.toLowerCase().replace(/\s+/g, '-');
 
-  let name = pokemon.name[0].toUpperCase() + pokemon.name.slice(1);
-  if (name.length > 9) {
-    name = name.split("-")[0];
-  } else {
-    name = name;
-  }
-  const id = pokemon.id.toString().padStart(3, "0");
-  //    const moves = [];
-  //    try {
-  //     for (let i = 0; i <= 1 ; i++) {
-  //             moves.push(pokemon.moves[i].move.name);
-  //     }
-  //     console.log(moves);
-  //     } catch (error) {
-  //         console.log(error);
-  //     }
+    const {
+      name                 = 'Unknown',
+      logo_url,
+      primary_category     = 'Other',
+      current_status       = 'unknown',
+      initial_release_year,
+      description,
+      latest_stable_version,
+      license,
+      tags                 = [],
+      website_or_repo
+    } = fw;
 
-  let weight = pokemon.weight / 10 + "kg";
-  let height = pokemon.height / 10 + "m";
+    var pokemonInnerHTML  = `
+      <div class="front side">
+          <div class="img-container">
+              <img class="image" src="${logo_url || './images/placeholder.png'}" alt="${name} logo">
+          </div>
+          <span class="number">${String(initial_release_year || '????')}</span>
+          <h3 class="name">${name}</h3>
+          <div class="category">
+              <div class="framework__category__bg ${primary_category.toLowerCase().replace(/[^a-z0-9]/g, '-')}">
+                  <img src="./images/icons/${primary_category.toLowerCase()}.png"
+                   style="width: 22px;"
+                   alt="${primary_category}" title="${primary_category}">
+              </div>
+          </div>
+          <div class="status-indicator ${current_status}" title="Status: ${current_status}">
+               <span class="badge badge-sm badge-${current_status.replace(/[^a-z0-9]/g, '-')}">${current_status}</span>
+          </div>
+      </div>
 
-  const poke_types = pokemon.types.map((type) => type.type.name);
-  const type = main_types.find((type) => poke_types.indexOf(type) > -1);
-  const color = colors[type];
-  let frontImg;
-  let backImg;
-  try{
-    frontImg = pokemon.sprites.front_default;
-    backImg = pokemon.sprites.back_default;
-  }
-  catch(err){
-    frontImg = "#";
-    backImg = "#";
-  }
+      <div class="back side">
+          <div class="framework-info">
+              <div class="description">
+                  <p>${description || 'No description available'}</p>
+              </div>
 
-  pokemonEl.style.backgroundColor = color;
+              <div class="stats">
+                  <div class="stat-item">
+                      <span class="label">Version:</span>
+                      <span class="value">${latest_stable_version || 'N/A'}</span>
+                  </div>
+                  <div class="stat-item">
+                      <span class="label">License:</span>
+                      <span class="value">${license || 'Unknown'}</span>
+                  </div>
+              </div>
 
-  const pokemonInnerHTML = `
-    <div class="front side">
-        <div class="img-container">
-        <img class="background" src="./Icons/default/pokeball.svg" alt="pokeball">
-        <img class="image" src="${frontImg}" alt="${name}">
-        </div>
-        <span class="number">#${id}</span>
-        <h3 class="name">${name}</h3>
-        <div class="types">
-          ${poke_types
-            .map(
-              (type) => `
-                <div class="poke__type__bg ${type}">
-                <img src="Icons/${type}.svg" alt="Type">
-                </div>
-          `
-            )
-            .join("")}
-        </div>
-    </div>
-    <div class="back side">
-        <div class="img-container">
-        <img class="image" src="${
-          backImg == null ? frontImg : backImg
-        }" alt="${name}" />
-        <img class="background" src="./Icons/default/pokeball.svg" alt="pokeball">
-        </div>
-        <span class="number">#${id}</span>
-    <div class="stats">
-    <div> Weight:<br> <b>${weight}</b></div>
-    <div> Height:<br> <b>${height}</b></div>
-    </div>
-    </div>
-  `;
+              ${tags.length ? `
+              <div class="tags">
+                  ${tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('')}
+              </div>` : ''}
+
+              ${website_or_repo ? `
+              <div class="links">
+                  <a href="${website_or_repo}" target="_blank" rel="noopener noreferrer" class="repo-link">
+                      <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                      View Project
+                  </a>
+              </div>` : ''}
+          </div>
+      </div>
+    `;
 
   // <div class="moves">
   // <div>${moves[0]}</div>
   // <div>${moves[1]}</div>
   // </div>
 
-  pokemonEl.innerHTML = pokemonInnerHTML;
+  card.innerHTML = pokemonInnerHTML;
   // Add event listener to open new page on card click
-  pokemonEl.addEventListener("click", () => {
+  card.addEventListener("click", () => {
     // Open new page with specific card details
     window.open(`details.html?id=${id}`, "_self");
   });
 
   const pokemonElHolder = document.createElement("div");
   pokemonElHolder.classList.add("cardContainer");
-  pokemonElHolder.appendChild(pokemonEl);
+  pokemonElHolder.appendChild(card);
 
   poke_container.appendChild(pokemonElHolder);
 };

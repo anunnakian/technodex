@@ -95,12 +95,13 @@ h1 {
   }
 }
 
+/* ICI
 .cardContainer:hover .card {
   transform: rotateY(180deg);
   cursor: pointer;
   transition: 0.25s ease-in-out;
   transition-delay: .2s;
-}
+} */
 
 /* Handle card flip behavior on touch-screen */
 @media(hover: none) {
@@ -182,12 +183,22 @@ h1 {
   font-family: moltors, sans-serif;
 }
 .name {
-  padding: 10px;
-  letter-spacing: 5px;
+  padding: 10px 0px;
+  letter-spacing: 3px;
   font-family: "pocketMonk", sans-serif;
   font-size: 1.5em;
-  white-space: nowrap;
-  text-overflow: clip;
+  max-width: 100%;
+  white-space: nowrap;         /* keep on one line   */
+  overflow: hidden;            /* hide extra chars   */
+  text-overflow: ellipsis;     /* add …              */
+}
+.description, .tag {
+  font-family: "slumbers", sans-serif;
+  text-align: left;
+  font-size: 1.2em;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
 }
 .stats {
   display: flex;
@@ -495,11 +506,6 @@ a {
 ::-webkit-scrollbar-thumb {
   background-color: #202020;
   border-radius: 10px;
-}
-
-.active {
-  background-color: black !important;
-  color: white !important;
 }
 
 .lds-ring {
