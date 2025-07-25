@@ -55,6 +55,123 @@
     font-size: 0.7rem;
     margin: 0.125rem;
 }
+         /* Footer Styles */
+        .site-footer {
+            background-color: #e0e0e0;
+            padding: 2rem 1rem 1rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-info {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-text {
+            margin: 0 0 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        .footer-text strong {
+            color: #6c757d;;
+            font-weight: 600;
+        }
+
+        .footer-copyright {
+            margin: 0;
+            font-size: 0.875rem;
+            color: #bdc3c7;
+        }
+
+        .footer-links {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: #bdc3c7;
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.2s ease;
+            padding: 0.25rem 0;
+        }
+
+        .footer-link:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+
+        .footer-link:focus-visible {
+            outline: 2px solid #3498db;
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+
+        .footer-separator {
+            color: #7f8c8d;
+            font-weight: bold;
+            user-select: none;
+        }
+
+        /* Responsive footer */
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.5rem;
+            }
+
+            .footer-info {
+                min-width: auto;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+        }
+
+        /* Dark mode footer */
+        [data-theme="dark"] .site-footer {
+            background-color: #1a1a1a;
+            border-top-color: #4A90E2;
+        }
+
+        [data-theme="dark"] .footer-text {
+            color: #f8f9fa;
+        }
+
+        [data-theme="dark"] .footer-text strong {
+            color: #4A90E2;
+        }
+
+        [data-theme="dark"] .footer-copyright {
+            color: #adb5bd;
+        }
+
+        [data-theme="dark"] .footer-link {
+            color: #adb5bd;
+        }
+
+        [data-theme="dark"] .footer-link:hover {
+            color: #4A90E2;
+        }
+
+        [data-theme="dark"] .footer-separator {
+            color: #6c757d;
+        }
     </style>
   </head>
   <body>
@@ -111,9 +228,23 @@
       <button id="scrollToDownBtn"><i class="fas fa-chevron-down"></i></button>
     </div>
 
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="footer-text">
+                    Created with ❤️ by <strong>Thoth Technologies</strong>
+                </p>
+                <p class="footer-copyright">
+                    © 2025 Thoth Technologies. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
     <!-- Design inspired by this Dribbble shot: https://dribbble.com/shots/5611109--Pokemon -->
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/919bc986f5.js" crossorigin="anonymous"></script>
     <!-- <script src="new.js"></script> -->
+
   </body>
 </html>
