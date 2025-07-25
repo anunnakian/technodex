@@ -124,7 +124,7 @@ const createPokemonCard = (fw) => {
               <img class="image" src="${logo_url || './images/placeholder.png'}" alt="${name} logo">
           </div>
           <span class="number">${String(initial_release_year || '????')}</span>
-          <h3 class="name">${name}</h3>
+          <h3 class="name" title="${name}">${name}</h3>
           <div class="category">
               <div class="framework__category__bg ${primary_category.toLowerCase().replace(/[^a-z0-9]/g, '-')}">
                   <img src="./images/icons/${primary_category.toLowerCase()}.png"
