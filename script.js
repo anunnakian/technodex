@@ -123,7 +123,9 @@ const createPokemonCard = (fw) => {
           <div class="img-container">
               <img class="image" src="${logo_url || './images/placeholder.png'}" alt="${name} logo">
           </div>
-          <span class="number">${String(initial_release_year || '????')}</span>
+          <div class="number">
+          <span>${latest_stable_version || 'N/A'}</span>
+          </div>
           <h3 class="name" title="${name}">${name}</h3>
           <div class="category">
               <div class="framework__category__bg ${primary_category.toLowerCase().replace(/[^a-z0-9]/g, '-')}">
@@ -142,7 +144,7 @@ const createPokemonCard = (fw) => {
               <div class="description">
                   <p>${description || 'No description available'}</p>
               </div>
-
+              <span>${String(initial_release_year || '????')}</span>
               <div class="stats">
                   <div class="stat-item">
                       <span class="label">Version:</span>

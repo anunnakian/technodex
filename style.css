@@ -175,12 +175,16 @@ h1 {
   }
 }
 .number {
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 10px 10px;
   margin-top: 10px;
-  border-radius: 10px;
+  padding: 10px 10px;
   font-size: 1em;
   font-family: moltors, sans-serif;
+}
+.number span {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px 10px;
+  font-size: 0.9em;
 }
 .name {
   padding: 10px 0px;
