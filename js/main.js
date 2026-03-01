@@ -11,12 +11,12 @@ const fetchFrameworks = async () => {
   for (let i = 0; i < allFrameworks.length; i++) {
     const data = allFrameworks[i];
     if (!data) break;
-    createFrameworkCard(data, i);
+    createFrameworkCard(data);
     await new Promise(r => setTimeout(r, 150));
   }
 };
 
-const createFrameworkCard = (fw, index) => {
+const createFrameworkCard = (fw) => {
 
   const card = document.createElement('div');
   card.className = 'card';
@@ -91,7 +91,7 @@ const createFrameworkCard = (fw, index) => {
 
   card.innerHTML = cardInnerHTML;
   card.addEventListener("click", () => {
-    window.open(`details.html?id=${index}`, "_self");
+    window.open(`details.html?id=${fw.slug}`, "_self");
   });
 
   const pokemonElHolder = document.createElement("div");

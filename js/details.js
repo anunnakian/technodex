@@ -1,5 +1,5 @@
 const params = new URLSearchParams(window.location.search);
-const id = parseInt(params.get("id"));
+const slugId = params.get("id");
 
 const tabs = document.querySelectorAll("[data-tab-value]");
 const tabInfos = document.querySelectorAll("[data-tab-info]");
@@ -17,11 +17,13 @@ tabs.forEach((tab) => {
   });
 });
 
+let _nextSlug = null;
+
 const fetchFrameworkDetails = async () => {
   try {
     const res = await fetch("./data/frameworks.json");
     const allFrameworks = await res.json();
-    const fw = allFrameworks[id];
+    const fw = allFrameworks.find(f => f.slug === slugId);
 
     if (!fw) {
       document.getElementById("pokemon-details").innerHTML =
@@ -58,11 +60,14 @@ const displayFrameworkDetails = (fw, allFrameworks) => {
     website_or_repo,
     license,
     tags = [],
-    notable_use_cases,
-    related_frameworks,
+    notable_use_cases = [],
+    related_frameworks = [],
   } = fw;
 
-  const total = allFrameworks.length;
+  const currentIdx = allFrameworks.findIndex(f => f.slug === fw.slug);
+  const nextFw = allFrameworks[currentIdx + 1];
+  _nextSlug = nextFw ? nextFw.slug : null;
+
   const statusClass = statusBadgeClass(current_status);
 
   // ── Hero (buttons are position:fixed, no wrapper div needed) ──
@@ -70,7 +75,7 @@ const displayFrameworkDetails = (fw, allFrameworks) => {
     <button class="previousBtn" onclick="backButton()">
       <i class="fas fa-chevron-left"></i>
     </button>
-    ${id + 1 < total
+    ${nextFw
       ? `<button class="nextBtn" onclick="nextFramework()">
            <i class="fas fa-chevron-right"></i>
          </button>`
@@ -95,11 +100,8 @@ const displayFrameworkDetails = (fw, allFrameworks) => {
 
   // ── Tab 1: Overview ───────────────────────────────────
   const useCaseTags = notable_use_cases
-    ? notable_use_cases
-        .split(",")
-        .map((u) => `<span class="tag">${u.trim()}</span>`)
-        .join("")
-    : "";
+    .map((u) => `<span class="tag">${u}</span>`)
+    .join("");
 
   document.getElementById("tab_1").innerHTML = `
     <div class="overview">
@@ -158,18 +160,14 @@ const displayFrameworkDetails = (fw, allFrameworks) => {
   `;
 
   // ── Tab 3: Related frameworks (linked chips) ──────────
-  const related = related_frameworks
-    ? related_frameworks.split(",").map((r) => r.trim()).filter(Boolean)
-    : [];
-
-  const relatedHTML = related.length
-    ? related
+  const relatedHTML = related_frameworks.length
+    ? related_frameworks
         .map((relName) => {
-          const relIdx = allFrameworks.findIndex(
+          const relFw = allFrameworks.find(
             (f) => f.name.toLowerCase() === relName.toLowerCase()
           );
-          return relIdx >= 0
-            ? `<a href="details.html?id=${relIdx}" class="evolution__pokemon">
+          return relFw
+            ? `<a href="details.html?id=${relFw.slug}" class="evolution__pokemon">
                  <h1>${relName}</h1>
                </a>`
             : `<div class="evolution__pokemon">
@@ -185,7 +183,7 @@ const displayFrameworkDetails = (fw, allFrameworks) => {
 };
 
 const nextFramework = () => {
-  window.location.href = `details.html?id=${id + 1}`;
+  if (_nextSlug) window.location.href = `details.html?id=${_nextSlug}`;
 };
 
 const backButton = () => {
