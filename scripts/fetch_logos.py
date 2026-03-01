@@ -4,7 +4,7 @@ from PIL import Image
 from slugify import slugify
 from tqdm.asyncio import tqdm_asyncio
 
-SRC_FILE   = "framework.json"
+SRC_FILE   = "scripts/framework.json"
 OUT_DIR    = "logos"
 SIZE       = (148, 148)
 CONCURRENT = 20

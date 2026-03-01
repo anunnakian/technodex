@@ -19,7 +19,7 @@ tabs.forEach((tab) => {
 
 const fetchFrameworkDetails = async () => {
   try {
-    const res = await fetch("./pokemon.json");
+    const res = await fetch("./data/frameworks.json");
     const allFrameworks = await res.json();
     const fw = allFrameworks[id];
 
@@ -86,9 +86,9 @@ const displayFrameworkDetails = (fw, allFrameworks) => {
     <div class="top">
       <div class="image">
         <img class="imgFront"
-             src="${logo_url || "./images/placeholder.png"}"
+             src="${logo_url || "./assets/images/placeholder.png"}"
              alt="${name} logo"
-             onerror="this.src='./images/placeholder.png'">
+             onerror="this.src='./assets/images/placeholder.png'">
       </div>
     </div>
   `;
