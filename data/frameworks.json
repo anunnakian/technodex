@@ -2363,5 +2363,1974 @@
       "bigdata"
     ],
     "logo_url": "./assets/images/tech/apache_flink.png"
+  },
+  {
+    "slug": "python",
+    "name": "Python",
+    "primary_category": "Language",
+    "description": "High-level, interpreted language known for its readability and vast ecosystem. Dominant in data science, ML, scripting, and web backends.",
+    "initial_release_year": 1991,
+    "current_status": "active",
+    "latest_stable_version": "3.13.0",
+    "website_or_repo": "https://www.python.org",
+    "license": "PSF-2.0",
+    "notable_use_cases": [
+      "data science",
+      "web backends",
+      "scripting",
+      "machine learning"
+    ],
+    "related_frameworks": [
+      "Django",
+      "FastAPI",
+      "Flask",
+      "PyTorch",
+      "TensorFlow"
+    ],
+    "tags": [
+      "interpreted",
+      "dynamic",
+      "general-purpose"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "javascript",
+    "name": "JavaScript",
+    "primary_category": "Language",
+    "description": "The language of the web. Runs in every browser and, via Node.js, on the server. ECMAScript standard evolves yearly.",
+    "initial_release_year": 1995,
+    "current_status": "active",
+    "latest_stable_version": "ES2024",
+    "website_or_repo": "https://tc39.es/ecma262/",
+    "license": "Multiple",
+    "notable_use_cases": [
+      "browser UIs",
+      "server-side APIs",
+      "mobile apps",
+      "desktop apps"
+    ],
+    "related_frameworks": [
+      "Express.js",
+      "Next.js",
+      "NestJS"
+    ],
+    "tags": [
+      "interpreted",
+      "dynamic",
+      "event-driven"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "typescript",
+    "name": "TypeScript",
+    "primary_category": "Language",
+    "description": "Strongly-typed superset of JavaScript developed by Microsoft. Compiles to plain JS and adds static type checking to large codebases.",
+    "initial_release_year": 2012,
+    "current_status": "active",
+    "latest_stable_version": "5.5.4",
+    "website_or_repo": "https://www.typescriptlang.org",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "large-scale web apps",
+      "backend APIs",
+      "library authoring"
+    ],
+    "related_frameworks": [
+      "NestJS",
+      "Next.js",
+      "tRPC"
+    ],
+    "tags": [
+      "typed",
+      "compiled",
+      "superset"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "rust",
+    "name": "Rust",
+    "primary_category": "Language",
+    "description": "Systems programming language guaranteeing memory safety without a garbage collector via its ownership model. High performance with no runtime overhead.",
+    "initial_release_year": 2015,
+    "current_status": "active",
+    "latest_stable_version": "1.80.0",
+    "website_or_repo": "https://www.rust-lang.org",
+    "license": "MIT / Apache-2.0",
+    "notable_use_cases": [
+      "systems software",
+      "WebAssembly",
+      "embedded",
+      "CLI tools"
+    ],
+    "related_frameworks": [],
+    "tags": [
+      "systems",
+      "memory-safe",
+      "compiled",
+      "no-gc"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "go",
+    "name": "Go",
+    "primary_category": "Language",
+    "description": "Statically typed, compiled language from Google. Designed for simplicity, fast compilation, and built-in concurrency primitives (goroutines, channels).",
+    "initial_release_year": 2009,
+    "current_status": "active",
+    "latest_stable_version": "1.23.0",
+    "website_or_repo": "https://go.dev",
+    "license": "BSD-3-Clause",
+    "notable_use_cases": [
+      "cloud services",
+      "CLI tools",
+      "microservices",
+      "DevOps tooling"
+    ],
+    "related_frameworks": [
+      "Gin",
+      "Fiber",
+      "Echo"
+    ],
+    "tags": [
+      "compiled",
+      "concurrent",
+      "statically-typed"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "kotlin",
+    "name": "Kotlin",
+    "primary_category": "Language",
+    "description": "Modern JVM language by JetBrains, fully interoperable with Java. Official language for Android development and a concise alternative on the server.",
+    "initial_release_year": 2016,
+    "current_status": "active",
+    "latest_stable_version": "2.0.0",
+    "website_or_repo": "https://kotlinlang.org",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "Android apps",
+      "server-side JVM",
+      "multiplatform"
+    ],
+    "related_frameworks": [
+      "Spring Boot",
+      "Android SDK"
+    ],
+    "tags": [
+      "jvm",
+      "multiplatform",
+      "null-safe"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "swift",
+    "name": "Swift",
+    "primary_category": "Language",
+    "description": "Apple's modern compiled language replacing Objective-C for iOS, macOS, and other Apple platforms. Also runs on Linux for server-side use.",
+    "initial_release_year": 2014,
+    "current_status": "active",
+    "latest_stable_version": "5.10",
+    "website_or_repo": "https://swift.org",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "iOS apps",
+      "macOS apps",
+      "server-side Swift"
+    ],
+    "related_frameworks": [],
+    "tags": [
+      "compiled",
+      "type-safe",
+      "apple"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "csharp",
+    "name": "C#",
+    "primary_category": "Language",
+    "description": "Strongly-typed, object-oriented language from Microsoft running on the .NET runtime. Widely used in enterprise software, game development (Unity), and web.",
+    "initial_release_year": 2000,
+    "current_status": "active",
+    "latest_stable_version": "13.0",
+    "website_or_repo": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+    "license": "MIT",
+    "notable_use_cases": [
+      "enterprise apps",
+      "game dev (Unity)",
+      "web APIs",
+      "desktop"
+    ],
+    "related_frameworks": [
+      "ASP.NET Core"
+    ],
+    "tags": [
+      "oop",
+      "dotnet",
+      "compiled",
+      "strongly-typed"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "ruby",
+    "name": "Ruby",
+    "primary_category": "Language",
+    "description": "Dynamic, expressive language optimised for developer happiness. Powers Ruby on Rails and a rich ecosystem of gems. Widely used in startups and web development.",
+    "initial_release_year": 1995,
+    "current_status": "active",
+    "latest_stable_version": "3.3.4",
+    "website_or_repo": "https://www.ruby-lang.org",
+    "license": "Ruby / BSD-2-Clause",
+    "notable_use_cases": [
+      "web applications",
+      "scripting",
+      "rapid prototyping"
+    ],
+    "related_frameworks": [
+      "Ruby on Rails"
+    ],
+    "tags": [
+      "interpreted",
+      "dynamic",
+      "metaprogramming"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "php",
+    "name": "PHP",
+    "primary_category": "Language",
+    "description": "Server-side scripting language that powers a large share of the web, including WordPress. Modern PHP 8.x has strong typing, JIT compilation, and fibers.",
+    "initial_release_year": 1994,
+    "current_status": "active",
+    "latest_stable_version": "8.3.9",
+    "website_or_repo": "https://www.php.net",
+    "license": "PHP-3.01",
+    "notable_use_cases": [
+      "CMS",
+      "web backends",
+      "e-commerce"
+    ],
+    "related_frameworks": [
+      "Laravel"
+    ],
+    "tags": [
+      "interpreted",
+      "server-side",
+      "web"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "dart",
+    "name": "Dart",
+    "primary_category": "Language",
+    "description": "Client-optimised language by Google, the backbone of the Flutter framework. Compiles to native ARM, x64, and JavaScript.",
+    "initial_release_year": 2011,
+    "current_status": "active",
+    "latest_stable_version": "3.4.4",
+    "website_or_repo": "https://dart.dev",
+    "license": "BSD-3-Clause",
+    "notable_use_cases": [
+      "mobile apps",
+      "web apps",
+      "desktop apps"
+    ],
+    "related_frameworks": [],
+    "tags": [
+      "compiled",
+      "aot",
+      "cross-platform"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "scala",
+    "name": "Scala",
+    "primary_category": "Language",
+    "description": "Hybrid functional/OOP language on the JVM. Strongly typed with type inference, pattern matching, and a powerful collection library. Powers big-data tools like Spark.",
+    "initial_release_year": 2004,
+    "current_status": "active",
+    "latest_stable_version": "3.4.2",
+    "website_or_repo": "https://www.scala-lang.org",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "big data",
+      "distributed systems",
+      "functional programming"
+    ],
+    "related_frameworks": [
+      "Akka",
+      "Play Framework"
+    ],
+    "tags": [
+      "jvm",
+      "functional",
+      "strongly-typed"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "elixir",
+    "name": "Elixir",
+    "primary_category": "Language",
+    "description": "Functional language built on the Erlang VM (BEAM), designed for fault-tolerant, distributed, low-latency systems. Phoenix framework powers real-time web apps.",
+    "initial_release_year": 2011,
+    "current_status": "active",
+    "latest_stable_version": "1.17.2",
+    "website_or_repo": "https://elixir-lang.org",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "real-time messaging",
+      "distributed systems",
+      "fault-tolerant backends"
+    ],
+    "related_frameworks": [],
+    "tags": [
+      "functional",
+      "concurrent",
+      "beam",
+      "fault-tolerant"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "haskell",
+    "name": "Haskell",
+    "primary_category": "Language",
+    "description": "Purely functional language with lazy evaluation, strong static typing, and a rich type system. Influential in programming language research and compiler design.",
+    "initial_release_year": 1990,
+    "current_status": "active",
+    "latest_stable_version": "GHC 9.10.1",
+    "website_or_repo": "https://www.haskell.org",
+    "license": "BSD-3-Clause",
+    "notable_use_cases": [
+      "compilers",
+      "financial systems",
+      "theorem proving",
+      "DSLs"
+    ],
+    "related_frameworks": [],
+    "tags": [
+      "functional",
+      "lazy",
+      "strongly-typed",
+      "pure"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "cpp",
+    "name": "C++",
+    "primary_category": "Language",
+    "description": "Multi-paradigm systems language extending C with classes, templates, and a rich standard library. Dominant in game engines, operating systems, and performance-critical applications.",
+    "initial_release_year": 1985,
+    "current_status": "active",
+    "latest_stable_version": "C++23",
+    "website_or_repo": "https://isocpp.org",
+    "license": "Multiple",
+    "notable_use_cases": [
+      "game engines",
+      "operating systems",
+      "embedded",
+      "high-frequency trading"
+    ],
+    "related_frameworks": [],
+    "tags": [
+      "compiled",
+      "systems",
+      "high-performance",
+      "oop"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "django",
+    "name": "Django",
+    "primary_category": "Web",
+    "description": "High-level Python web framework following the 'batteries included' philosophy. Comes with ORM, admin panel, auth, and templating out of the box.",
+    "initial_release_year": 2005,
+    "current_status": "active",
+    "latest_stable_version": "5.1",
+    "website_or_repo": "https://www.djangoproject.com",
+    "license": "BSD-3-Clause",
+    "notable_use_cases": [
+      "content management",
+      "REST APIs",
+      "e-commerce",
+      "SaaS backends"
+    ],
+    "related_frameworks": [
+      "Python",
+      "FastAPI",
+      "Flask"
+    ],
+    "tags": [
+      "python",
+      "full-stack",
+      "orm",
+      "batteries-included"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "flask",
+    "name": "Flask",
+    "primary_category": "Web",
+    "description": "Lightweight Python micro-framework. Minimal core with a rich extension ecosystem. Favoured for APIs and smaller applications that don't need a full framework.",
+    "initial_release_year": 2010,
+    "current_status": "active",
+    "latest_stable_version": "3.0.3",
+    "website_or_repo": "https://flask.palletsprojects.com",
+    "license": "BSD-3-Clause",
+    "notable_use_cases": [
+      "REST APIs",
+      "microservices",
+      "prototyping"
+    ],
+    "related_frameworks": [
+      "Django",
+      "FastAPI",
+      "Python"
+    ],
+    "tags": [
+      "python",
+      "micro-framework",
+      "wsgi"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "fastapi",
+    "name": "FastAPI",
+    "primary_category": "Web",
+    "description": "Modern, async Python web framework for building APIs with automatic OpenAPI docs. Leverages type hints for validation and serialisation via Pydantic.",
+    "initial_release_year": 2018,
+    "current_status": "active",
+    "latest_stable_version": "0.112.0",
+    "website_or_repo": "https://fastapi.tiangolo.com",
+    "license": "MIT",
+    "notable_use_cases": [
+      "ML model serving",
+      "REST APIs",
+      "async microservices"
+    ],
+    "related_frameworks": [
+      "Python",
+      "Flask",
+      "Django",
+      "Starlette"
+    ],
+    "tags": [
+      "python",
+      "async",
+      "openapi",
+      "type-hints"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "starlette",
+    "name": "Starlette",
+    "primary_category": "Web",
+    "description": "Lightweight ASGI framework and toolkit for async Python web services. Serves as the foundation of FastAPI.",
+    "initial_release_year": 2018,
+    "current_status": "active",
+    "latest_stable_version": "0.37.2",
+    "website_or_repo": "https://www.starlette.io",
+    "license": "BSD-3-Clause",
+    "notable_use_cases": [
+      "async APIs",
+      "WebSockets",
+      "background tasks"
+    ],
+    "related_frameworks": [
+      "FastAPI",
+      "Python"
+    ],
+    "tags": [
+      "python",
+      "asgi",
+      "async"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "expressjs",
+    "name": "Express.js",
+    "primary_category": "Web",
+    "description": "Minimal, unopinionated Node.js web framework. The de-facto standard for building REST APIs in JavaScript. Large middleware ecosystem.",
+    "initial_release_year": 2010,
+    "current_status": "active",
+    "latest_stable_version": "4.19.2",
+    "website_or_repo": "https://expressjs.com",
+    "license": "MIT",
+    "notable_use_cases": [
+      "REST APIs",
+      "web apps",
+      "middleware pipelines"
+    ],
+    "related_frameworks": [
+      "JavaScript",
+      "NestJS",
+      "Fastify"
+    ],
+    "tags": [
+      "nodejs",
+      "javascript",
+      "rest",
+      "middleware"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "fastify",
+    "name": "Fastify",
+    "primary_category": "Web",
+    "description": "High-performance Node.js web framework with a plugin system and built-in schema-based serialisation. Significantly faster than Express in benchmarks.",
+    "initial_release_year": 2016,
+    "current_status": "active",
+    "latest_stable_version": "4.28.1",
+    "website_or_repo": "https://fastify.dev",
+    "license": "MIT",
+    "notable_use_cases": [
+      "high-throughput APIs",
+      "microservices"
+    ],
+    "related_frameworks": [
+      "Express.js",
+      "NestJS",
+      "JavaScript"
+    ],
+    "tags": [
+      "nodejs",
+      "javascript",
+      "high-performance",
+      "schema"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "nestjs",
+    "name": "NestJS",
+    "primary_category": "Web",
+    "description": "Progressive Node.js framework for building efficient, scalable server-side applications. Uses TypeScript, Angular-style decorators, and a modular architecture.",
+    "initial_release_year": 2017,
+    "current_status": "active",
+    "latest_stable_version": "10.4.1",
+    "website_or_repo": "https://nestjs.com",
+    "license": "MIT",
+    "notable_use_cases": [
+      "enterprise APIs",
+      "microservices",
+      "GraphQL backends"
+    ],
+    "related_frameworks": [
+      "TypeScript",
+      "Express.js",
+      "Fastify"
+    ],
+    "tags": [
+      "nodejs",
+      "typescript",
+      "decorators",
+      "modular"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "nextjs",
+    "name": "Next.js",
+    "primary_category": "Web",
+    "description": "React framework by Vercel with file-system routing, SSR, static generation, and App Router. The dominant full-stack React solution.",
+    "initial_release_year": 2016,
+    "current_status": "active",
+    "latest_stable_version": "14.2.5",
+    "website_or_repo": "https://nextjs.org",
+    "license": "MIT",
+    "notable_use_cases": [
+      "full-stack web apps",
+      "e-commerce",
+      "marketing sites",
+      "dashboards"
+    ],
+    "related_frameworks": [
+      "TypeScript",
+      "Remix",
+      "Nuxt.js"
+    ],
+    "tags": [
+      "react",
+      "ssr",
+      "ssg",
+      "fullstack",
+      "typescript"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "nuxtjs",
+    "name": "Nuxt.js",
+    "primary_category": "Web",
+    "description": "Vue.js meta-framework offering file-system routing, SSR, SSG, and an auto-import system. The Vue equivalent of Next.js.",
+    "initial_release_year": 2016,
+    "current_status": "active",
+    "latest_stable_version": "3.12.4",
+    "website_or_repo": "https://nuxt.com",
+    "license": "MIT",
+    "notable_use_cases": [
+      "full-stack Vue apps",
+      "marketing sites",
+      "content sites"
+    ],
+    "related_frameworks": [
+      "Next.js",
+      "TypeScript"
+    ],
+    "tags": [
+      "vue",
+      "ssr",
+      "ssg",
+      "fullstack"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "sveltekit",
+    "name": "SvelteKit",
+    "primary_category": "Web",
+    "description": "Full-stack framework for Svelte with file-based routing, SSR, and adapter-based deployment. Zero-cost reactivity via compiled components.",
+    "initial_release_year": 2021,
+    "current_status": "active",
+    "latest_stable_version": "2.5.17",
+    "website_or_repo": "https://kit.svelte.dev",
+    "license": "MIT",
+    "notable_use_cases": [
+      "full-stack web apps",
+      "content sites",
+      "PWAs"
+    ],
+    "related_frameworks": [
+      "Next.js",
+      "Nuxt.js",
+      "Astro"
+    ],
+    "tags": [
+      "svelte",
+      "ssr",
+      "ssg",
+      "compiled"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "astro",
+    "name": "Astro",
+    "primary_category": "Web",
+    "description": "Content-focused web framework that ships zero JS by default. Islands architecture allows embedding any UI framework (React, Vue, Svelte) selectively.",
+    "initial_release_year": 2021,
+    "current_status": "active",
+    "latest_stable_version": "4.12.2",
+    "website_or_repo": "https://astro.build",
+    "license": "MIT",
+    "notable_use_cases": [
+      "documentation sites",
+      "blogs",
+      "marketing pages",
+      "content-heavy sites"
+    ],
+    "related_frameworks": [
+      "SvelteKit",
+      "Next.js"
+    ],
+    "tags": [
+      "static",
+      "islands",
+      "performance",
+      "content"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "remix",
+    "name": "Remix",
+    "primary_category": "Web",
+    "description": "React full-stack framework that embraces web fundamentals (forms, HTTP, browser APIs). Uses loader/action model for data fetching close to the component.",
+    "initial_release_year": 2021,
+    "current_status": "active",
+    "latest_stable_version": "2.10.3",
+    "website_or_repo": "https://remix.run",
+    "license": "MIT",
+    "notable_use_cases": [
+      "full-stack React apps",
+      "nested routing apps",
+      "forms-heavy UIs"
+    ],
+    "related_frameworks": [
+      "Next.js",
+      "TypeScript"
+    ],
+    "tags": [
+      "react",
+      "fullstack",
+      "web-standards",
+      "ssr"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "ruby-on-rails",
+    "name": "Ruby on Rails",
+    "primary_category": "Web",
+    "description": "Full-stack MVC framework for Ruby with ActiveRecord ORM, convention over configuration, and built-in scaffolding. Popularised REST and COC patterns.",
+    "initial_release_year": 2004,
+    "current_status": "active",
+    "latest_stable_version": "7.2.1",
+    "website_or_repo": "https://rubyonrails.org",
+    "license": "MIT",
+    "notable_use_cases": [
+      "SaaS apps",
+      "MVPs",
+      "content platforms",
+      "e-commerce"
+    ],
+    "related_frameworks": [
+      "Ruby"
+    ],
+    "tags": [
+      "ruby",
+      "mvc",
+      "orm",
+      "convention-over-configuration"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "laravel",
+    "name": "Laravel",
+    "primary_category": "Web",
+    "description": "Elegant PHP web framework with expressive syntax. Includes Eloquent ORM, Blade templating, queues, broadcasting, and a rich ecosystem.",
+    "initial_release_year": 2011,
+    "current_status": "active",
+    "latest_stable_version": "11.19.0",
+    "website_or_repo": "https://laravel.com",
+    "license": "MIT",
+    "notable_use_cases": [
+      "SaaS backends",
+      "REST APIs",
+      "e-commerce",
+      "CMS"
+    ],
+    "related_frameworks": [
+      "PHP"
+    ],
+    "tags": [
+      "php",
+      "mvc",
+      "orm",
+      "eloquent"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "aspnet-core",
+    "name": "ASP.NET Core",
+    "primary_category": "Web",
+    "description": "Cross-platform, high-performance web framework from Microsoft for building modern APIs and web apps on .NET. Supports MVC, Razor Pages, Minimal APIs, and Blazor.",
+    "initial_release_year": 2016,
+    "current_status": "active",
+    "latest_stable_version": "8.0.7",
+    "website_or_repo": "https://dotnet.microsoft.com/en-us/apps/aspnet",
+    "license": "MIT",
+    "notable_use_cases": [
+      "enterprise APIs",
+      "microservices",
+      "real-time apps"
+    ],
+    "related_frameworks": [
+      "C#"
+    ],
+    "tags": [
+      "dotnet",
+      "csharp",
+      "cross-platform",
+      "high-performance"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "gin",
+    "name": "Gin",
+    "primary_category": "Web",
+    "description": "High-performance HTTP web framework for Go. Features zero-allocation router, middleware chain, and JSON validation. Among the fastest Go web frameworks.",
+    "initial_release_year": 2014,
+    "current_status": "active",
+    "latest_stable_version": "1.10.0",
+    "website_or_repo": "https://gin-gonic.com",
+    "license": "MIT",
+    "notable_use_cases": [
+      "REST APIs",
+      "microservices",
+      "high-throughput backends"
+    ],
+    "related_frameworks": [
+      "Go",
+      "Fiber",
+      "Echo"
+    ],
+    "tags": [
+      "go",
+      "rest",
+      "high-performance",
+      "router"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "fiber",
+    "name": "Fiber",
+    "primary_category": "Web",
+    "description": "Express-inspired Go web framework built on Fasthttp, optimised for ultra-low memory usage and extreme throughput.",
+    "initial_release_year": 2020,
+    "current_status": "active",
+    "latest_stable_version": "2.52.5",
+    "website_or_repo": "https://gofiber.io",
+    "license": "MIT",
+    "notable_use_cases": [
+      "high-throughput APIs",
+      "real-time backends"
+    ],
+    "related_frameworks": [
+      "Go",
+      "Gin",
+      "Echo"
+    ],
+    "tags": [
+      "go",
+      "fasthttp",
+      "express-like",
+      "performance"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "echo",
+    "name": "Echo",
+    "primary_category": "Web",
+    "description": "High-performance, minimalist Go web framework with a focus on clean API design and extensibility. Includes built-in middleware, data binding, and validation.",
+    "initial_release_year": 2015,
+    "current_status": "active",
+    "latest_stable_version": "4.12.0",
+    "website_or_repo": "https://echo.labstack.com",
+    "license": "MIT",
+    "notable_use_cases": [
+      "REST APIs",
+      "microservices"
+    ],
+    "related_frameworks": [
+      "Go",
+      "Gin",
+      "Fiber"
+    ],
+    "tags": [
+      "go",
+      "minimalist",
+      "middleware"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "docker",
+    "name": "Docker",
+    "primary_category": "DevOps",
+    "description": "Platform for building, packaging, and running applications in lightweight containers. Standardised the container image format and popularised containerisation.",
+    "initial_release_year": 2013,
+    "current_status": "active",
+    "latest_stable_version": "27.1.1",
+    "website_or_repo": "https://www.docker.com",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "app packaging",
+      "local development",
+      "CI/CD pipelines",
+      "microservices"
+    ],
+    "related_frameworks": [
+      "Kubernetes",
+      "Helm"
+    ],
+    "tags": [
+      "containers",
+      "images",
+      "devops",
+      "linux"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "kubernetes",
+    "name": "Kubernetes",
+    "primary_category": "DevOps",
+    "description": "Open-source container orchestration system from Google. Automates deployment, scaling, and management of containerised applications across clusters.",
+    "initial_release_year": 2014,
+    "current_status": "active",
+    "latest_stable_version": "1.31.0",
+    "website_or_repo": "https://kubernetes.io",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "container orchestration",
+      "auto-scaling",
+      "service mesh",
+      "hybrid cloud"
+    ],
+    "related_frameworks": [
+      "Docker",
+      "Helm",
+      "ArgoCD"
+    ],
+    "tags": [
+      "containers",
+      "orchestration",
+      "cloud-native",
+      "k8s"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "terraform",
+    "name": "Terraform",
+    "primary_category": "DevOps",
+    "description": "Infrastructure as Code tool by HashiCorp. Declarative HCL language to provision cloud resources across AWS, Azure, GCP, and 1000+ providers.",
+    "initial_release_year": 2014,
+    "current_status": "active",
+    "latest_stable_version": "1.9.4",
+    "website_or_repo": "https://www.terraform.io",
+    "license": "BSL-1.1",
+    "notable_use_cases": [
+      "cloud provisioning",
+      "infrastructure automation",
+      "multi-cloud"
+    ],
+    "related_frameworks": [
+      "Pulumi",
+      "Ansible",
+      "AWS CDK"
+    ],
+    "tags": [
+      "iac",
+      "cloud",
+      "hashicorp",
+      "declarative"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "ansible",
+    "name": "Ansible",
+    "primary_category": "DevOps",
+    "description": "Agentless IT automation tool using YAML playbooks over SSH. Handles configuration management, application deployment, and orchestration without installing agents.",
+    "initial_release_year": 2012,
+    "current_status": "active",
+    "latest_stable_version": "10.2.0",
+    "website_or_repo": "https://www.ansible.com",
+    "license": "GPL-3.0",
+    "notable_use_cases": [
+      "configuration management",
+      "server provisioning",
+      "app deployment"
+    ],
+    "related_frameworks": [
+      "Terraform"
+    ],
+    "tags": [
+      "agentless",
+      "yaml",
+      "ssh",
+      "configuration-management"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "helm",
+    "name": "Helm",
+    "primary_category": "DevOps",
+    "description": "The package manager for Kubernetes. Bundles Kubernetes YAML manifests into versioned, templatable charts that can be shared and deployed consistently.",
+    "initial_release_year": 2015,
+    "current_status": "active",
+    "latest_stable_version": "3.15.4",
+    "website_or_repo": "https://helm.sh",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "Kubernetes package management",
+      "release management",
+      "GitOps"
+    ],
+    "related_frameworks": [
+      "Kubernetes",
+      "ArgoCD"
+    ],
+    "tags": [
+      "kubernetes",
+      "charts",
+      "packaging",
+      "templating"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "jenkins",
+    "name": "Jenkins",
+    "primary_category": "DevOps",
+    "description": "Self-hosted, open-source CI/CD automation server. Thousands of plugins cover build, test, and deployment pipelines.",
+    "initial_release_year": 2011,
+    "current_status": "active",
+    "latest_stable_version": "2.471",
+    "website_or_repo": "https://www.jenkins.io",
+    "license": "MIT",
+    "notable_use_cases": [
+      "CI/CD pipelines",
+      "build automation",
+      "self-hosted automation"
+    ],
+    "related_frameworks": [
+      "GitHub Actions",
+      "ArgoCD"
+    ],
+    "tags": [
+      "ci-cd",
+      "automation",
+      "self-hosted",
+      "pipelines"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "github-actions",
+    "name": "GitHub Actions",
+    "primary_category": "DevOps",
+    "description": "GitHub-native CI/CD platform using YAML workflow files. Tight integration with the GitHub ecosystem, marketplace of reusable actions, and free minutes for open source.",
+    "initial_release_year": 2018,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://github.com/features/actions",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "CI/CD",
+      "automated testing",
+      "deployment",
+      "release automation"
+    ],
+    "related_frameworks": [
+      "Jenkins",
+      "ArgoCD"
+    ],
+    "tags": [
+      "ci-cd",
+      "github",
+      "yaml",
+      "automation"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "argocd",
+    "name": "ArgoCD",
+    "primary_category": "DevOps",
+    "description": "Declarative GitOps continuous delivery tool for Kubernetes. Syncs application state from Git repositories to clusters automatically.",
+    "initial_release_year": 2018,
+    "current_status": "active",
+    "latest_stable_version": "2.11.7",
+    "website_or_repo": "https://argo-cd.readthedocs.io",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "GitOps",
+      "Kubernetes deployments",
+      "multi-cluster management"
+    ],
+    "related_frameworks": [
+      "Kubernetes",
+      "Helm",
+      "GitHub Actions"
+    ],
+    "tags": [
+      "gitops",
+      "kubernetes",
+      "cd",
+      "declarative"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "tensorflow",
+    "name": "TensorFlow",
+    "primary_category": "ML",
+    "description": "Open-source ML platform by Google. End-to-end toolkit for building and deploying ML models, from research to production via TF Serving, TF Lite, and TF.js.",
+    "initial_release_year": 2015,
+    "current_status": "active",
+    "latest_stable_version": "2.17.0",
+    "website_or_repo": "https://www.tensorflow.org",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "deep learning",
+      "computer vision",
+      "NLP",
+      "model serving"
+    ],
+    "related_frameworks": [
+      "Keras",
+      "PyTorch",
+      "Python"
+    ],
+    "tags": [
+      "deep-learning",
+      "neural-networks",
+      "google",
+      "gpu"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "pytorch",
+    "name": "PyTorch",
+    "primary_category": "ML",
+    "description": "Open-source ML framework by Meta with dynamic computation graphs. Preferred in research for its Pythonic API and dominant in academic publications.",
+    "initial_release_year": 2016,
+    "current_status": "active",
+    "latest_stable_version": "2.4.0",
+    "website_or_repo": "https://pytorch.org",
+    "license": "BSD-3-Clause",
+    "notable_use_cases": [
+      "deep learning research",
+      "NLP",
+      "computer vision",
+      "generative AI"
+    ],
+    "related_frameworks": [
+      "TensorFlow",
+      "Hugging Face Transformers",
+      "Python"
+    ],
+    "tags": [
+      "deep-learning",
+      "dynamic-graphs",
+      "meta",
+      "gpu"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "scikit-learn",
+    "name": "scikit-learn",
+    "primary_category": "ML",
+    "description": "Python library for classical machine learning algorithms. Consistent API across classification, regression, clustering, and preprocessing. The ML workhorse for tabular data.",
+    "initial_release_year": 2007,
+    "current_status": "active",
+    "latest_stable_version": "1.5.1",
+    "website_or_repo": "https://scikit-learn.org",
+    "license": "BSD-3-Clause",
+    "notable_use_cases": [
+      "classification",
+      "regression",
+      "clustering",
+      "feature engineering"
+    ],
+    "related_frameworks": [
+      "Python",
+      "PyTorch",
+      "TensorFlow"
+    ],
+    "tags": [
+      "machine-learning",
+      "classical-ml",
+      "tabular",
+      "sklearn"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "keras",
+    "name": "Keras",
+    "primary_category": "ML",
+    "description": "High-level neural networks API, now multi-backend (TensorFlow, PyTorch, JAX). Designed for fast prototyping and ease of use while remaining production-ready.",
+    "initial_release_year": 2015,
+    "current_status": "active",
+    "latest_stable_version": "3.4.1",
+    "website_or_repo": "https://keras.io",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "rapid model prototyping",
+      "research",
+      "deep learning"
+    ],
+    "related_frameworks": [
+      "TensorFlow",
+      "PyTorch",
+      "Python"
+    ],
+    "tags": [
+      "deep-learning",
+      "high-level",
+      "multi-backend"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "hugging-face-transformers",
+    "name": "Hugging Face Transformers",
+    "primary_category": "ML",
+    "description": "Library of pre-trained transformer models for NLP, vision, and audio. Hub hosts 500k+ models. The standard API for working with LLMs and foundation models.",
+    "initial_release_year": 2018,
+    "current_status": "active",
+    "latest_stable_version": "4.44.0",
+    "website_or_repo": "https://huggingface.co/docs/transformers",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "NLP",
+      "text generation",
+      "fine-tuning LLMs",
+      "vision transformers"
+    ],
+    "related_frameworks": [
+      "PyTorch",
+      "TensorFlow",
+      "LangChain"
+    ],
+    "tags": [
+      "transformers",
+      "llm",
+      "nlp",
+      "pre-trained"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "langchain",
+    "name": "LangChain",
+    "primary_category": "AI",
+    "description": "Framework for building applications powered by large language models. Provides chains, agents, retrieval-augmented generation (RAG), and tool-calling abstractions.",
+    "initial_release_year": 2022,
+    "current_status": "active",
+    "latest_stable_version": "0.2.12",
+    "website_or_repo": "https://www.langchain.com",
+    "license": "MIT",
+    "notable_use_cases": [
+      "RAG pipelines",
+      "AI agents",
+      "chatbots",
+      "document QA"
+    ],
+    "related_frameworks": [
+      "Hugging Face Transformers",
+      "Python"
+    ],
+    "tags": [
+      "llm",
+      "rag",
+      "agents",
+      "genai"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "opencv",
+    "name": "OpenCV",
+    "primary_category": "ML",
+    "description": "Open-source computer vision and image processing library. Covers classical CV algorithms and DNN inference. Available in C++ and Python.",
+    "initial_release_year": 1999,
+    "current_status": "active",
+    "latest_stable_version": "4.10.0",
+    "website_or_repo": "https://opencv.org",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "image processing",
+      "object detection",
+      "video analysis",
+      "robotics"
+    ],
+    "related_frameworks": [
+      "Python",
+      "TensorFlow",
+      "PyTorch"
+    ],
+    "tags": [
+      "computer-vision",
+      "image-processing",
+      "cpp",
+      "python"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "sqlalchemy",
+    "name": "SQLAlchemy",
+    "primary_category": "Data",
+    "description": "Python SQL toolkit and ORM. Provides both a Core expression language for raw SQL and a full ORM layer. The de-facto Python ORM for production.",
+    "initial_release_year": 2006,
+    "current_status": "active",
+    "latest_stable_version": "2.0.32",
+    "website_or_repo": "https://www.sqlalchemy.org",
+    "license": "MIT",
+    "notable_use_cases": [
+      "database abstraction",
+      "ORM",
+      "SQL query building"
+    ],
+    "related_frameworks": [
+      "Python",
+      "FastAPI"
+    ],
+    "tags": [
+      "python",
+      "orm",
+      "sql",
+      "database"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "prisma",
+    "name": "Prisma",
+    "primary_category": "Data",
+    "description": "Next-generation TypeScript/JavaScript ORM with a schema-first approach and auto-generated client. Supports PostgreSQL, MySQL, SQLite, and MongoDB.",
+    "initial_release_year": 2019,
+    "current_status": "active",
+    "latest_stable_version": "5.17.0",
+    "website_or_repo": "https://www.prisma.io",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "type-safe database access",
+      "schema migrations",
+      "full-stack apps"
+    ],
+    "related_frameworks": [
+      "TypeScript",
+      "NestJS",
+      "Next.js"
+    ],
+    "tags": [
+      "typescript",
+      "orm",
+      "schema-first",
+      "type-safe"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "typeorm",
+    "name": "TypeORM",
+    "primary_category": "Data",
+    "description": "ORM for TypeScript and JavaScript supporting Active Record and Data Mapper patterns. Works with PostgreSQL, MySQL, MariaDB, SQLite, and more.",
+    "initial_release_year": 2016,
+    "current_status": "active",
+    "latest_stable_version": "0.3.20",
+    "website_or_repo": "https://typeorm.io",
+    "license": "MIT",
+    "notable_use_cases": [
+      "Node.js database access",
+      "REST APIs",
+      "NestJS apps"
+    ],
+    "related_frameworks": [
+      "TypeScript",
+      "NestJS",
+      "Prisma"
+    ],
+    "tags": [
+      "typescript",
+      "orm",
+      "active-record",
+      "data-mapper"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "sequelize",
+    "name": "Sequelize",
+    "primary_category": "Data",
+    "description": "Promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite, and MSSQL. One of the oldest and most widely used JavaScript ORMs.",
+    "initial_release_year": 2010,
+    "current_status": "active",
+    "latest_stable_version": "6.37.3",
+    "website_or_repo": "https://sequelize.org",
+    "license": "MIT",
+    "notable_use_cases": [
+      "Node.js database access",
+      "REST APIs"
+    ],
+    "related_frameworks": [
+      "JavaScript",
+      "Express.js",
+      "TypeORM"
+    ],
+    "tags": [
+      "nodejs",
+      "javascript",
+      "orm",
+      "sql"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "gorm",
+    "name": "GORM",
+    "primary_category": "Data",
+    "description": "The fantastic ORM library for Go. Full-featured with associations, hooks, transactions, and auto-migrations. Works with MySQL, PostgreSQL, SQLite, and SQL Server.",
+    "initial_release_year": 2013,
+    "current_status": "active",
+    "latest_stable_version": "1.25.11",
+    "website_or_repo": "https://gorm.io",
+    "license": "MIT",
+    "notable_use_cases": [
+      "Go database access",
+      "REST APIs",
+      "microservices"
+    ],
+    "related_frameworks": [
+      "Go",
+      "Gin",
+      "Fiber"
+    ],
+    "tags": [
+      "go",
+      "orm",
+      "database",
+      "associations"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "graphql",
+    "name": "GraphQL",
+    "primary_category": "API",
+    "description": "Query language for APIs and a runtime for executing those queries. Lets clients request exactly the data they need, avoiding over/under-fetching. Originally from Meta.",
+    "initial_release_year": 2015,
+    "current_status": "active",
+    "latest_stable_version": "October 2021",
+    "website_or_repo": "https://graphql.org",
+    "license": "MIT",
+    "notable_use_cases": [
+      "flexible data fetching",
+      "BFF pattern",
+      "mobile APIs"
+    ],
+    "related_frameworks": [
+      "tRPC"
+    ],
+    "tags": [
+      "query-language",
+      "api",
+      "schema",
+      "meta"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "grpc",
+    "name": "gRPC",
+    "primary_category": "API",
+    "description": "High-performance RPC framework from Google using HTTP/2 and Protocol Buffers. Strongly-typed contracts, bi-directional streaming, and multi-language code generation.",
+    "initial_release_year": 2015,
+    "current_status": "active",
+    "latest_stable_version": "1.66.0",
+    "website_or_repo": "https://grpc.io",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "microservice-to-microservice",
+      "streaming APIs",
+      "polyglot services"
+    ],
+    "related_frameworks": [
+      "GraphQL"
+    ],
+    "tags": [
+      "rpc",
+      "http2",
+      "protobuf",
+      "streaming"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "trpc",
+    "name": "tRPC",
+    "primary_category": "API",
+    "description": "Type-safe API layer for TypeScript full-stack apps. Eliminates the API schema layer by sharing types directly between server and client. Zero code generation.",
+    "initial_release_year": 2021,
+    "current_status": "active",
+    "latest_stable_version": "11.0.0",
+    "website_or_repo": "https://trpc.io",
+    "license": "MIT",
+    "notable_use_cases": [
+      "TypeScript monorepos",
+      "Next.js APIs",
+      "type-safe RPC"
+    ],
+    "related_frameworks": [
+      "TypeScript",
+      "Next.js",
+      "GraphQL"
+    ],
+    "tags": [
+      "typescript",
+      "type-safe",
+      "rpc",
+      "fullstack"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "openapi",
+    "name": "OpenAPI",
+    "primary_category": "API",
+    "description": "Specification standard (formerly Swagger) for describing REST APIs. Machine-readable definitions drive documentation, client SDKs, and server stubs via code generation.",
+    "initial_release_year": 2011,
+    "current_status": "active",
+    "latest_stable_version": "3.1.0",
+    "website_or_repo": "https://www.openapis.org",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "API documentation",
+      "client SDK generation",
+      "API design-first"
+    ],
+    "related_frameworks": [
+      "FastAPI",
+      "gRPC"
+    ],
+    "tags": [
+      "specification",
+      "rest",
+      "documentation",
+      "code-generation"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "aws-cdk",
+    "name": "AWS CDK",
+    "primary_category": "Cloud",
+    "description": "AWS Cloud Development Kit. Define cloud infrastructure in TypeScript, Python, Java, or C# using familiar languages instead of raw CloudFormation YAML.",
+    "initial_release_year": 2018,
+    "current_status": "active",
+    "latest_stable_version": "2.152.0",
+    "website_or_repo": "https://aws.amazon.com/cdk/",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "AWS infrastructure as code",
+      "serverless deployment",
+      "multi-stack apps"
+    ],
+    "related_frameworks": [
+      "Terraform",
+      "Pulumi",
+      "TypeScript"
+    ],
+    "tags": [
+      "aws",
+      "iac",
+      "cloud",
+      "cdk"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "pulumi",
+    "name": "Pulumi",
+    "primary_category": "Cloud",
+    "description": "Infrastructure as Code platform using general-purpose languages (TypeScript, Python, Go, C#). Multi-cloud with a rich provider ecosystem and state management.",
+    "initial_release_year": 2017,
+    "current_status": "active",
+    "latest_stable_version": "3.127.0",
+    "website_or_repo": "https://www.pulumi.com",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "multi-cloud IaC",
+      "serverless deployments",
+      "Kubernetes provisioning"
+    ],
+    "related_frameworks": [
+      "Terraform",
+      "AWS CDK",
+      "TypeScript"
+    ],
+    "tags": [
+      "iac",
+      "multi-cloud",
+      "typescript",
+      "python"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "serverless-framework",
+    "name": "Serverless Framework",
+    "primary_category": "Cloud",
+    "description": "CLI-driven framework for building and deploying serverless applications across AWS Lambda, Azure Functions, Google Cloud Functions, and more.",
+    "initial_release_year": 2015,
+    "current_status": "active",
+    "latest_stable_version": "3.38.0",
+    "website_or_repo": "https://www.serverless.com",
+    "license": "MIT",
+    "notable_use_cases": [
+      "AWS Lambda deployment",
+      "serverless APIs",
+      "event-driven apps"
+    ],
+    "related_frameworks": [
+      "Terraform",
+      "AWS CDK"
+    ],
+    "tags": [
+      "serverless",
+      "lambda",
+      "faas",
+      "cloud"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "firebase",
+    "name": "Firebase",
+    "primary_category": "Cloud",
+    "description": "Google's Backend-as-a-Service platform. Provides Firestore (NoSQL), Auth, Hosting, Cloud Functions, Storage, and Realtime Database — all with client SDKs.",
+    "initial_release_year": 2011,
+    "current_status": "active",
+    "latest_stable_version": "10.13.0",
+    "website_or_repo": "https://firebase.google.com",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "real-time apps",
+      "mobile backends",
+      "rapid prototyping",
+      "auth"
+    ],
+    "related_frameworks": [
+      "Supabase"
+    ],
+    "tags": [
+      "baas",
+      "nosql",
+      "realtime",
+      "google",
+      "mobile"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "supabase",
+    "name": "Supabase",
+    "primary_category": "Cloud",
+    "description": "Open-source Firebase alternative built on PostgreSQL. Provides a managed Postgres database, Auth, Storage, Edge Functions, and auto-generated REST/GraphQL APIs.",
+    "initial_release_year": 2020,
+    "current_status": "active",
+    "latest_stable_version": "2.44.4",
+    "website_or_repo": "https://supabase.com",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "full-stack apps",
+      "auth",
+      "real-time subscriptions",
+      "postgres backend"
+    ],
+    "related_frameworks": [
+      "Firebase",
+      "Prisma",
+      "Next.js"
+    ],
+    "tags": [
+      "baas",
+      "postgres",
+      "realtime",
+      "open-source"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "jest",
+    "name": "Jest",
+    "primary_category": "Testing",
+    "description": "JavaScript testing framework by Meta with a focus on simplicity. Zero-config setup, built-in code coverage, snapshot testing, and mocking. Standard for React apps.",
+    "initial_release_year": 2014,
+    "current_status": "active",
+    "latest_stable_version": "29.7.0",
+    "website_or_repo": "https://jestjs.io",
+    "license": "MIT",
+    "notable_use_cases": [
+      "unit testing",
+      "integration testing",
+      "React component testing"
+    ],
+    "related_frameworks": [
+      "JavaScript",
+      "TypeScript",
+      "Vitest"
+    ],
+    "tags": [
+      "javascript",
+      "unit-test",
+      "snapshot",
+      "mocking"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "pytest",
+    "name": "Pytest",
+    "primary_category": "Testing",
+    "description": "The dominant Python testing framework. Simple function-based tests, powerful fixtures, parametrize decorator, and a rich plugin ecosystem.",
+    "initial_release_year": 2004,
+    "current_status": "active",
+    "latest_stable_version": "8.3.2",
+    "website_or_repo": "https://pytest.org",
+    "license": "MIT",
+    "notable_use_cases": [
+      "unit testing",
+      "integration testing",
+      "API testing"
+    ],
+    "related_frameworks": [
+      "Python",
+      "FastAPI",
+      "Django"
+    ],
+    "tags": [
+      "python",
+      "unit-test",
+      "fixtures",
+      "parametrize"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "cypress",
+    "name": "Cypress",
+    "primary_category": "Testing",
+    "description": "End-to-end testing framework that runs in-browser. Real-time reload, time-travel debugging, automatic waiting, and screenshots/video on failure.",
+    "initial_release_year": 2014,
+    "current_status": "active",
+    "latest_stable_version": "13.13.2",
+    "website_or_repo": "https://www.cypress.io",
+    "license": "MIT",
+    "notable_use_cases": [
+      "end-to-end testing",
+      "component testing",
+      "browser automation"
+    ],
+    "related_frameworks": [
+      "JavaScript",
+      "TypeScript",
+      "Playwright"
+    ],
+    "tags": [
+      "e2e",
+      "browser",
+      "visual-testing",
+      "javascript"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "playwright",
+    "name": "Playwright",
+    "primary_category": "Testing",
+    "description": "End-to-end testing framework by Microsoft supporting Chromium, Firefox, and WebKit. Cross-browser, cross-language (JS, Python, Java, C#), with parallelism and tracing built-in.",
+    "initial_release_year": 2020,
+    "current_status": "active",
+    "latest_stable_version": "1.46.0",
+    "website_or_repo": "https://playwright.dev",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "cross-browser e2e testing",
+      "browser automation",
+      "visual regression"
+    ],
+    "related_frameworks": [
+      "JavaScript",
+      "TypeScript",
+      "Cypress"
+    ],
+    "tags": [
+      "e2e",
+      "cross-browser",
+      "microsoft",
+      "browser-automation"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "vitest",
+    "name": "Vitest",
+    "primary_category": "Testing",
+    "description": "Vite-native unit testing framework compatible with Jest's API. Near-instant startup using Vite's ESM pipeline, with first-class TypeScript and JSX support.",
+    "initial_release_year": 2021,
+    "current_status": "active",
+    "latest_stable_version": "2.0.5",
+    "website_or_repo": "https://vitest.dev",
+    "license": "MIT",
+    "notable_use_cases": [
+      "unit testing",
+      "component testing in Vite projects"
+    ],
+    "related_frameworks": [
+      "Vite",
+      "TypeScript",
+      "Jest"
+    ],
+    "tags": [
+      "javascript",
+      "typescript",
+      "vite",
+      "jest-compatible"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "vite",
+    "name": "Vite",
+    "primary_category": "Build",
+    "description": "Next-generation frontend build tool by Evan You. Dev server uses native ES modules (no bundling in dev), production uses Rollup. Fast HMR and minimal config.",
+    "initial_release_year": 2020,
+    "current_status": "active",
+    "latest_stable_version": "5.4.0",
+    "website_or_repo": "https://vitejs.dev",
+    "license": "MIT",
+    "notable_use_cases": [
+      "frontend development",
+      "React/Vue/Svelte tooling",
+      "library bundling"
+    ],
+    "related_frameworks": [
+      "Rollup",
+      "esbuild",
+      "SvelteKit",
+      "Vitest"
+    ],
+    "tags": [
+      "bundler",
+      "esm",
+      "hot-reload",
+      "frontend"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "webpack",
+    "name": "webpack",
+    "primary_category": "Build",
+    "description": "Powerful, highly configurable JavaScript module bundler. Underpins many production build pipelines. Extensive loader and plugin ecosystem.",
+    "initial_release_year": 2012,
+    "current_status": "active",
+    "latest_stable_version": "5.93.0",
+    "website_or_repo": "https://webpack.js.org",
+    "license": "MIT",
+    "notable_use_cases": [
+      "production bundling",
+      "code splitting",
+      "asset processing"
+    ],
+    "related_frameworks": [
+      "JavaScript",
+      "Vite",
+      "esbuild"
+    ],
+    "tags": [
+      "bundler",
+      "javascript",
+      "code-splitting",
+      "loaders"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "esbuild",
+    "name": "esbuild",
+    "primary_category": "Build",
+    "description": "Extremely fast JavaScript bundler and minifier written in Go. 10-100x faster than webpack in benchmarks. Powers Vite's dependency pre-bundling stage.",
+    "initial_release_year": 2020,
+    "current_status": "active",
+    "latest_stable_version": "0.23.1",
+    "website_or_repo": "https://esbuild.github.io",
+    "license": "MIT",
+    "notable_use_cases": [
+      "fast bundling",
+      "library builds",
+      "CI minification"
+    ],
+    "related_frameworks": [
+      "Vite",
+      "webpack",
+      "Rollup"
+    ],
+    "tags": [
+      "bundler",
+      "go",
+      "fast",
+      "minifier"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "rollup",
+    "name": "Rollup",
+    "primary_category": "Build",
+    "description": "JavaScript module bundler optimised for libraries. Tree-shaking removes unused code, and multiple output formats (ESM, CJS, UMD) support broad compatibility.",
+    "initial_release_year": 2015,
+    "current_status": "active",
+    "latest_stable_version": "4.20.0",
+    "website_or_repo": "https://rollupjs.org",
+    "license": "MIT",
+    "notable_use_cases": [
+      "library bundling",
+      "tree-shaking",
+      "ES module output"
+    ],
+    "related_frameworks": [
+      "Vite",
+      "esbuild",
+      "webpack"
+    ],
+    "tags": [
+      "bundler",
+      "tree-shaking",
+      "esm",
+      "library"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "bun",
+    "name": "Bun",
+    "primary_category": "Build",
+    "description": "All-in-one JavaScript runtime, package manager, bundler, and test runner written in Zig. Dramatically faster installs and startup times than Node.js/npm.",
+    "initial_release_year": 2022,
+    "current_status": "active",
+    "latest_stable_version": "1.1.21",
+    "website_or_repo": "https://bun.sh",
+    "license": "MIT",
+    "notable_use_cases": [
+      "fast JS runtime",
+      "package management",
+      "serverless edge functions"
+    ],
+    "related_frameworks": [
+      "JavaScript",
+      "TypeScript",
+      "esbuild"
+    ],
+    "tags": [
+      "runtime",
+      "bundler",
+      "package-manager",
+      "zig",
+      "fast"
+    ],
+    "logo_url": null
   }
 ]
