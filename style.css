@@ -46,9 +46,9 @@ body {
 .header {
   position: sticky;
   top: 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  gap: 16px;
   height: 64px;
   width: 100%;
   padding: 0 24px;
@@ -64,12 +64,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: transform 0.6s;
   flex-shrink: 0;
-}
-
-.header .logo:hover {
-  transform: rotate(360deg);
 }
 
 .header .logo img {
@@ -87,15 +82,15 @@ body {
 }
 
 .box {
-  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
-.features {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-left: auto;
+.box #searchbar {
+  width: 100%;
+  max-width: 360px;
 }
+
 
 /* ── Card Grid ────────────────────────────────────────── */
 .poke-container {
@@ -467,10 +462,12 @@ body {
 /* ── Responsive header ────────────────────────────────── */
 @media (max-width: 600px) {
   .header {
-    padding: 0 16px;
-    gap: 10px;
+    padding: 0 12px;
   }
   .header-title {
-    font-size: 1rem;
+    display: none;
+  }
+  .box #searchbar {
+    max-width: 100%;
   }
 }

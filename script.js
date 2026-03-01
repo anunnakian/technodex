@@ -186,6 +186,15 @@ const createPokemonCard = (fw, index) => {
 
   const pokemonElHolder = document.createElement("div");
   pokemonElHolder.classList.add("cardContainer");
+  pokemonElHolder.dataset.search = [
+    name,
+    primary_category,
+    current_status,
+    description || "",
+    latest_stable_version || "",
+    license || "",
+    ...tags,
+  ].join(" ").toLowerCase();
   pokemonElHolder.appendChild(card);
 
   poke_container.appendChild(pokemonElHolder);
@@ -243,21 +252,12 @@ document
     });
   });
 function search_pokemon() {
-  let input = document.getElementById("searchbar").value;
-  input = input.toLowerCase();
-  input = input.replace(/\s+/g, ""); // removing all spaces from search box
-  // storing all card along wiith details in variable
-  let x = document.getElementsByClassName("cardContainer");
+  const input = document.getElementById("searchbar").value.toLowerCase().trim();
+  const cards = document.getElementsByClassName("cardContainer");
 
-  for (i = 0; i < x.length; i++) {
-    // checking  the name or type entered by user from search box if doesn't match than dont display the message
-    if (!x[i].innerHTML.toLowerCase().includes(input)) {
-      x[i].style.display = "none";
-    }
-    // checking  the name or type entered by user from search box if doesn't match than dont display the pokemon card
-    else {
-      x[i].style.display = "block";
-    }
+  for (let i = 0; i < cards.length; i++) {
+    const match = !input || cards[i].dataset.search.includes(input);
+    cards[i].style.display = match ? "" : "none";
   }
 }
 
