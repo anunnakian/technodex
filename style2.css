@@ -24,6 +24,9 @@ body {
   background: var(--bg);
   min-height: 100vh;
   color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ── Main layout ──────────────────────────────────────── */
@@ -31,8 +34,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
-  min-height: 100vh;
+  padding: 72px 20px 32px;
+  width: 100%;
+  max-width: 680px;
 }
 
 /* ── Top hero section ─────────────────────────────────── */
@@ -135,6 +139,7 @@ body {
   padding: 8px 24px 48px;
   width: 100%;
   max-width: 680px;
+  flex: 1;
 }
 
 /* ── Tabs ─────────────────────────────────────────────── */

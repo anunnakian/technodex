@@ -4,14 +4,16 @@ const id = parseInt(params.get("id"));
 const tabs = document.querySelectorAll("[data-tab-value]");
 const tabInfos = document.querySelectorAll("[data-tab-info]");
 
+// Mark first tab as active on load
+tabs[0]?.classList.add("active");
+
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     const target = document.querySelector(tab.dataset.tabValue);
-    tabInfos.forEach((tabInfo) => {
-      tabInfo.classList.remove("active");
-    });
+    tabInfos.forEach((tabInfo) => tabInfo.classList.remove("active"));
+    tabs.forEach((t) => t.classList.remove("active"));
     target.classList.add("active");
-    target.scrollIntoView({ behavior: "smooth" });
+    tab.classList.add("active");
   });
 });
 
