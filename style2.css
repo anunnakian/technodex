@@ -223,13 +223,39 @@ body {
   text-align: center;
 }
 
+/* ── Badge ────────────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge-active           { background: #dcfce7; color: #15803d; }
+.badge-deprecated       { background: #fee2e2; color: #dc2626; }
+.badge-maintenance-only { background: #fff7ed; color: #c2410c; }
+.badge-outline          { background: transparent; border: 1px solid var(--text-secondary); color: var(--text-secondary); }
+
+/* ── Version tag ──────────────────────────────────────── */
+.version-tag {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  margin-top: 2px;
+}
+
 /* ── About tab ────────────────────────────────────────── */
 .about {
   font-size: 0.875rem;
   display: flex;
   flex-direction: column;
   gap: 0;
-  text-transform: capitalize;
   padding: 8px 4px;
   font-family: "Inter", sans-serif;
 }
@@ -243,12 +269,36 @@ body {
   border-bottom: none;
 }
 
-.about a {
-  color: var(--accent);
-  text-decoration: none;
+.about-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
 }
 
-.about a:hover {
+.about-label {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 400;
+  flex-shrink: 0;
+  text-transform: capitalize;
+}
+
+.about-value {
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-align: right;
+  color: var(--text-primary);
+}
+
+.about-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.about-link:hover {
   text-decoration: underline;
 }
 
@@ -257,9 +307,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  justify-content: flex-end;
 }
 
-.about .tag {
+.about .tag,
+.tag {
   background: #eff6ff;
   color: var(--accent);
   border: 1px solid #bfdbfe;
@@ -267,7 +319,25 @@ body {
   padding: 3px 10px;
   font-size: 0.72rem;
   font-weight: 500;
-  text-transform: lowercase;
+}
+
+/* ── Use cases (overview tab) ─────────────────────────── */
+.use-cases {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 4px 4px;
+}
+
+.use-cases-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+  margin-right: 2px;
 }
 
 /* ── Stats tab ────────────────────────────────────────── */
@@ -407,6 +477,16 @@ meter::-webkit-meter-even-less-good-value {
   font-size: 0.8rem;
   font-weight: 600;
   font-family: "Inter", sans-serif;
+}
+
+/* ── Linked evolution chips ───────────────────────────── */
+a.evolution__pokemon {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.evolution__pokemon:hover {
+  border-color: var(--accent);
 }
 
 /* ── Nav buttons ──────────────────────────────────────── */

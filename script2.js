@@ -4,7 +4,7 @@ const id = parseInt(params.get("id"));
 const tabs = document.querySelectorAll("[data-tab-value]");
 const tabInfos = document.querySelectorAll("[data-tab-info]");
 
-// Mark first tab as active on load
+// Mark first tab span as active on load
 tabs[0]?.classList.add("active");
 
 tabs.forEach((tab) => {
@@ -19,7 +19,7 @@ tabs.forEach((tab) => {
 
 const fetchFrameworkDetails = async () => {
   try {
-    const res = await fetch("./framework.json");
+    const res = await fetch("./pokemon.json");
     const allFrameworks = await res.json();
     const fw = allFrameworks[id];
 
@@ -29,7 +29,7 @@ const fetchFrameworkDetails = async () => {
       return;
     }
 
-    displayFrameworkDetails(fw, allFrameworks.length);
+    displayFrameworkDetails(fw, allFrameworks);
   } catch (err) {
     console.error("Failed to load framework data:", err);
     document.getElementById("pokemon-details").innerHTML =
@@ -37,7 +37,16 @@ const fetchFrameworkDetails = async () => {
   }
 };
 
-const displayFrameworkDetails = (fw, total) => {
+const statusBadgeClass = (status) => {
+  const map = {
+    active: "badge-active",
+    deprecated: "badge-deprecated",
+    "maintenance-only": "badge-maintenance-only",
+  };
+  return map[status] || "badge-outline";
+};
+
+const displayFrameworkDetails = (fw, allFrameworks) => {
   const {
     name = "Unknown",
     logo_url,
@@ -53,78 +62,125 @@ const displayFrameworkDetails = (fw, total) => {
     related_frameworks,
   } = fw;
 
-  // Header
+  const total = allFrameworks.length;
+  const statusClass = statusBadgeClass(current_status);
+
+  // ── Hero (buttons are position:fixed, no wrapper div needed) ──
   document.getElementById("pokemon-details").innerHTML = `
-    <div class="btn">
-      <button class="previousBtn" onclick="backButton()"><i class="fas fa-chevron-left"></i></button>
-      ${id + 1 < total ? `<button class="nextBtn" onclick="nextFramework()"><i class="fas fa-chevron-right"></i></button>` : ""}
-    </div>
+    <button class="previousBtn" onclick="backButton()">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    ${id + 1 < total
+      ? `<button class="nextBtn" onclick="nextFramework()">
+           <i class="fas fa-chevron-right"></i>
+         </button>`
+      : ""}
     <div class="names">
-      <div class="japaneseName">${primary_category}</div>
+      <span class="japaneseName">${primary_category}</span>
       <div class="name">${name}</div>
+      <span class="badge ${statusClass}">${current_status}</span>
+      ${latest_stable_version
+        ? `<span class="version-tag">v${latest_stable_version}</span>`
+        : ""}
     </div>
     <div class="top">
       <div class="image">
-        <img class="imgFront" src="${logo_url || "./images/placeholder.png"}" alt="${name} logo"
-          onerror="this.src='./images/placeholder.png'">
+        <img class="imgFront"
+             src="${logo_url || "./images/placeholder.png"}"
+             alt="${name} logo"
+             onerror="this.src='./images/placeholder.png'">
       </div>
     </div>
   `;
 
-  // Tab 1: Overview
+  // ── Tab 1: Overview ───────────────────────────────────
+  const useCaseTags = notable_use_cases
+    ? notable_use_cases
+        .split(",")
+        .map((u) => `<span class="tag">${u.trim()}</span>`)
+        .join("")
+    : "";
+
   document.getElementById("tab_1").innerHTML = `
     <div class="overview">
       <p>${description || "No description available."}</p>
-      <div class="about">
-        <div>Status: <b>${current_status}</b></div>
-        <div>Released: <b>${initial_release_year || "Unknown"}</b></div>
-        <div>Version: <b>${latest_stable_version || "N/A"}</b></div>
-        <div>License: <b>${license || "Unknown"}</b></div>
-        ${notable_use_cases ? `<div>Use Cases: <b>${notable_use_cases}</b></div>` : ""}
-        ${website_or_repo ? `<div><a href="${website_or_repo}" target="_blank" rel="noopener noreferrer">View Project &rarr;</a></div>` : ""}
-        ${tags.length ? `<div class="tags">${tags.map((t) => `<span class="tag">${t}</span>`).join("")}</div>` : ""}
-      </div>
+      ${useCaseTags
+        ? `<div class="use-cases">
+             <span class="use-cases-label">Use Cases</span>
+             ${useCaseTags}
+           </div>`
+        : ""}
     </div>
   `;
 
-  // Tab 2: Stats
-  const releaseYear = initial_release_year || 2000;
+  // ── Tab 2: Details (structured key/value rows) ────────
+  const tagPills = tags.length
+    ? `<div class="tags">${tags.map((t) => `<span class="tag">${t}</span>`).join("")}</div>`
+    : "";
+
   document.getElementById("tab_2").innerHTML = `
-    <div class="stats">
-      <div class="stat">
-        <div><span>Release Year:</span><span>${initial_release_year || "?"}</span></div>
-        <meter min="1990" max="2025" value="${releaseYear}"></meter>
+    <div class="about">
+      <div class="about-row">
+        <span class="about-label">Status</span>
+        <span class="badge ${statusClass}">${current_status}</span>
       </div>
-      <div class="stat">
-        <div><span>Status:</span><span>${current_status}</span></div>
+      <div class="about-row">
+        <span class="about-label">Released</span>
+        <span class="about-value">${initial_release_year || "Unknown"}</span>
       </div>
-      <div class="stat">
-        <div><span>Latest Version:</span><span>${latest_stable_version || "N/A"}</span></div>
+      <div class="about-row">
+        <span class="about-label">Latest Version</span>
+        <span class="about-value">${latest_stable_version || "N/A"}</span>
       </div>
-      <div class="stat">
-        <div><span>License:</span><span>${license || "Unknown"}</span></div>
+      <div class="about-row">
+        <span class="about-label">License</span>
+        <span class="about-value">${license || "Unknown"}</span>
       </div>
+      <div class="about-row">
+        <span class="about-label">Category</span>
+        <span class="about-value">${primary_category}</span>
+      </div>
+      ${tagPills
+        ? `<div class="about-row">
+             <span class="about-label">Tags</span>
+             ${tagPills}
+           </div>`
+        : ""}
+      ${website_or_repo
+        ? `<div class="about-row">
+             <span class="about-label">Website</span>
+             <a href="${website_or_repo}" target="_blank" rel="noopener noreferrer" class="about-link">
+               View Project →
+             </a>
+           </div>`
+        : ""}
     </div>
   `;
 
-  // Tab 3: Related frameworks
+  // ── Tab 3: Related frameworks (linked chips) ──────────
   const related = related_frameworks
-    ? related_frameworks
-        .split(",")
-        .map((r) => r.trim())
-        .filter(Boolean)
+    ? related_frameworks.split(",").map((r) => r.trim()).filter(Boolean)
     : [];
 
+  const relatedHTML = related.length
+    ? related
+        .map((relName) => {
+          const relIdx = allFrameworks.findIndex(
+            (f) => f.name.toLowerCase() === relName.toLowerCase()
+          );
+          return relIdx >= 0
+            ? `<a href="details.html?id=${relIdx}" class="evolution__pokemon">
+                 <h1>${relName}</h1>
+               </a>`
+            : `<div class="evolution__pokemon">
+                 <h1>${relName}</h1>
+               </div>`;
+        })
+        .join("")
+    : `<p style="padding:20px 4px;color:#6b7280;font-size:0.875rem;">No related frameworks listed.</p>`;
+
   document.getElementById("tab_3").innerHTML = `
-    <div class="evolution">
-      ${
-        related.length
-          ? related
-              .map((r) => `<div class="evolution__pokemon"><h1>${r}</h1></div>`)
-              .join('<i class="fa-solid fa-caret-right fa-2x fa-beat"></i>')
-          : "<p>No related frameworks listed.</p>"
-      }
-    </div>
+    <div class="evolution">${relatedHTML}</div>
   `;
 };
 
