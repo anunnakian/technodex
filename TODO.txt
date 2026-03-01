@@ -1,0 +1,73 @@
+Here's my review of Technodex — a Pokedex-inspired tech framework directory. Overall it's a creative concept with a solid visual style, but there are some real issues to
+  address.
+
+  ---
+  What's Good
+
+  - Creative concept — Pokedex UI for tech frameworks is original
+  - Nice card flip animation with front/back info
+  - Good data structure in framework.json (108+ frameworks)
+  - Category icons and status badges add clarity
+
+  ---
+  Critical Bugs
+
+  1. Card clicks are broken (script.js:184)
+  // 'id' is never defined in this scope!
+  card.addEventListener("click", () => {
+    window.open(`details.html?id=${id}`, "_self");
+  });
+  Should be card.id or the framework's ID from the data.
+
+  2. Dark mode crashes the page on load
+  The JS references a #dark element that's commented out in HTML — throws a runtime error.
+
+  3. Details page still uses PokeAPI
+  script2.js fetches from the PokeAPI instead of your local framework.json, so the detail view doesn't work.
+
+  ---
+  Code Quality
+
+  - Heavy use of var throughout — should be const/let
+  - Large commented-out blocks of dead code
+  - Pokemon naming artifacts everywhere (pokemonInnerHTML, poke_container) — confusing for a tech app
+  - framework.json and pokemon.json are duplicates — pick one
+  - No error handling on fetch calls (silent failures)
+
+  ---
+  UX Issues
+
+  - Search bar is disabled — the JS logic exists but the HTML input is commented out
+  - Mobile cards don't flip — touch users never see the description on the back
+  - No back button on the details page — users must use browser history
+  - No sorting (by name, year, release, status)
+
+  ---
+  Missing Features Worth Adding
+
+  ┌──────────────────────────┬────────┐
+  │         Feature          │ Effort │
+  ├──────────────────────────┼────────┤
+  │ Re-enable search         │ Low    │
+  ├──────────────────────────┼────────┤
+  │ Sort by name/year/status │ Low    │
+  ├──────────────────────────┼────────┤
+  │ Filter by license        │ Low    │
+  ├──────────────────────────┼────────┤
+  │ Favorites (localStorage) │ Medium │
+  ├──────────────────────────┼────────┤
+  │ Framework comparison     │ High   │
+  ├──────────────────────────┼────────┤
+  │ PWA support              │ Medium │
+  └──────────────────────────┴────────┘
+
+  ---
+  Quick Wins (Highest Impact)
+
+  1. Fix the id variable bug so cards actually navigate
+  2. Remove or fix the dark mode toggle
+  3. Wire script2.js to load from framework.json instead of PokeAPI
+  4. Re-enable the search input
+  5. Clean up dead commented code
+
+  Want me to start fixing any of these? I'd suggest starting with the critical bugs since they block core functionality.

@@ -78,7 +78,7 @@ const fetchPokemons = async (region) => {
   for (let i = start; i <= end; i++) {
     const data = allPokemon[i - 1];           // JSON is zero‑based; API IDs start at 1
     if (!data) break;                         // safety guard if end > file length
-    createPokemonCard(data);
+    createPokemonCard(data, i - 1);
     await new Promise(r => setTimeout(r, 150)); // keep your pacing if needed
   }
 };
@@ -99,7 +99,7 @@ const main_types = Object.keys(colors);
 //   createPokemonCard(data);
 // };
 
-const createPokemonCard = (fw) => {
+const createPokemonCard = (fw, index) => {
 
   const card = document.createElement('div');
     card.className = 'card';
@@ -118,7 +118,7 @@ const createPokemonCard = (fw) => {
       website_or_repo
     } = fw;
 
-    var pokemonInnerHTML  = `
+    const pokemonInnerHTML  = `
       <div class="front side">
           <div class="img-container">
               <img class="image" src="${logo_url || './images/placeholder.png'}" alt="${name} logo">
@@ -181,7 +181,7 @@ const createPokemonCard = (fw) => {
   // Add event listener to open new page on card click
   card.addEventListener("click", () => {
     // Open new page with specific card details
-    window.open(`details.html?id=${id}`, "_self");
+    window.open(`details.html?id=${index}`, "_self");
   });
 
   const pokemonElHolder = document.createElement("div");
@@ -262,29 +262,3 @@ function search_pokemon() {
 }
 
 
-// dark mode enabled
-const darkModeButton = document.getElementById("dark");
-
-darkModeButton.addEventListener("click", () => {
-
-  let element = document.body;
-  element.classList.toggle("dark-mode");
-  document.body.classList.toggle("dark-mode");
-
-  const regions = document.querySelectorAll(".regionvalue");
-  console.log(regions);
-  regions.forEach(region => {
-    region.classList.toggle("dark-mode");
-  });
-
-});
-
-const darkModeIcon = document.getElementById("dark");
-darkModeButton.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-  darkModeIcon.classList.toggle("fa-toggle-on");
-  // You can add additional elements that need dark mode here
-});
-
-
-changeRegion();
