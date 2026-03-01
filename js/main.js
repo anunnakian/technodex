@@ -1,11 +1,12 @@
 const poke_container = document.getElementById("poke-container");
 const loader = document.querySelector(".lds-ring");
+let allFrameworks = [];
 
 const fetchFrameworks = async () => {
   loader.classList.add("ring-active");
 
   const res = await fetch('./data/frameworks.json');
-  const allFrameworks = await res.json();
+  allFrameworks = await res.json();
   loader.classList.remove('ring-active');
 
   for (let i = 0; i < allFrameworks.length; i++) {
@@ -96,15 +97,7 @@ const createFrameworkCard = (fw) => {
 
   const pokemonElHolder = document.createElement("div");
   pokemonElHolder.classList.add("cardContainer");
-  pokemonElHolder.dataset.search = [
-    name,
-    primary_category,
-    current_status,
-    description || "",
-    latest_stable_version || "",
-    license || "",
-    ...tags,
-  ].join(" ").toLowerCase();
+  pokemonElHolder.dataset.search = name.toLowerCase();
   pokemonElHolder.appendChild(card);
 
   poke_container.appendChild(pokemonElHolder);
@@ -134,10 +127,30 @@ document.getElementById("scrollToDownBtn").addEventListener("click", function ()
 
 function search_pokemon() {
   const input = document.getElementById("searchbar").value.toLowerCase().trim();
-  const cards = document.getElementsByClassName("cardContainer");
+  const resultsEl = document.getElementById("search-results");
 
-  for (let i = 0; i < cards.length; i++) {
-    const match = !input || cards[i].dataset.search.includes(input);
-    cards[i].style.display = match ? "" : "none";
+  if (!input) {
+    poke_container.style.display = "";
+    resultsEl.style.display = "none";
+    return;
   }
+
+  const matches = allFrameworks.filter(fw => fw.name.toLowerCase().includes(input));
+
+  poke_container.style.display = "none";
+
+  if (matches.length === 0) {
+    resultsEl.innerHTML = `<p class="search-no-results">No results for "<strong>${input}</strong>"</p>`;
+  } else {
+    resultsEl.innerHTML = matches.map(fw => `
+      <div class="search-result-item" onclick="window.open('details.html?id=${fw.slug}', '_self')">
+        <img class="search-result-logo" src="${fw.logo_url || './assets/images/placeholder.png'}" alt="${fw.name} logo" onerror="this.src='./assets/images/placeholder.png'">
+        <span class="search-result-name">${fw.name}</span>
+        <span class="search-result-category">${fw.primary_category}</span>
+        <span class="badge badge-sm badge-${fw.current_status.replace(/[^a-z0-9]/g, '-')}">${fw.current_status}</span>
+      </div>
+    `).join('');
+  }
+
+  resultsEl.style.display = "block";
 }
