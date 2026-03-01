@@ -4332,5 +4332,1276 @@
       "fast"
     ],
     "logo_url": null
+  },
+  {
+    "slug": "aws",
+    "name": "Amazon Web Services",
+    "primary_category": "Cloud",
+    "description": "The world's most comprehensive cloud platform by Amazon, with 200+ services covering compute, storage, databases, networking, ML, analytics, security, and more.",
+    "initial_release_year": 2006,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://aws.amazon.com",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "cloud infrastructure",
+      "serverless",
+      "big data",
+      "machine learning",
+      "global deployments"
+    ],
+    "related_frameworks": [
+      "Microsoft Azure",
+      "Google Cloud Platform",
+      "Terraform",
+      "AWS CDK"
+    ],
+    "tags": [
+      "cloud",
+      "iaas",
+      "paas",
+      "saas",
+      "amazon"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "microsoft-azure",
+    "name": "Microsoft Azure",
+    "primary_category": "Cloud",
+    "description": "Microsoft's enterprise cloud platform with 200+ services. Strong integration with Windows, Active Directory, and the Microsoft 365 ecosystem. Popular in enterprise environments.",
+    "initial_release_year": 2010,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://azure.microsoft.com",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "enterprise apps",
+      "hybrid cloud",
+      "DevOps",
+      "AI/ML",
+      "SAP workloads"
+    ],
+    "related_frameworks": [
+      "Amazon Web Services",
+      "Google Cloud Platform",
+      "Terraform"
+    ],
+    "tags": [
+      "cloud",
+      "microsoft",
+      "iaas",
+      "paas",
+      "hybrid"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "google-cloud-platform",
+    "name": "Google Cloud Platform",
+    "primary_category": "Cloud",
+    "description": "Google's cloud platform offering compute, storage, networking, and managed services including BigQuery, Cloud Run, and Vertex AI. Strong in data analytics and ML workloads.",
+    "initial_release_year": 2008,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://cloud.google.com",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "data analytics",
+      "machine learning",
+      "container workloads",
+      "global networking"
+    ],
+    "related_frameworks": [
+      "Amazon Web Services",
+      "Microsoft Azure",
+      "Terraform"
+    ],
+    "tags": [
+      "cloud",
+      "google",
+      "iaas",
+      "paas",
+      "analytics"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "digitalocean",
+    "name": "DigitalOcean",
+    "primary_category": "Cloud",
+    "description": "Developer-focused cloud platform with a simple UX and predictable pricing. Offers Droplets (VMs), Kubernetes (DOKS), managed databases, and App Platform.",
+    "initial_release_year": 2011,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://www.digitalocean.com",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "startups",
+      "developer projects",
+      "managed Kubernetes",
+      "simple deployments"
+    ],
+    "related_frameworks": [
+      "Amazon Web Services",
+      "Terraform"
+    ],
+    "tags": [
+      "cloud",
+      "vps",
+      "developer-friendly",
+      "kubernetes"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "cloudflare",
+    "name": "Cloudflare",
+    "primary_category": "Cloud",
+    "description": "Global CDN, DDoS protection, and edge compute platform. Cloudflare Workers enables serverless at the edge across 300+ PoPs. Also offers DNS, Zero Trust, and R2 storage.",
+    "initial_release_year": 2010,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://www.cloudflare.com",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "CDN",
+      "DDoS protection",
+      "edge computing",
+      "DNS",
+      "Zero Trust"
+    ],
+    "related_frameworks": [
+      "Amazon Web Services",
+      "Vercel"
+    ],
+    "tags": [
+      "cdn",
+      "edge",
+      "security",
+      "workers",
+      "dns"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "aws-lambda",
+    "name": "AWS Lambda",
+    "primary_category": "Cloud",
+    "description": "AWS serverless compute service. Runs code in response to events without provisioning servers. Supports Node.js, Python, Java, Go, C#, and custom runtimes. Billed per-invocation.",
+    "initial_release_year": 2014,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://aws.amazon.com/lambda/",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "event-driven functions",
+      "API backends",
+      "data processing",
+      "scheduled tasks"
+    ],
+    "related_frameworks": [
+      "Amazon Web Services",
+      "Serverless Framework",
+      "AWS CDK"
+    ],
+    "tags": [
+      "serverless",
+      "faas",
+      "event-driven",
+      "aws"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "amazon-ec2",
+    "name": "Amazon EC2",
+    "primary_category": "Cloud",
+    "description": "AWS's flagship virtual server service. Hundreds of instance types optimised for compute, memory, storage, and GPU workloads. Forms the foundation of most AWS architectures.",
+    "initial_release_year": 2006,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://aws.amazon.com/ec2/",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "web servers",
+      "batch processing",
+      "GPU training",
+      "high-performance compute"
+    ],
+    "related_frameworks": [
+      "Amazon Web Services",
+      "Kubernetes",
+      "Terraform"
+    ],
+    "tags": [
+      "compute",
+      "vms",
+      "instances",
+      "aws",
+      "iaas"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "amazon-s3",
+    "name": "Amazon S3",
+    "primary_category": "Cloud",
+    "description": "AWS object storage service with 99.999999999% durability. Underpins countless architectures as cheap, infinitely scalable storage for files, backups, data lakes, and static websites.",
+    "initial_release_year": 2006,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://aws.amazon.com/s3/",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "data lakes",
+      "backups",
+      "static website hosting",
+      "media storage",
+      "log archives"
+    ],
+    "related_frameworks": [
+      "Amazon Web Services",
+      "AWS CDK",
+      "Terraform"
+    ],
+    "tags": [
+      "storage",
+      "object-storage",
+      "data-lake",
+      "aws"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "amazon-rds",
+    "name": "Amazon RDS",
+    "primary_category": "Cloud",
+    "description": "AWS managed relational database service supporting PostgreSQL, MySQL, MariaDB, Oracle, and SQL Server. Handles backups, patching, multi-AZ failover, and read replicas automatically.",
+    "initial_release_year": 2009,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://aws.amazon.com/rds/",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "managed relational databases",
+      "OLTP workloads",
+      "multi-AZ HA"
+    ],
+    "related_frameworks": [
+      "Amazon Web Services",
+      "Amazon Redshift",
+      "Amazon DynamoDB"
+    ],
+    "tags": [
+      "database",
+      "managed",
+      "relational",
+      "postgres",
+      "mysql",
+      "aws"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "amazon-dynamodb",
+    "name": "Amazon DynamoDB",
+    "primary_category": "Data",
+    "description": "AWS fully managed NoSQL database with single-digit millisecond latency at any scale. Supports key-value and document models. Powers many high-traffic AWS-native applications.",
+    "initial_release_year": 2012,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://aws.amazon.com/dynamodb/",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "high-throughput key-value store",
+      "gaming leaderboards",
+      "session management",
+      "IoT"
+    ],
+    "related_frameworks": [
+      "Amazon Web Services",
+      "Amazon RDS",
+      "MongoDB"
+    ],
+    "tags": [
+      "nosql",
+      "key-value",
+      "serverless-db",
+      "aws",
+      "managed"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "amazon-redshift",
+    "name": "Amazon Redshift",
+    "primary_category": "Data",
+    "description": "AWS fully managed cloud data warehouse based on PostgreSQL. Columnar storage and MPP architecture deliver fast analytics over petabytes of data. Integrates with S3, Glue, and BI tools.",
+    "initial_release_year": 2012,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://aws.amazon.com/redshift/",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "cloud data warehouse",
+      "BI reporting",
+      "large-scale analytics",
+      "ETL target"
+    ],
+    "related_frameworks": [
+      "Amazon Web Services",
+      "Snowflake",
+      "Google BigQuery"
+    ],
+    "tags": [
+      "data-warehouse",
+      "analytics",
+      "columnar",
+      "sql",
+      "aws"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "amazon-emr",
+    "name": "Amazon EMR",
+    "primary_category": "Data",
+    "description": "AWS managed big data platform running Apache Spark, Hive, Presto, HBase, and more on auto-scaling clusters. Processes large datasets from S3 without managing infrastructure.",
+    "initial_release_year": 2009,
+    "current_status": "active",
+    "latest_stable_version": "7.x",
+    "website_or_repo": "https://aws.amazon.com/emr/",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "big data processing",
+      "ETL at scale",
+      "Apache Spark workloads",
+      "log analytics"
+    ],
+    "related_frameworks": [
+      "Amazon Web Services",
+      "Apache Spark",
+      "Apache Hadoop MapReduce"
+    ],
+    "tags": [
+      "big-data",
+      "spark",
+      "hadoop",
+      "managed",
+      "aws"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "amazon-sagemaker",
+    "name": "Amazon SageMaker",
+    "primary_category": "ML",
+    "description": "AWS fully managed ML platform covering the entire lifecycle: data labelling, model training, hyperparameter tuning, deployment, and monitoring. Supports all major ML frameworks.",
+    "initial_release_year": 2017,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://aws.amazon.com/sagemaker/",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "ML model training",
+      "model deployment",
+      "feature engineering",
+      "MLOps"
+    ],
+    "related_frameworks": [
+      "Amazon Web Services",
+      "TensorFlow",
+      "PyTorch",
+      "Vertex AI"
+    ],
+    "tags": [
+      "mlops",
+      "ml-platform",
+      "training",
+      "inference",
+      "aws"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "aws-cloudformation",
+    "name": "AWS CloudFormation",
+    "primary_category": "DevOps",
+    "description": "AWS-native Infrastructure as Code service using JSON/YAML templates. Provisions and manages AWS resources as stacks with dependency ordering and rollback support.",
+    "initial_release_year": 2011,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://aws.amazon.com/cloudformation/",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "AWS resource provisioning",
+      "stack lifecycle management",
+      "drift detection"
+    ],
+    "related_frameworks": [
+      "Amazon Web Services",
+      "AWS CDK",
+      "Terraform"
+    ],
+    "tags": [
+      "iac",
+      "aws",
+      "templates",
+      "yaml",
+      "stacks"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "azure-functions",
+    "name": "Azure Functions",
+    "primary_category": "Cloud",
+    "description": "Microsoft's serverless compute service supporting C#, JavaScript, Python, Java, and PowerShell. Triggered by HTTP, queues, timers, blob events, and 20+ other connectors.",
+    "initial_release_year": 2016,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://azure.microsoft.com/en-us/products/functions/",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "event-driven functions",
+      "data processing pipelines",
+      "API backends"
+    ],
+    "related_frameworks": [
+      "Microsoft Azure",
+      "AWS Lambda",
+      "Serverless Framework"
+    ],
+    "tags": [
+      "serverless",
+      "faas",
+      "event-driven",
+      "azure",
+      "microsoft"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "azure-kubernetes-service",
+    "name": "Azure Kubernetes Service",
+    "primary_category": "DevOps",
+    "description": "Microsoft's managed Kubernetes service. Handles control plane management, upgrades, scaling, and integrates with Azure AD, Container Registry, and Azure Monitor.",
+    "initial_release_year": 2018,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://azure.microsoft.com/en-us/products/kubernetes-service/",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "managed Kubernetes",
+      "container orchestration",
+      "microservices at scale"
+    ],
+    "related_frameworks": [
+      "Microsoft Azure",
+      "Kubernetes",
+      "Helm",
+      "ArgoCD"
+    ],
+    "tags": [
+      "kubernetes",
+      "managed",
+      "containers",
+      "azure",
+      "orchestration"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "azure-devops",
+    "name": "Azure DevOps",
+    "primary_category": "DevOps",
+    "description": "Microsoft's integrated DevOps platform with Boards (Scrum/Kanban), Repos (Git), Pipelines (CI/CD), Test Plans, and Artifacts (package registry) in a single suite.",
+    "initial_release_year": 2018,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://azure.microsoft.com/en-us/products/devops/",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "CI/CD pipelines",
+      "project management",
+      "artifact management",
+      "enterprise DevOps"
+    ],
+    "related_frameworks": [
+      "Microsoft Azure",
+      "GitHub Actions",
+      "Jenkins"
+    ],
+    "tags": [
+      "ci-cd",
+      "pipelines",
+      "boards",
+      "git",
+      "microsoft"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "azure-machine-learning",
+    "name": "Azure Machine Learning",
+    "primary_category": "ML",
+    "description": "Microsoft's cloud ML platform for building, training, deploying, and monitoring ML models. Supports AutoML, designer (no-code), and SDK-based workflows with MLflow integration.",
+    "initial_release_year": 2014,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://azure.microsoft.com/en-us/products/machine-learning/",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "MLOps",
+      "automated ML",
+      "responsible AI",
+      "model registry"
+    ],
+    "related_frameworks": [
+      "Microsoft Azure",
+      "Amazon SageMaker",
+      "Vertex AI",
+      "MLflow"
+    ],
+    "tags": [
+      "mlops",
+      "automl",
+      "ml-platform",
+      "azure",
+      "microsoft"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "azure-cosmos-db",
+    "name": "Azure Cosmos DB",
+    "primary_category": "Data",
+    "description": "Microsoft's globally distributed, multi-model NoSQL database with single-digit millisecond latency. Supports document, key-value, graph, and column-family models via multiple APIs.",
+    "initial_release_year": 2017,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://azure.microsoft.com/en-us/products/cosmos-db/",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "global-scale apps",
+      "IoT",
+      "real-time personalization",
+      "gaming"
+    ],
+    "related_frameworks": [
+      "Microsoft Azure",
+      "Amazon DynamoDB",
+      "MongoDB"
+    ],
+    "tags": [
+      "nosql",
+      "globally-distributed",
+      "multi-model",
+      "azure"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "google-bigquery",
+    "name": "Google BigQuery",
+    "primary_category": "Data",
+    "description": "Google's serverless, highly scalable enterprise data warehouse. Supports SQL analytics over petabytes of data in seconds. Built-in ML via BigQuery ML and BI Engine.",
+    "initial_release_year": 2010,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://cloud.google.com/bigquery",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "cloud data warehouse",
+      "ad hoc analytics",
+      "real-time analytics",
+      "ML on data"
+    ],
+    "related_frameworks": [
+      "Google Cloud Platform",
+      "Amazon Redshift",
+      "Snowflake",
+      "dbt"
+    ],
+    "tags": [
+      "data-warehouse",
+      "serverless",
+      "sql",
+      "analytics",
+      "gcp"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "google-cloud-run",
+    "name": "Google Cloud Run",
+    "primary_category": "Cloud",
+    "description": "GCP's fully managed serverless container platform. Run any stateless container without managing infrastructure. Auto-scales to zero and supports HTTP and gRPC.",
+    "initial_release_year": 2019,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://cloud.google.com/run",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "containerised APIs",
+      "microservices",
+      "event-driven jobs",
+      "web apps"
+    ],
+    "related_frameworks": [
+      "Google Cloud Platform",
+      "AWS Lambda",
+      "Azure Functions"
+    ],
+    "tags": [
+      "serverless",
+      "containers",
+      "caas",
+      "http",
+      "gcp"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "vertex-ai",
+    "name": "Vertex AI",
+    "primary_category": "ML",
+    "description": "Google Cloud's unified ML platform for building, deploying, and scaling ML models. Integrates AutoML, custom training, Model Registry, Feature Store, and Vertex AI Pipelines.",
+    "initial_release_year": 2021,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://cloud.google.com/vertex-ai",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "MLOps",
+      "generative AI",
+      "AutoML",
+      "model serving"
+    ],
+    "related_frameworks": [
+      "Google Cloud Platform",
+      "Amazon SageMaker",
+      "Azure Machine Learning"
+    ],
+    "tags": [
+      "mlops",
+      "ml-platform",
+      "automl",
+      "google",
+      "genai"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "google-kubernetes-engine",
+    "name": "Google Kubernetes Engine",
+    "primary_category": "DevOps",
+    "description": "Google's managed Kubernetes service, the most mature managed K8s offering. Google invented Kubernetes and GKE benefits from the deepest integration with the open-source project.",
+    "initial_release_year": 2015,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://cloud.google.com/kubernetes-engine",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "managed Kubernetes",
+      "container orchestration",
+      "autopilot clusters"
+    ],
+    "related_frameworks": [
+      "Google Cloud Platform",
+      "Kubernetes",
+      "Helm",
+      "ArgoCD"
+    ],
+    "tags": [
+      "kubernetes",
+      "managed",
+      "gcp",
+      "containers",
+      "google"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "cloudera",
+    "name": "Cloudera",
+    "primary_category": "Data",
+    "description": "Enterprise big data platform (Cloudera Data Platform, CDP) built on Apache Hadoop, Spark, Hive, and Impala. Provides on-premises and hybrid cloud data lakehouse capabilities.",
+    "initial_release_year": 2008,
+    "current_status": "active",
+    "latest_stable_version": "CDP 7.1.9",
+    "website_or_repo": "https://www.cloudera.com",
+    "license": "Proprietary / Apache-2.0",
+    "notable_use_cases": [
+      "enterprise data lakehouse",
+      "big data analytics",
+      "ETL at scale",
+      "hybrid cloud data"
+    ],
+    "related_frameworks": [
+      "Apache Spark",
+      "Apache Hive",
+      "Apache Hadoop MapReduce",
+      "Databricks"
+    ],
+    "tags": [
+      "hadoop",
+      "big-data",
+      "enterprise",
+      "lakehouse",
+      "cdp"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "snowflake",
+    "name": "Snowflake",
+    "primary_category": "Data",
+    "description": "Cloud-native data platform that separates storage and compute. Delivers a data warehouse, data lake, data sharing, and application development in one platform across AWS, Azure, and GCP.",
+    "initial_release_year": 2014,
+    "current_status": "active",
+    "latest_stable_version": "N/A",
+    "website_or_repo": "https://www.snowflake.com",
+    "license": "Proprietary",
+    "notable_use_cases": [
+      "cloud data warehouse",
+      "data sharing",
+      "analytics",
+      "data marketplace"
+    ],
+    "related_frameworks": [
+      "Google BigQuery",
+      "Amazon Redshift",
+      "Databricks",
+      "dbt"
+    ],
+    "tags": [
+      "data-warehouse",
+      "cloud-native",
+      "sql",
+      "storage-compute-separation"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "databricks",
+    "name": "Databricks",
+    "primary_category": "Data",
+    "description": "Unified data analytics and AI platform founded by the creators of Apache Spark. Combines data engineering, data science, and ML on a collaborative lakehouse architecture (Delta Lake).",
+    "initial_release_year": 2013,
+    "current_status": "active",
+    "latest_stable_version": "Runtime 15.x",
+    "website_or_repo": "https://www.databricks.com",
+    "license": "Proprietary / Apache-2.0",
+    "notable_use_cases": [
+      "data lakehouse",
+      "ML training at scale",
+      "ETL pipelines",
+      "streaming analytics"
+    ],
+    "related_frameworks": [
+      "Apache Spark",
+      "Cloudera",
+      "Snowflake",
+      "Delta Lake"
+    ],
+    "tags": [
+      "lakehouse",
+      "spark",
+      "delta-lake",
+      "data-engineering",
+      "ml"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "apache-spark",
+    "name": "Apache Spark",
+    "primary_category": "Data",
+    "description": "Unified analytics engine for large-scale data processing. Supports batch, streaming, SQL, ML (MLlib), and graph processing. In-memory execution makes it 100x faster than Hadoop MapReduce.",
+    "initial_release_year": 2014,
+    "current_status": "active",
+    "latest_stable_version": "3.5.1",
+    "website_or_repo": "https://spark.apache.org",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "batch ETL",
+      "streaming pipelines",
+      "ML at scale",
+      "interactive SQL"
+    ],
+    "related_frameworks": [
+      "Databricks",
+      "Apache Kafka",
+      "Amazon EMR",
+      "Cloudera"
+    ],
+    "tags": [
+      "big-data",
+      "batch",
+      "streaming",
+      "in-memory",
+      "scala",
+      "python"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "apache-kafka",
+    "name": "Apache Kafka",
+    "primary_category": "Data",
+    "description": "Distributed event streaming platform used as a high-throughput message broker and event log. Backbone of real-time data pipelines and event-driven architectures at massive scale.",
+    "initial_release_year": 2011,
+    "current_status": "active",
+    "latest_stable_version": "3.7.0",
+    "website_or_repo": "https://kafka.apache.org",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "event streaming",
+      "message brokering",
+      "log aggregation",
+      "CDC",
+      "real-time pipelines"
+    ],
+    "related_frameworks": [
+      "Apache Spark",
+      "Apache Flink",
+      "Databricks",
+      "Confluent"
+    ],
+    "tags": [
+      "streaming",
+      "event-driven",
+      "distributed",
+      "message-broker",
+      "log"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "apache-hive",
+    "name": "Apache Hive",
+    "primary_category": "Data",
+    "description": "Data warehouse software built on top of Hadoop that provides SQL-like query language (HiveQL) for analysing large datasets stored in HDFS or S3. Widely used in Hadoop ecosystems.",
+    "initial_release_year": 2008,
+    "current_status": "maintenance-only",
+    "latest_stable_version": "4.0.0",
+    "website_or_repo": "https://hive.apache.org",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "SQL on Hadoop",
+      "batch ETL",
+      "data warehouse on HDFS"
+    ],
+    "related_frameworks": [
+      "Apache Spark",
+      "Apache Hadoop MapReduce",
+      "Cloudera",
+      "Trino"
+    ],
+    "tags": [
+      "sql",
+      "hadoop",
+      "hiveql",
+      "data-warehouse",
+      "batch"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "trino",
+    "name": "Trino",
+    "primary_category": "Data",
+    "description": "Distributed SQL query engine (formerly PrestoSQL) for running fast, ad-hoc analytics across multiple data sources — S3, HDFS, Hive, databases, and Kafka — without moving data.",
+    "initial_release_year": 2012,
+    "current_status": "active",
+    "latest_stable_version": "453",
+    "website_or_repo": "https://trino.io",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "federated queries",
+      "data lake analytics",
+      "ad-hoc SQL",
+      "cross-source joins"
+    ],
+    "related_frameworks": [
+      "Apache Hive",
+      "Apache Spark",
+      "Google BigQuery",
+      "Cloudera"
+    ],
+    "tags": [
+      "sql",
+      "distributed",
+      "federated",
+      "analytics",
+      "presto"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "dbt",
+    "name": "dbt",
+    "primary_category": "Data",
+    "description": "Data build tool that lets analytics engineers transform data in their warehouse using SQL SELECT statements. Brings software engineering practices (version control, testing, docs) to analytics.",
+    "initial_release_year": 2016,
+    "current_status": "active",
+    "latest_stable_version": "1.8.4",
+    "website_or_repo": "https://www.getdbt.com",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "data transformation",
+      "analytics engineering",
+      "data modelling",
+      "ELT pipelines"
+    ],
+    "related_frameworks": [
+      "Snowflake",
+      "Google BigQuery",
+      "Amazon Redshift",
+      "Apache Spark"
+    ],
+    "tags": [
+      "sql",
+      "elt",
+      "transformation",
+      "analytics-engineering",
+      "version-control"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "apache-airflow",
+    "name": "Apache Airflow",
+    "primary_category": "DevOps",
+    "description": "Platform for programmatically authoring, scheduling, and monitoring data workflows (DAGs) written in Python. The de-facto standard for data pipeline orchestration.",
+    "initial_release_year": 2015,
+    "current_status": "active",
+    "latest_stable_version": "2.9.3",
+    "website_or_repo": "https://airflow.apache.org",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "ETL orchestration",
+      "ML pipeline scheduling",
+      "data workflows",
+      "cron replacement"
+    ],
+    "related_frameworks": [
+      "Apache Spark",
+      "dbt",
+      "Prefect",
+      "Dagster"
+    ],
+    "tags": [
+      "workflow",
+      "dag",
+      "orchestration",
+      "python",
+      "data-pipelines"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "delta-lake",
+    "name": "Delta Lake",
+    "primary_category": "Data",
+    "description": "Open-source storage framework that brings ACID transactions, scalable metadata, and time travel to data lakes built on cloud object storage. The storage layer behind Databricks Lakehouse.",
+    "initial_release_year": 2019,
+    "current_status": "active",
+    "latest_stable_version": "3.2.0",
+    "website_or_repo": "https://delta.io",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "data lakehouse",
+      "ACID on S3",
+      "time travel queries",
+      "schema enforcement"
+    ],
+    "related_frameworks": [
+      "Databricks",
+      "Apache Spark",
+      "Apache Iceberg"
+    ],
+    "tags": [
+      "lakehouse",
+      "acid",
+      "storage-layer",
+      "spark",
+      "time-travel"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "apache-iceberg",
+    "name": "Apache Iceberg",
+    "primary_category": "Data",
+    "description": "Open table format for huge analytic datasets. Provides ACID transactions, schema evolution, partition evolution, and time travel on top of object storage like S3 and GCS.",
+    "initial_release_year": 2018,
+    "current_status": "active",
+    "latest_stable_version": "1.5.2",
+    "website_or_repo": "https://iceberg.apache.org",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "open lakehouse format",
+      "data lake governance",
+      "multi-engine access"
+    ],
+    "related_frameworks": [
+      "Delta Lake",
+      "Apache Spark",
+      "Trino",
+      "Databricks"
+    ],
+    "tags": [
+      "table-format",
+      "lakehouse",
+      "open-standard",
+      "acid",
+      "big-data"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "postgresql",
+    "name": "PostgreSQL",
+    "primary_category": "Data",
+    "description": "The world's most advanced open-source relational database. Full ACID compliance, rich SQL support, JSONB for documents, extensive indexing, and a large extension ecosystem (PostGIS, TimescaleDB).",
+    "initial_release_year": 1996,
+    "current_status": "active",
+    "latest_stable_version": "16.3",
+    "website_or_repo": "https://www.postgresql.org",
+    "license": "PostgreSQL",
+    "notable_use_cases": [
+      "web application databases",
+      "analytics",
+      "geospatial data",
+      "JSON storage"
+    ],
+    "related_frameworks": [
+      "MySQL",
+      "SQLAlchemy",
+      "Prisma",
+      "Amazon RDS"
+    ],
+    "tags": [
+      "sql",
+      "relational",
+      "acid",
+      "open-source",
+      "jsonb"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "mysql",
+    "name": "MySQL",
+    "primary_category": "Data",
+    "description": "The world's most popular open-source relational database. Widely used in LAMP stacks, SaaS applications, and e-commerce. Oracle-owned but community edition is freely available.",
+    "initial_release_year": 1995,
+    "current_status": "active",
+    "latest_stable_version": "8.4.0",
+    "website_or_repo": "https://www.mysql.com",
+    "license": "GPL-2.0 / Commercial",
+    "notable_use_cases": [
+      "web applications",
+      "e-commerce",
+      "CMS backends",
+      "SaaS apps"
+    ],
+    "related_frameworks": [
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Sequelize",
+      "Amazon RDS"
+    ],
+    "tags": [
+      "sql",
+      "relational",
+      "lamp-stack",
+      "open-source"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "mongodb",
+    "name": "MongoDB",
+    "primary_category": "Data",
+    "description": "The most popular NoSQL document database. Stores data as flexible JSON-like BSON documents. Offers horizontal scaling via sharding, replica sets for HA, and Atlas cloud service.",
+    "initial_release_year": 2009,
+    "current_status": "active",
+    "latest_stable_version": "7.0.12",
+    "website_or_repo": "https://www.mongodb.com",
+    "license": "SSPL / Apache-2.0",
+    "notable_use_cases": [
+      "flexible document storage",
+      "content management",
+      "real-time apps",
+      "catalogs"
+    ],
+    "related_frameworks": [
+      "Mongoose",
+      "Amazon DynamoDB",
+      "Azure Cosmos DB"
+    ],
+    "tags": [
+      "nosql",
+      "document",
+      "bson",
+      "sharding",
+      "atlas"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "redis",
+    "name": "Redis",
+    "primary_category": "Data",
+    "description": "In-memory data structure store used as a cache, message broker, and database. Supports strings, hashes, lists, sets, sorted sets, streams, and pub/sub. Sub-millisecond latency.",
+    "initial_release_year": 2009,
+    "current_status": "active",
+    "latest_stable_version": "7.2.5",
+    "website_or_repo": "https://redis.io",
+    "license": "RSALv2 / SSPLv1",
+    "notable_use_cases": [
+      "caching",
+      "session storage",
+      "real-time leaderboards",
+      "pub/sub messaging",
+      "rate limiting"
+    ],
+    "related_frameworks": [
+      "Memcached",
+      "Apache Kafka"
+    ],
+    "tags": [
+      "cache",
+      "in-memory",
+      "pub-sub",
+      "key-value",
+      "fast"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "elasticsearch",
+    "name": "Elasticsearch",
+    "primary_category": "Data",
+    "description": "Distributed search and analytics engine built on Apache Lucene. The E in the ELK stack (with Logstash and Kibana). Powers full-text search, log analytics, and observability.",
+    "initial_release_year": 2010,
+    "current_status": "active",
+    "latest_stable_version": "8.14.3",
+    "website_or_repo": "https://www.elastic.co/elasticsearch",
+    "license": "SSPL / Elastic-2.0",
+    "notable_use_cases": [
+      "full-text search",
+      "log analytics",
+      "APM",
+      "security analytics",
+      "vector search"
+    ],
+    "related_frameworks": [
+      "Apache Kafka",
+      "Kibana",
+      "OpenSearch"
+    ],
+    "tags": [
+      "search",
+      "analytics",
+      "full-text",
+      "elk-stack",
+      "distributed"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "clickhouse",
+    "name": "ClickHouse",
+    "primary_category": "Data",
+    "description": "Open-source column-oriented OLAP database for real-time analytics. Exceptionally fast for analytical queries over billions of rows. Used by major internet companies for clickstream and log data.",
+    "initial_release_year": 2016,
+    "current_status": "active",
+    "latest_stable_version": "24.7.2",
+    "website_or_repo": "https://clickhouse.com",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "real-time analytics",
+      "clickstream analysis",
+      "log analytics",
+      "time-series"
+    ],
+    "related_frameworks": [
+      "Google BigQuery",
+      "Amazon Redshift",
+      "Snowflake"
+    ],
+    "tags": [
+      "olap",
+      "columnar",
+      "analytics",
+      "real-time",
+      "sql"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "apache-cassandra",
+    "name": "Apache Cassandra",
+    "primary_category": "Data",
+    "description": "Highly scalable, distributed NoSQL database designed for high write throughput with no single point of failure. Linear scalability across nodes. Used by Netflix, Apple, and Discord.",
+    "initial_release_year": 2008,
+    "current_status": "active",
+    "latest_stable_version": "5.0.1",
+    "website_or_repo": "https://cassandra.apache.org",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "high-write workloads",
+      "time-series data",
+      "IoT",
+      "distributed messaging"
+    ],
+    "related_frameworks": [
+      "MongoDB",
+      "Amazon DynamoDB",
+      "Redis"
+    ],
+    "tags": [
+      "nosql",
+      "distributed",
+      "wide-column",
+      "high-availability",
+      "write-optimised"
+    ],
+    "logo_url": null
+  },
+  {
+    "slug": "mlflow",
+    "name": "MLflow",
+    "primary_category": "ML",
+    "description": "Open-source platform for managing the ML lifecycle: experiment tracking, model registry, packaging, and serving. Backend-agnostic and works with any ML library.",
+    "initial_release_year": 2018,
+    "current_status": "active",
+    "latest_stable_version": "2.14.1",
+    "website_or_repo": "https://mlflow.org",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "experiment tracking",
+      "model versioning",
+      "model deployment",
+      "reproducibility"
+    ],
+    "related_frameworks": [
+      "Databricks",
+      "PyTorch",
+      "TensorFlow",
+      "Amazon SageMaker"
+    ],
+    "tags": [
+      "mlops",
+      "experiment-tracking",
+      "model-registry",
+      "reproducibility"
+    ],
+    "logo_url": null
   }
 ]
