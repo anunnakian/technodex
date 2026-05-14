@@ -27,7 +27,7 @@ body {
 }
 
 /* ── Main layout ──────────────────────────────────────── */
-#pokemon-details {
+#framework-details {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -396,7 +396,7 @@ meter::-webkit-meter-even-less-good-value {
   text-transform: capitalize;
 }
 
-.evolution__pokemon {
+.related-chip {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -409,19 +409,19 @@ meter::-webkit-meter-even-less-good-value {
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.evolution__pokemon:hover {
+.related-chip:hover {
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
 }
 
-.evolution__pokemon img {
+.related-chip img {
   width: 72px;
   height: 72px;
   object-fit: contain;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
 }
 
-.evolution__pokemon span {
+.related-chip span {
   font-size: 0.8rem;
   font-weight: 600;
   font-family: "Inter", sans-serif;
@@ -440,33 +440,33 @@ meter::-webkit-meter-even-less-good-value {
   text-transform: capitalize;
 }
 
-.varieties__pokemon {
+.variety-chip {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
 }
 
-.varieties__pokemon img {
+.variety-chip img {
   width: 120px;
   height: 120px;
   object-fit: contain;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
 }
 
-.varieties__pokemon h1 {
+.variety-chip h1 {
   font-size: 0.8rem;
   font-weight: 600;
   font-family: "Inter", sans-serif;
 }
 
 /* ── Linked evolution chips ───────────────────────────── */
-a.evolution__pokemon {
+a.related-chip {
   text-decoration: none;
   color: inherit;
 }
 
-a.evolution__pokemon:hover {
+a.related-chip:hover {
   border-color: var(--accent);
 }
 
@@ -501,7 +501,7 @@ a.evolution__pokemon:hover {
 }
 
 /* ── Types ────────────────────────────────────────────── */
-.poke__type__bg {
+.type-icon-bg {
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -511,7 +511,7 @@ a.evolution__pokemon:hover {
   overflow: hidden;
 }
 
-.poke__type__bg img {
+.type-icon-bg img {
   width: 20px;
   height: 20px;
   object-fit: contain;

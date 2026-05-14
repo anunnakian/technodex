@@ -78,7 +78,7 @@ To bulk-fetch logos: edit `scripts/framework.json` and run `python scripts/fetch
 
 - All asset and data paths must be **relative** (`./`-prefixed) — no absolute paths anywhere
 - `?id=` in the URL is the entry's `slug` field — stable across reorders, but renaming a slug breaks existing links
-- The `search_pokemon` function name in `js/main.js:128` is a legacy artifact; don't rename without updating `index.html`
+- The `search_frameworks` function in `js/main.js` is called via `oninput` in `index.html` — rename both together
 
 ---
 

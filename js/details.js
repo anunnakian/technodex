@@ -38,7 +38,7 @@ const fetchFrameworkDetails = async () => {
     const fw = allFrameworks.find(f => f.slug === slugId);
 
     if (!fw) {
-      document.getElementById("pokemon-details").innerHTML =
+      document.getElementById("framework-details").innerHTML =
         '<p style="padding:2rem;text-align:center">Framework not found. <a href="./index.html">Back to homepage</a></p>';
       return;
     }
@@ -46,7 +46,7 @@ const fetchFrameworkDetails = async () => {
     displayFrameworkDetails(fw, allFrameworks);
   } catch (err) {
     console.error("Failed to load framework data:", err);
-    document.getElementById("pokemon-details").innerHTML =
+    document.getElementById("framework-details").innerHTML =
       '<p style="padding:2rem;text-align:center">Error loading framework data. <a href="./index.html">Back to homepage</a></p>';
   }
 };
@@ -83,7 +83,7 @@ const displayFrameworkDetails = (fw, allFrameworks) => {
   const statusClass = statusBadgeClass(current_status);
 
   // ── Hero ──────────────────────────────────────────────
-  document.getElementById("pokemon-details").innerHTML = `
+  document.getElementById("framework-details").innerHTML = `
     <button class="previousBtn" onclick="backButton()" aria-label="Back to homepage">
       <i class="fas fa-chevron-left" aria-hidden="true"></i>
     </button>
@@ -179,10 +179,10 @@ const displayFrameworkDetails = (fw, allFrameworks) => {
             (f) => f.name.toLowerCase() === relName.toLowerCase()
           );
           return relFw
-            ? `<a href="details.html?id=${relFw.slug}" class="evolution__pokemon">
+            ? `<a href="details.html?id=${relFw.slug}" class="related-chip">
                  <span>${relName}</span>
                </a>`
-            : `<div class="evolution__pokemon">
+            : `<div class="related-chip">
                  <span>${relName}</span>
                </div>`;
         })

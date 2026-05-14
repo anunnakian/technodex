@@ -107,7 +107,7 @@ body {
 
 
 /* ── Card Grid ────────────────────────────────────────── */
-.poke-container {
+.framework-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   gap: 20px;
@@ -156,7 +156,7 @@ a.cardContainer {
 
 /* Responsive card width on small screens */
 @media screen and (max-width: 480px) {
-  .poke-container {
+  .framework-grid {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 12px 32px;
     gap: 12px;

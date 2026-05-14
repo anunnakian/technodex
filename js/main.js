@@ -1,4 +1,4 @@
-const poke_container = document.getElementById("poke-container");
+const frameworkGrid = document.getElementById("framework-grid");
 const loader = document.querySelector(".lds-ring");
 let allFrameworks = [];
 
@@ -92,14 +92,14 @@ const createFrameworkCard = (fw) => {
 
   card.innerHTML = cardInnerHTML;
 
-  const pokemonElHolder = document.createElement("a");
-  pokemonElHolder.href = `details.html?id=${fw.slug}`;
-  pokemonElHolder.setAttribute("aria-label", name);
-  pokemonElHolder.classList.add("cardContainer");
-  pokemonElHolder.dataset.search = name.toLowerCase();
-  pokemonElHolder.appendChild(card);
+  const cardLink = document.createElement("a");
+  cardLink.href = `details.html?id=${fw.slug}`;
+  cardLink.setAttribute("aria-label", name);
+  cardLink.classList.add("cardContainer");
+  cardLink.dataset.search = name.toLowerCase();
+  cardLink.appendChild(card);
 
-  poke_container.appendChild(pokemonElHolder);
+  frameworkGrid.appendChild(cardLink);
 };
 
 fetchFrameworks();
@@ -124,19 +124,19 @@ document.getElementById("scrollToDownBtn").addEventListener("click", function ()
   window.scrollTo({ top: 999999, behavior: "smooth" });
 });
 
-function search_pokemon() {
+function search_frameworks() {
   const input = document.getElementById("searchbar").value.toLowerCase().trim();
   const resultsEl = document.getElementById("search-results");
 
   if (!input) {
-    poke_container.style.display = "";
+    frameworkGrid.style.display = "";
     resultsEl.style.display = "none";
     return;
   }
 
   const matches = allFrameworks.filter(fw => fw.name.toLowerCase().includes(input));
 
-  poke_container.style.display = "none";
+  frameworkGrid.style.display = "none";
 
   if (matches.length === 0) {
     resultsEl.innerHTML = `<p class="search-no-results">No results for "<strong>${input}</strong>"</p>`;

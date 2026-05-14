@@ -30,13 +30,13 @@ The Related tab is the one place where a display name resolves back to a slug. I
 
 ## 3. In-Memory Array Search
 
-Search filters the `allFrameworks` array directly in memory — not the DOM. On every keyup, `search_pokemon()` (`js/main.js:128`) calls:
+Search filters the `allFrameworks` array directly in memory — not the DOM. On every input event, `search_frameworks()` (`js/main.js`) calls:
 
 ```
 allFrameworks.filter(fw => fw.name.toLowerCase().includes(input))
 ```
 
-Matches are re-rendered as a separate results list; the card grid is hidden (`poke_container.style.display = "none"`). Clearing the input restores the grid and hides the results. Search is name-only — tags, category, and status are not searched.
+Matches are re-rendered as a separate results list; the card grid is hidden (`frameworkGrid.style.display = "none"`). Clearing the input restores the grid and hides the results. Search is name-only — tags, category, and status are not searched.
 
 ---
 
