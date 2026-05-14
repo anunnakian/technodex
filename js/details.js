@@ -4,16 +4,28 @@ const slugId = params.get("id");
 const tabs = document.querySelectorAll("[data-tab-value]");
 const tabInfos = document.querySelectorAll("[data-tab-info]");
 
-// Mark first tab span as active on load
+function activateTab(tab) {
+  const target = document.querySelector(tab.dataset.tabValue);
+  tabInfos.forEach((tabInfo) => tabInfo.classList.remove("active"));
+  tabs.forEach((t) => {
+    t.classList.remove("active");
+    t.setAttribute("aria-selected", "false");
+  });
+  target.classList.add("active");
+  tab.classList.add("active");
+  tab.setAttribute("aria-selected", "true");
+}
+
 tabs[0]?.classList.add("active");
+tabs[0]?.setAttribute("aria-selected", "true");
 
 tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    const target = document.querySelector(tab.dataset.tabValue);
-    tabInfos.forEach((tabInfo) => tabInfo.classList.remove("active"));
-    tabs.forEach((t) => t.classList.remove("active"));
-    target.classList.add("active");
-    tab.classList.add("active");
+  tab.addEventListener("click", () => activateTab(tab));
+  tab.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      activateTab(tab);
+    }
   });
 });
 
@@ -27,7 +39,7 @@ const fetchFrameworkDetails = async () => {
 
     if (!fw) {
       document.getElementById("pokemon-details").innerHTML =
-        "<p>Framework not found.</p>";
+        '<p style="padding:2rem;text-align:center">Framework not found. <a href="./index.html">Back to homepage</a></p>';
       return;
     }
 
@@ -35,7 +47,7 @@ const fetchFrameworkDetails = async () => {
   } catch (err) {
     console.error("Failed to load framework data:", err);
     document.getElementById("pokemon-details").innerHTML =
-      "<p>Error loading framework data.</p>";
+      '<p style="padding:2rem;text-align:center">Error loading framework data. <a href="./index.html">Back to homepage</a></p>';
   }
 };
 
@@ -70,14 +82,14 @@ const displayFrameworkDetails = (fw, allFrameworks) => {
 
   const statusClass = statusBadgeClass(current_status);
 
-  // ── Hero (buttons are position:fixed, no wrapper div needed) ──
+  // ── Hero ──────────────────────────────────────────────
   document.getElementById("pokemon-details").innerHTML = `
-    <button class="previousBtn" onclick="backButton()">
-      <i class="fas fa-chevron-left"></i>
+    <button class="previousBtn" onclick="backButton()" aria-label="Back to homepage">
+      <i class="fas fa-chevron-left" aria-hidden="true"></i>
     </button>
     ${nextFw
-      ? `<button class="nextBtn" onclick="nextFramework()">
-           <i class="fas fa-chevron-right"></i>
+      ? `<button class="nextBtn" onclick="nextFramework()" aria-label="Next framework">
+           <i class="fas fa-chevron-right" aria-hidden="true"></i>
          </button>`
       : ""}
     <div class="names">
@@ -115,7 +127,7 @@ const displayFrameworkDetails = (fw, allFrameworks) => {
     </div>
   `;
 
-  // ── Tab 2: Details (structured key/value rows) ────────
+  // ── Tab 2: Details ────────────────────────────────────
   const tagPills = tags.length
     ? `<div class="tags">${tags.map((t) => `<span class="tag">${t}</span>`).join("")}</div>`
     : "";
@@ -159,7 +171,7 @@ const displayFrameworkDetails = (fw, allFrameworks) => {
     </div>
   `;
 
-  // ── Tab 3: Related frameworks (linked chips) ──────────
+  // ── Tab 3: Related ────────────────────────────────────
   const relatedHTML = related_frameworks.length
     ? related_frameworks
         .map((relName) => {
@@ -168,10 +180,10 @@ const displayFrameworkDetails = (fw, allFrameworks) => {
           );
           return relFw
             ? `<a href="details.html?id=${relFw.slug}" class="evolution__pokemon">
-                 <h1>${relName}</h1>
+                 <span>${relName}</span>
                </a>`
             : `<div class="evolution__pokemon">
-                 <h1>${relName}</h1>
+                 <span>${relName}</span>
                </div>`;
         })
         .join("")
@@ -187,7 +199,7 @@ const nextFramework = () => {
 };
 
 const backButton = () => {
-  window.history.back();
+  window.location.href = "./index.html";
 };
 
 fetchFrameworkDetails();

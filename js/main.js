@@ -57,7 +57,7 @@ const createFrameworkCard = (fw) => {
         </div>
     </div>
 
-    <div class="back side">
+    <div class="back side" aria-hidden="true">
         <div class="framework-info">
             <div class="description">
                 <p>${description || 'No description available'}</p>
@@ -81,21 +81,20 @@ const createFrameworkCard = (fw) => {
 
             ${website_or_repo ? `
             <div class="links">
-                <a href="${website_or_repo}" target="_blank" rel="noopener noreferrer" class="repo-link">
+                <span class="repo-link">
                     <i class="fas fa-external-link-alt" aria-hidden="true"></i>
                     View Project
-                </a>
+                </span>
             </div>` : ''}
         </div>
     </div>
   `;
 
   card.innerHTML = cardInnerHTML;
-  card.addEventListener("click", () => {
-    window.open(`details.html?id=${fw.slug}`, "_self");
-  });
 
-  const pokemonElHolder = document.createElement("div");
+  const pokemonElHolder = document.createElement("a");
+  pokemonElHolder.href = `details.html?id=${fw.slug}`;
+  pokemonElHolder.setAttribute("aria-label", name);
   pokemonElHolder.classList.add("cardContainer");
   pokemonElHolder.dataset.search = name.toLowerCase();
   pokemonElHolder.appendChild(card);
@@ -143,12 +142,12 @@ function search_pokemon() {
     resultsEl.innerHTML = `<p class="search-no-results">No results for "<strong>${input}</strong>"</p>`;
   } else {
     resultsEl.innerHTML = matches.map(fw => `
-      <div class="search-result-item" onclick="window.open('details.html?id=${fw.slug}', '_self')">
+      <a href="details.html?id=${fw.slug}" class="search-result-item">
         <img class="search-result-logo" src="${fw.logo_url || './assets/images/placeholder.png'}" alt="${fw.name} logo" onerror="this.src='./assets/images/placeholder.png'">
         <span class="search-result-name">${fw.name}</span>
         <span class="search-result-category">${fw.primary_category}</span>
         <span class="badge badge-sm badge-${fw.current_status.replace(/[^a-z0-9]/g, '-')}">${fw.current_status}</span>
-      </div>
+      </a>
     `).join('');
   }
 

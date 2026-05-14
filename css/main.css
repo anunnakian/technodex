@@ -1,9 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 :root {
@@ -108,6 +118,12 @@ body {
 
 .cardContainer {
   perspective: 1000px;
+}
+
+a.cardContainer {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ── Card ─────────────────────────────────────────────── */
@@ -272,7 +288,7 @@ body {
 }
 
 .description p {
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   line-height: 1.5;
   color: var(--text-secondary);
   display: -webkit-box;
@@ -290,7 +306,7 @@ body {
 .stat-item {
   display: flex;
   gap: 6px;
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   color: var(--text-secondary);
 }
 
@@ -319,7 +335,7 @@ body {
   border: 1px solid #bfdbfe;
   border-radius: 20px;
   padding: 2px 8px;
-  font-size: 0.62rem;
+  font-size: 0.72rem;
   font-weight: 500;
 }
 
@@ -328,17 +344,13 @@ body {
 }
 
 .repo-link {
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   color: var(--accent);
   text-decoration: none;
   font-weight: 500;
   display: inline-flex;
   align-items: center;
   gap: 4px;
-}
-
-.repo-link:hover {
-  text-decoration: underline;
 }
 
 /* ── Badge ────────────────────────────────────────────── */
@@ -361,26 +373,10 @@ body {
     font-size: 0.65rem;
 }
 
-.badge-active {
-    background-color: #198754;
-    color: #fff;
-}
-
-.badge-deprecated {
-    background-color: #dc3545;
-    color: #fff;
-}
-
-.badge-maintenance-only {
-    background-color: #fd7e14;
-    color: #fff;
-}
-
-.badge-outline {
-    background-color: transparent;
-    border: 1px solid #6c757d;
-    color: #6c757d;
-}
+.badge-active           { background: #dcfce7; color: #15803d; }
+.badge-deprecated       { background: #fee2e2; color: #dc2626; }
+.badge-maintenance-only { background: #fff7ed; color: #c2410c; }
+.badge-outline          { background: transparent; border: 1px solid var(--text-secondary); color: var(--text-secondary); }
 
 .badge-tag {
     font-size: 0.7rem;
@@ -476,6 +472,8 @@ body {
   box-shadow: var(--shadow-sm);
   border: 1px solid transparent;
   transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+  text-decoration: none;
+  color: inherit;
 }
 
 .search-result-item:hover {
