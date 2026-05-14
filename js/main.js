@@ -64,31 +64,33 @@ const createFrameworkCard = (fw) => {
             <div class="description">
                 <p>${description || 'No description available'}</p>
             </div>
-            <div class="back-divider"></div>
-            <div class="stats">
-                <div class="stat-item">
-                    <span class="label">Released</span>
-                    <span class="value">${String(initial_release_year || '????')}</span>
+            <div class="back-bottom">
+                <div class="back-divider"></div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="label">Released</span>
+                        <span class="value">${String(initial_release_year || '????')}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="label">Version</span>
+                        <span class="value">${latest_stable_version || 'N/A'}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="label">License</span>
+                        <span class="value">${license || 'Unknown'}</span>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <span class="label">Version</span>
-                    <span class="value">${latest_stable_version || 'N/A'}</span>
-                </div>
-                <div class="stat-item">
-                    <span class="label">License</span>
-                    <span class="value">${license || 'Unknown'}</span>
-                </div>
+
+                ${tags.length ? `
+                <div class="tags">
+                    ${tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('')}
+                </div>` : ''}
+
+                ${website_or_repo ? `
+                <div class="links">
+                    <span class="repo-link">↗ View Project</span>
+                </div>` : ''}
             </div>
-
-            ${tags.length ? `
-            <div class="tags">
-                ${tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('')}
-            </div>` : ''}
-
-            ${website_or_repo ? `
-            <div class="links">
-                <span class="repo-link">↗ View Project</span>
-            </div>` : ''}
         </div>
     </div>
   `;
