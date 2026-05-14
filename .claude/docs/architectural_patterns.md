@@ -9,38 +9,34 @@ Patterns that appear across multiple files. Check here before making structural 
 `data/frameworks.json` is a flat array consumed identically by both pages:
 
 - **Homepage** (`js/main.js:8`) — fetches the full array, iterates every element to build cards
-- **Detail page** (`js/details.js:22`) — fetches the same array, reads one element at `allFrameworks[id]`
+- **Detail page** (`js/details.js:24`) — fetches the same array, finds one element by `slug`
 
-The array **index** is the only identifier linking the two pages. There are no slugs or stable IDs used for routing.
-
-**Consequence:** Never reorder entries in `frameworks.json` without also updating any bookmarked or shared `?id=` URLs.
+The `slug` field is the stable identifier linking the two pages. Unlike a numeric index, slugs survive array reordering — but renaming a slug breaks any existing `?id=` URLs.
 
 ---
 
-## 2. Index-Based Navigation
+## 2. Slug-Based Navigation
 
-Navigation between pages passes the array index as a query parameter, not a name or slug.
+Navigation between pages passes the entry's `slug` as the `?id=` query parameter.
 
-- Card click → `details.html?id=${index}` (`js/main.js:94`)
-- Next button → `details.html?id=${id + 1}` (`js/details.js:188`)
-- Back button → `window.history.back()` (`js/details.js:192`)
-- Related tab → `findIndex(f => f.name.toLowerCase() === relName.toLowerCase())` (`js/details.js:168`)
+- Card click → `details.html?id=${fw.slug}` (`js/main.js:95`)
+- Next button → `details.html?id=${_nextSlug}` (`js/details.js:186`), where `_nextSlug` is resolved from `allFrameworks[currentIdx + 1].slug`
+- Back button → `window.history.back()` (`js/details.js:190`)
+- Related tab → name-to-slug lookup: `allFrameworks.find(f => f.name.toLowerCase() === relName.toLowerCase())` (`js/details.js:166`)
 
-The Related tab is the one place where a name lookup converts back to an index. If a framework name changes in the JSON, related links across other entries break silently.
+The Related tab is the one place where a display name resolves back to a slug. If a `name` field changes in the JSON, related links from other entries break silently.
 
 ---
 
-## 3. Data Attribute Search Index
+## 3. In-Memory Array Search
 
-Rather than searching the DOM or re-querying the JSON, all searchable content is pre-joined into a single lowercase string on a `data-search` attribute at card creation time.
+Search filters the `allFrameworks` array directly in memory — not the DOM. On every keyup, `search_pokemon()` (`js/main.js:128`) calls:
 
-Built in `js/main.js:99-107`:
 ```
-[name, primary_category, current_status, description, latest_stable_version, license, ...tags]
-  .join(" ").toLowerCase()
+allFrameworks.filter(fw => fw.name.toLowerCase().includes(input))
 ```
 
-Filtered in `js/main.js:135-143` via `String.prototype.includes()` on every keyup. This is O(n) substring matching — fast enough for the current dataset size but will degrade with thousands of entries.
+Matches are re-rendered as a separate results list; the card grid is hidden (`poke_container.style.display = "none"`). Clearing the input restores the grid and hides the results. Search is name-only — tags, category, and status are not searched.
 
 ---
 
@@ -48,14 +44,14 @@ Filtered in `js/main.js:135-143` via `String.prototype.includes()` on every keyu
 
 Dynamic coloring for the category icon badge uses a consistent sanitization transform applied in both JS and CSS:
 
-- **JS** (`js/main.js:48`): `primary_category.toLowerCase().replace(/[^a-z0-9]/g, '-')`
+- **JS** (`js/main.js:49`): `primary_category.toLowerCase().replace(/[^a-z0-9]/g, '-')`
 - **CSS** (`css/main.css:238-251`): `.framework__category__bg.web`, `.framework__category__bg.data`, etc.
 
 Adding a new category requires **both**:
 1. A new CSS rule in `css/main.css` after line 251
 2. A corresponding icon PNG in `assets/images/icons/<category>.png`
 
-The same sanitization pattern is reused for status badges: `current_status.replace(/[^a-z0-9]/g, '-')` → `badge-{sanitized-status}` (`js/main.js:54`, `css/main.css:358-375`).
+The same sanitization pattern applies to status badges: `current_status.replace(/[^a-z0-9]/g, '-')` → `badge-{sanitized-status}` (`js/main.js:56`, `css/main.css:358-375`).
 
 ---
 
@@ -108,7 +104,7 @@ Cards are not rendered all at once. After the JSON fetch resolves, `js/main.js:1
 `details.html` has a full-screen preloader overlay (`details.html:37-42`) that persists until JS adds `.loaded` to `<body>`.
 
 - CSS (`css/details.css:561-661`): defines split-curtain animation and ring spinner, hidden by `.loaded` class transitions
-- JS (`js/details.js:197-199`): `window.addEventListener("load", () => body.classList.add("loaded"))`
+- JS (`js/details.js:195-197`): `window.addEventListener("load", () => body.classList.add("loaded"))`
 
 The `load` event fires after all resources (including images) finish loading, so the preloader covers any image flash. The homepage has no equivalent — it uses the inline `.lds-ring` spinner instead.
 
@@ -120,7 +116,7 @@ Every asset reference across all files uses `./`-prefixed relative paths. No abs
 
 - HTML links/scripts: `./css/main.css`, `./js/main.js`, `./assets/icons/default/icon.png`
 - JS fetches: `./data/frameworks.json`
-- JSON `logo_url` values: `./assets/images/tech/<name>.png`
-- Fallback in JS: `'./assets/images/placeholder.png'` (`js/main.js:41`, `js/details.js:89-91`)
+- JSON `logo_url` values: `./assets/images/tech/<slug>.png`
+- Fallback in JS: `'./assets/images/placeholder.png'` (`js/main.js:42`, `js/details.js:94`)
 
 Any new asset or data reference must follow this convention.
