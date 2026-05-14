@@ -129,13 +129,20 @@ a.cardContainer {
 /* ── Card ─────────────────────────────────────────────── */
 .card {
   background: var(--card-bg);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-md);
+  border-radius: 20px;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.04),
+    0 4px 16px rgba(0, 0, 0, 0.08),
+    0 16px 48px rgba(0, 0, 0, 0.07);
   height: 290px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.45s ease, box-shadow 0.25s ease;
   cursor: pointer;
+  --stripe-color: var(--cat-default);
+  --logo-bg: rgba(107, 114, 128, 0.07);
+  --cat-color: var(--cat-default);
+  --cat-bg: rgba(107, 114, 128, 0.10);
 }
 
 .cardContainer:hover .card {
@@ -168,7 +175,7 @@ a.cardContainer {
 .back {
   position: absolute;
   inset: 0;
-  border-radius: var(--radius);
+  border-radius: 20px;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   display: flex;
@@ -178,6 +185,37 @@ a.cardContainer {
   padding: 16px;
   overflow: hidden;
 }
+
+/* ── Category stripe (top of both faces) ─────────────── */
+.front::before,
+.back::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--stripe-color);
+}
+
+/* ── Per-category theme vars ──────────────────────────── */
+.card[data-category="web"]      { --stripe-color: var(--cat-web);      --logo-bg: rgba(59,  130, 246, 0.07); --cat-color: #3b82f6; --cat-bg: rgba(59,  130, 246, 0.10); }
+.card[data-category="data"]     { --stripe-color: var(--cat-data);     --logo-bg: rgba(139,  92, 246, 0.07); --cat-color: #8b5cf6; --cat-bg: rgba(139,  92, 246, 0.10); }
+.card[data-category="cloud"]    { --stripe-color: var(--cat-cloud);    --logo-bg: rgba(6,   182, 212, 0.07); --cat-color: #06b6d4; --cat-bg: rgba(6,   182, 212, 0.10); }
+.card[data-category="ui"]       { --stripe-color: var(--cat-ui);       --logo-bg: rgba(236,  72, 153, 0.07); --cat-color: #ec4899; --cat-bg: rgba(236,  72, 153, 0.10); }
+.card[data-category="mobile"]   { --stripe-color: var(--cat-mobile);   --logo-bg: rgba(245, 158,  11, 0.07); --cat-color: #f59e0b; --cat-bg: rgba(245, 158,  11, 0.10); }
+.card[data-category="devops"]   { --stripe-color: var(--cat-devops);   --logo-bg: rgba(16,  185, 129, 0.07); --cat-color: #10b981; --cat-bg: rgba(16,  185, 129, 0.10); }
+.card[data-category="security"] { --stripe-color: var(--cat-security); --logo-bg: rgba(239,  68,  68, 0.07); --cat-color: #ef4444; --cat-bg: rgba(239,  68,  68, 0.10); }
+.card[data-category="ml"]       { --stripe-color: var(--cat-ml);       --logo-bg: rgba(249, 115,  22, 0.07); --cat-color: #f97316; --cat-bg: rgba(249, 115,  22, 0.10); }
+.card[data-category="ai"]       { --stripe-color: var(--cat-ai);       --logo-bg: rgba(249, 115,  22, 0.07); --cat-color: #f97316; --cat-bg: rgba(249, 115,  22, 0.10); }
+.card[data-category="orm"]      { --stripe-color: var(--cat-orm);      --logo-bg: rgba(99,  102, 241, 0.07); --cat-color: #6366f1; --cat-bg: rgba(99,  102, 241, 0.10); }
+.card[data-category="testing"]  { --stripe-color: var(--cat-testing);  --logo-bg: rgba(20,  184, 166, 0.07); --cat-color: #14b8a6; --cat-bg: rgba(20,  184, 166, 0.10); }
+.card[data-category="build"]    { --stripe-color: var(--cat-build);    --logo-bg: rgba(245, 158,  11, 0.07); --cat-color: #f59e0b; --cat-bg: rgba(245, 158,  11, 0.10); }
+.card[data-category="api"]      { --stripe-color: var(--cat-api);      --logo-bg: rgba(14,  165, 233, 0.07); --cat-color: #0ea5e9; --cat-bg: rgba(14,  165, 233, 0.10); }
+.card[data-category="language"] { --stripe-color: var(--cat-language); --logo-bg: rgba(124,  58, 237, 0.07); --cat-color: #7c3aed; --cat-bg: rgba(124,  58, 237, 0.10); }
+.card[data-category="reactive"] { --stripe-color: var(--cat-reactive); --logo-bg: rgba(8,   145, 178, 0.07); --cat-color: #0891b2; --cat-bg: rgba(8,   145, 178, 0.10); }
+.card[data-category="ioc"]      { --stripe-color: var(--cat-ioc);      --logo-bg: rgba(217, 119,   6, 0.07); --cat-color: #d97706; --cat-bg: rgba(217, 119,   6, 0.10); }
+.card[data-category="game"]     { --stripe-color: var(--cat-game);     --logo-bg: rgba(220,  38,  38, 0.07); --cat-color: #dc2626; --cat-bg: rgba(220,  38,  38, 0.10); }
 
 .back {
   transform: rotateY(180deg);
@@ -189,10 +227,10 @@ a.cardContainer {
 
 /* ── Front face content ───────────────────────────────── */
 .img-container {
-  width: 88px;
-  height: 88px;
+  width: 74px;
+  height: 74px;
   border-radius: 50%;
-  background: #f3f4f6;
+  background: var(--logo-bg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,8 +239,8 @@ a.cardContainer {
 }
 
 .image {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
   image-rendering: auto;
 }
@@ -239,40 +277,15 @@ a.cardContainer {
 }
 
 .framework__category__bg {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--cat-default);
+  background: var(--cat-bg);
+  color: var(--cat-color);
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
 }
-
-.framework__category__bg img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
-}
-
-/* Category color map */
-.framework__category__bg.web      { background: var(--cat-web); }
-.framework__category__bg.data     { background: var(--cat-data); }
-.framework__category__bg.cloud    { background: var(--cat-cloud); }
-.framework__category__bg.ui       { background: var(--cat-ui); }
-.framework__category__bg.mobile   { background: var(--cat-mobile); }
-.framework__category__bg.devops   { background: var(--cat-devops); }
-.framework__category__bg.security { background: var(--cat-security); }
-.framework__category__bg.ml       { background: var(--cat-ml); }
-.framework__category__bg.ai       { background: var(--cat-ai); }
-.framework__category__bg.orm      { background: var(--cat-orm); }
-.framework__category__bg.testing  { background: var(--cat-testing); }
-.framework__category__bg.build    { background: var(--cat-build); }
-.framework__category__bg.api      { background: var(--cat-api); }
-.framework__category__bg.language { background: var(--cat-language); }
-.framework__category__bg.reactive { background: var(--cat-reactive); }
-.framework__category__bg.ioc      { background: var(--cat-ioc); }
-.framework__category__bg.game     { background: var(--cat-game); }
 
 .status-indicator {
   margin-top: 4px;
@@ -288,13 +301,30 @@ a.cardContainer {
 }
 
 .description p {
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   line-height: 1.5;
   color: var(--text-secondary);
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.back-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.back-divider {
+  width: 100%;
+  height: 1px;
+  background: #f1f5f9;
+  flex-shrink: 0;
 }
 
 .stats {
@@ -305,18 +335,25 @@ a.cardContainer {
 
 .stat-item {
   display: flex;
-  gap: 6px;
-  font-size: 0.75rem;
-  color: var(--text-secondary);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .stat-item .label {
+  font-size: 0.68rem;
   font-weight: 600;
-  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #94a3b8;
   white-space: nowrap;
 }
 
 .stat-item .value {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #334155;
+  text-align: right;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

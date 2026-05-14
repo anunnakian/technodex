@@ -36,6 +36,9 @@ const createFrameworkCard = (fw) => {
     website_or_repo
   } = fw;
 
+  const slug = primary_category.toLowerCase().replace(/[^a-z0-9]/g, '-');
+  card.dataset.category = slug;
+
   const cardInnerHTML = `
     <div class="front side">
         <div class="img-container">
@@ -46,10 +49,8 @@ const createFrameworkCard = (fw) => {
         </div>
         <h3 class="name" title="${name}">${name}</h3>
         <div class="category">
-            <div class="framework__category__bg ${primary_category.toLowerCase().replace(/[^a-z0-9]/g, '-')}">
-                <img src="./assets/images/icons/${primary_category.toLowerCase()}.png"
-                 style="width: 22px;"
-                 alt="${primary_category}" title="${primary_category}">
+            <div class="framework__category__bg ${slug}">
+                ${primary_category.toUpperCase()}
             </div>
         </div>
         <div class="status-indicator ${current_status}" title="Status: ${current_status}">
@@ -59,17 +60,22 @@ const createFrameworkCard = (fw) => {
 
     <div class="back side" aria-hidden="true">
         <div class="framework-info">
+            <div class="back-name">${name}</div>
             <div class="description">
                 <p>${description || 'No description available'}</p>
             </div>
-            <span>${String(initial_release_year || '????')}</span>
+            <div class="back-divider"></div>
             <div class="stats">
                 <div class="stat-item">
-                    <span class="label">Version:</span>
+                    <span class="label">Released</span>
+                    <span class="value">${String(initial_release_year || '????')}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="label">Version</span>
                     <span class="value">${latest_stable_version || 'N/A'}</span>
                 </div>
                 <div class="stat-item">
-                    <span class="label">License:</span>
+                    <span class="label">License</span>
                     <span class="value">${license || 'Unknown'}</span>
                 </div>
             </div>
@@ -81,10 +87,7 @@ const createFrameworkCard = (fw) => {
 
             ${website_or_repo ? `
             <div class="links">
-                <span class="repo-link">
-                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-                    View Project
-                </span>
+                <span class="repo-link">↗ View Project</span>
             </div>` : ''}
         </div>
     </div>
