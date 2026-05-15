@@ -23,7 +23,8 @@
       "web"
     ],
     "logo_url": "./assets/images/tech/spring.png",
-    "github_repo": "spring-projects/spring-framework"
+    "github_repo": "spring-projects/spring-framework",
+    "maven_artifact": "org.springframework:spring-webmvc"
   },
   {
     "slug": "apache-struts",
@@ -214,7 +215,8 @@
       "microservice"
     ],
     "logo_url": "./assets/images/tech/dropwizard.png",
-    "github_repo": "dropwizard/dropwizard"
+    "github_repo": "dropwizard/dropwizard",
+    "maven_artifact": "io.dropwizard:dropwizard-core"
   },
   {
     "slug": "micronaut",
@@ -240,7 +242,8 @@
       "di"
     ],
     "logo_url": "./assets/images/tech/micronaut.png",
-    "github_repo": "micronaut-projects/micronaut-core"
+    "github_repo": "micronaut-projects/micronaut-core",
+    "maven_artifact": "io.micronaut:micronaut-core"
   },
   {
     "slug": "quarkus",
@@ -266,7 +269,8 @@
       "microservice"
     ],
     "logo_url": "./assets/images/tech/quarkus.png",
-    "github_repo": "quarkusio/quarkus"
+    "github_repo": "quarkusio/quarkus",
+    "maven_artifact": "io.quarkus:quarkus-core"
   },
   {
     "slug": "helidon",
@@ -290,7 +294,8 @@
       "microservice"
     ],
     "logo_url": "./assets/images/tech/helidon.png",
-    "github_repo": "helidon-io/helidon"
+    "github_repo": "helidon-io/helidon",
+    "maven_artifact": "io.helidon:helidon"
   },
   {
     "slug": "spark-java",
@@ -448,7 +453,8 @@
       "web"
     ],
     "logo_url": "./assets/images/tech/vertx.png",
-    "github_repo": "eclipse-vertx/vert.x"
+    "github_repo": "eclipse-vertx/vert.x",
+    "maven_artifact": "io.vertx:vertx-web"
   },
   {
     "slug": "vaadin",
@@ -725,7 +731,8 @@
       "spring"
     ],
     "logo_url": "./assets/images/tech/spring.png",
-    "github_repo": "spring-projects/spring-framework"
+    "github_repo": "spring-projects/spring-framework",
+    "maven_artifact": "org.springframework:spring-core"
   },
   {
     "slug": "google-guice",
@@ -885,7 +892,8 @@
       "jpa"
     ],
     "logo_url": "https://cdn.simpleicons.org/hibernate",
-    "github_repo": "hibernate/hibernate-orm"
+    "github_repo": "hibernate/hibernate-orm",
+    "maven_artifact": "org.hibernate.orm:hibernate-core"
   },
   {
     "slug": "mybatis",
@@ -908,7 +916,8 @@
       "mapper"
     ],
     "logo_url": "https://cdn.simpleicons.org/mybatis",
-    "github_repo": "mybatis/mybatis-3"
+    "github_repo": "mybatis/mybatis-3",
+    "maven_artifact": "org.mybatis:mybatis"
   },
   {
     "slug": "eclipselink",
@@ -1017,7 +1026,8 @@
       "dsl"
     ],
     "logo_url": "https://cdn.simpleicons.org/jooq",
-    "github_repo": "jOOQ/jOOQ"
+    "github_repo": "jOOQ/jOOQ",
+    "maven_artifact": "org.jooq:jooq"
   },
   {
     "slug": "apache-torque",
@@ -1078,7 +1088,8 @@
       "odm"
     ],
     "logo_url": "https://cdn.simpleicons.org/mongodb",
-    "github_repo": "MorphiaOrg/morphia"
+    "github_repo": "MorphiaOrg/morphia",
+    "maven_artifact": "dev.morphia.morphia:morphia-core"
   },
   {
     "slug": "kundera",
@@ -1167,7 +1178,8 @@
       "streams"
     ],
     "logo_url": "https://cdn.simpleicons.org/reactivex",
-    "github_repo": "reactor/reactor-core"
+    "github_repo": "reactor/reactor-core",
+    "maven_artifact": "io.projectreactor:reactor-core"
   },
   {
     "slug": "rxjava",
@@ -1190,7 +1202,8 @@
       "observables"
     ],
     "logo_url": "https://cdn.simpleicons.org/reactivex",
-    "github_repo": "ReactiveX/RxJava"
+    "github_repo": "ReactiveX/RxJava",
+    "maven_artifact": "io.reactivex.rxjava3:rxjava"
   },
   {
     "slug": "eclipse-vertx",
@@ -1213,7 +1226,8 @@
       "event‑loop"
     ],
     "logo_url": "https://cdn.simpleicons.org/eclipsevertx",
-    "github_repo": "eclipse-vertx/vert.x"
+    "github_repo": "eclipse-vertx/vert.x",
+    "maven_artifact": "io.vertx:vertx-core"
   },
   {
     "slug": "akka",
@@ -1307,7 +1321,8 @@
       "network"
     ],
     "logo_url": "https://cdn.simpleicons.org/apachenetbeans",
-    "github_repo": "netty/netty"
+    "github_repo": "netty/netty",
+    "maven_artifact": "io.netty:netty-all"
   },
   {
     "slug": "mutiny",
@@ -1374,7 +1389,8 @@
       "oauth2"
     ],
     "logo_url": "./assets/images/tech/spring.png",
-    "github_repo": "spring-projects/spring-security"
+    "github_repo": "spring-projects/spring-security",
+    "maven_artifact": "org.springframework.security:spring-security-core"
   },
   {
     "slug": "apache-shiro",
@@ -1394,7 +1410,8 @@
       "security"
     ],
     "logo_url": "https://cdn.simpleicons.org/apache",
-    "github_repo": "apache/shiro"
+    "github_repo": "apache/shiro",
+    "maven_artifact": "org.apache.shiro:shiro-core"
   },
   {
     "slug": "keycloak",
@@ -1415,7 +1432,8 @@
       "oauth2"
     ],
     "logo_url": "https://cdn.simpleicons.org/keycloak",
-    "github_repo": "keycloak/keycloak"
+    "github_repo": "keycloak/keycloak",
+    "maven_artifact": "org.keycloak:keycloak-core"
   },
   {
     "slug": "pac4j",
@@ -1763,7 +1781,8 @@
       "dependency"
     ],
     "logo_url": "https://cdn.simpleicons.org/apachemaven",
-    "github_repo": "apache/maven"
+    "github_repo": "apache/maven",
+    "maven_artifact": "org.apache.maven:maven-core"
   },
   {
     "slug": "gradle",
@@ -1967,7 +1986,8 @@
       "unit"
     ],
     "logo_url": "https://cdn.simpleicons.org/junit5",
-    "github_repo": "junit-team/junit5"
+    "github_repo": "junit-team/junit5",
+    "maven_artifact": "org.junit.jupiter:junit-jupiter"
   },
   {
     "slug": "testng",
@@ -1989,7 +2009,8 @@
       "testing"
     ],
     "logo_url": "https://cdn.simpleicons.org/java",
-    "github_repo": "cbeust/testng"
+    "github_repo": "cbeust/testng",
+    "maven_artifact": "org.testng:testng"
   },
   {
     "slug": "spock",
@@ -2012,7 +2033,8 @@
       "testing"
     ],
     "logo_url": "https://cdn.simpleicons.org/groovy",
-    "github_repo": "spockframework/spock"
+    "github_repo": "spockframework/spock",
+    "maven_artifact": "org.spockframework:spock-core"
   },
   {
     "slug": "mockito",
@@ -2033,7 +2055,8 @@
       "testing"
     ],
     "logo_url": "https://cdn.simpleicons.org/java",
-    "github_repo": "mockito/mockito"
+    "github_repo": "mockito/mockito",
+    "maven_artifact": "org.mockito:mockito-core"
   },
   {
     "slug": "easymock",
@@ -2141,7 +2164,8 @@
       "gherkin"
     ],
     "logo_url": "https://cdn.simpleicons.org/cucumber",
-    "github_repo": "cucumber/cucumber-jvm"
+    "github_repo": "cucumber/cucumber-jvm",
+    "maven_artifact": "io.cucumber:cucumber-core"
   },
   {
     "slug": "serenity-bdd",
@@ -2188,7 +2212,8 @@
       "microservice"
     ],
     "logo_url": "./assets/images/tech/spring.png",
-    "github_repo": "spring-cloud/spring-cloud-build"
+    "github_repo": "spring-cloud/spring-cloud-build",
+    "maven_artifact": "org.springframework.cloud:spring-cloud-dependencies"
   },
   {
     "slug": "apache-brooklyn",
@@ -2255,7 +2280,8 @@
       "eip"
     ],
     "logo_url": "https://cdn.simpleicons.org/apache",
-    "github_repo": "apache/camel"
+    "github_repo": "apache/camel",
+    "maven_artifact": "org.apache.camel:camel-core"
   },
   {
     "slug": "mule-esb",
@@ -2438,7 +2464,8 @@
       "streaming"
     ],
     "logo_url": "https://cdn.simpleicons.org/apachestorm",
-    "github_repo": "apache/storm"
+    "github_repo": "apache/storm",
+    "maven_artifact": "org.apache.storm:storm-core"
   },
   {
     "slug": "apache-flink",
@@ -2461,7 +2488,8 @@
       "bigdata"
     ],
     "logo_url": "./assets/images/tech/apache_flink.png",
-    "github_repo": "apache/flink"
+    "github_repo": "apache/flink",
+    "maven_artifact": "org.apache.flink:flink-core"
   },
   {
     "slug": "python",
@@ -2548,7 +2576,8 @@
       "superset"
     ],
     "logo_url": "https://cdn.simpleicons.org/typescript",
-    "github_repo": "microsoft/TypeScript"
+    "github_repo": "microsoft/TypeScript",
+    "npm_package": "typescript"
   },
   {
     "slug": "rust",
@@ -2889,7 +2918,8 @@
       "batteries-included"
     ],
     "logo_url": "https://cdn.simpleicons.org/django",
-    "github_repo": "django/django"
+    "github_repo": "django/django",
+    "pypi_package": "Django"
   },
   {
     "slug": "flask",
@@ -2917,7 +2947,8 @@
       "wsgi"
     ],
     "logo_url": "https://cdn.simpleicons.org/flask",
-    "github_repo": "pallets/flask"
+    "github_repo": "pallets/flask",
+    "pypi_package": "Flask"
   },
   {
     "slug": "fastapi",
@@ -2947,7 +2978,8 @@
       "type-hints"
     ],
     "logo_url": "https://cdn.simpleicons.org/fastapi",
-    "github_repo": "fastapi/fastapi"
+    "github_repo": "fastapi/fastapi",
+    "pypi_package": "fastapi"
   },
   {
     "slug": "starlette",
@@ -2974,7 +3006,8 @@
       "async"
     ],
     "logo_url": "https://cdn.simpleicons.org/python",
-    "github_repo": "encode/starlette"
+    "github_repo": "encode/starlette",
+    "pypi_package": "starlette"
   },
   {
     "slug": "expressjs",
@@ -3003,7 +3036,8 @@
       "middleware"
     ],
     "logo_url": "https://cdn.simpleicons.org/express",
-    "github_repo": "expressjs/express"
+    "github_repo": "expressjs/express",
+    "npm_package": "express"
   },
   {
     "slug": "fastify",
@@ -3031,7 +3065,8 @@
       "schema"
     ],
     "logo_url": "https://cdn.simpleicons.org/fastify",
-    "github_repo": "fastify/fastify"
+    "github_repo": "fastify/fastify",
+    "npm_package": "fastify"
   },
   {
     "slug": "nestjs",
@@ -3060,7 +3095,8 @@
       "modular"
     ],
     "logo_url": "https://cdn.simpleicons.org/nestjs",
-    "github_repo": "nestjs/nest"
+    "github_repo": "nestjs/nest",
+    "npm_package": "@nestjs/core"
   },
   {
     "slug": "nextjs",
@@ -3091,7 +3127,8 @@
       "typescript"
     ],
     "logo_url": "https://cdn.simpleicons.org/nextdotjs",
-    "github_repo": "vercel/next.js"
+    "github_repo": "vercel/next.js",
+    "npm_package": "next"
   },
   {
     "slug": "nuxtjs",
@@ -3119,7 +3156,8 @@
       "fullstack"
     ],
     "logo_url": "https://cdn.simpleicons.org/nuxtdotjs",
-    "github_repo": "nuxt/nuxt"
+    "github_repo": "nuxt/nuxt",
+    "npm_package": "nuxt"
   },
   {
     "slug": "sveltekit",
@@ -3148,7 +3186,8 @@
       "compiled"
     ],
     "logo_url": "https://cdn.simpleicons.org/svelte",
-    "github_repo": "sveltejs/kit"
+    "github_repo": "sveltejs/kit",
+    "npm_package": "@sveltejs/kit"
   },
   {
     "slug": "astro",
@@ -3177,7 +3216,8 @@
       "content"
     ],
     "logo_url": "https://cdn.simpleicons.org/astro",
-    "github_repo": "withastro/astro"
+    "github_repo": "withastro/astro",
+    "npm_package": "astro"
   },
   {
     "slug": "remix",
@@ -3205,7 +3245,8 @@
       "ssr"
     ],
     "logo_url": "https://cdn.simpleicons.org/remix",
-    "github_repo": "remix-run/remix"
+    "github_repo": "remix-run/remix",
+    "npm_package": "@remix-run/node"
   },
   {
     "slug": "ruby-on-rails",
@@ -3233,7 +3274,8 @@
       "convention-over-configuration"
     ],
     "logo_url": "https://cdn.simpleicons.org/rubyonrails",
-    "github_repo": "rails/rails"
+    "github_repo": "rails/rails",
+    "rubygems_package": "rails"
   },
   {
     "slug": "laravel",
@@ -3631,7 +3673,8 @@
       "gpu"
     ],
     "logo_url": "https://cdn.simpleicons.org/tensorflow",
-    "github_repo": "tensorflow/tensorflow"
+    "github_repo": "tensorflow/tensorflow",
+    "pypi_package": "tensorflow"
   },
   {
     "slug": "pytorch",
@@ -3661,7 +3704,8 @@
       "gpu"
     ],
     "logo_url": "https://cdn.simpleicons.org/pytorch",
-    "github_repo": "pytorch/pytorch"
+    "github_repo": "pytorch/pytorch",
+    "pypi_package": "torch"
   },
   {
     "slug": "scikit-learn",
@@ -3691,7 +3735,8 @@
       "sklearn"
     ],
     "logo_url": "https://cdn.simpleicons.org/scikitlearn",
-    "github_repo": "scikit-learn/scikit-learn"
+    "github_repo": "scikit-learn/scikit-learn",
+    "pypi_package": "scikit-learn"
   },
   {
     "slug": "keras",
@@ -3719,7 +3764,8 @@
       "multi-backend"
     ],
     "logo_url": "https://cdn.simpleicons.org/keras",
-    "github_repo": "keras-team/keras"
+    "github_repo": "keras-team/keras",
+    "pypi_package": "keras"
   },
   {
     "slug": "hugging-face-transformers",
@@ -3749,7 +3795,8 @@
       "pre-trained"
     ],
     "logo_url": "https://cdn.simpleicons.org/huggingface",
-    "github_repo": "huggingface/transformers"
+    "github_repo": "huggingface/transformers",
+    "pypi_package": "transformers"
   },
   {
     "slug": "langchain",
@@ -3778,7 +3825,8 @@
       "genai"
     ],
     "logo_url": "https://cdn.simpleicons.org/langchain",
-    "github_repo": "langchain-ai/langchain"
+    "github_repo": "langchain-ai/langchain",
+    "pypi_package": "langchain"
   },
   {
     "slug": "opencv",
@@ -3808,7 +3856,8 @@
       "python"
     ],
     "logo_url": "https://cdn.simpleicons.org/opencv",
-    "github_repo": "opencv/opencv"
+    "github_repo": "opencv/opencv",
+    "pypi_package": "opencv-python"
   },
   {
     "slug": "sqlalchemy",
@@ -3836,7 +3885,8 @@
       "database"
     ],
     "logo_url": "https://cdn.simpleicons.org/sqlalchemy",
-    "github_repo": "sqlalchemy/sqlalchemy"
+    "github_repo": "sqlalchemy/sqlalchemy",
+    "pypi_package": "SQLAlchemy"
   },
   {
     "slug": "prisma",
@@ -3865,7 +3915,8 @@
       "type-safe"
     ],
     "logo_url": "https://cdn.simpleicons.org/prisma",
-    "github_repo": "prisma/prisma"
+    "github_repo": "prisma/prisma",
+    "npm_package": "prisma"
   },
   {
     "slug": "typeorm",
@@ -3894,7 +3945,8 @@
       "data-mapper"
     ],
     "logo_url": "https://cdn.simpleicons.org/typescript",
-    "github_repo": "typeorm/typeorm"
+    "github_repo": "typeorm/typeorm",
+    "npm_package": "typeorm"
   },
   {
     "slug": "sequelize",
@@ -3922,7 +3974,8 @@
       "sql"
     ],
     "logo_url": "https://cdn.simpleicons.org/sequelize",
-    "github_repo": "sequelize/sequelize"
+    "github_repo": "sequelize/sequelize",
+    "npm_package": "sequelize"
   },
   {
     "slug": "gorm",
@@ -3978,7 +4031,8 @@
       "meta"
     ],
     "logo_url": "https://cdn.simpleicons.org/graphql",
-    "github_repo": "graphql/graphql-js"
+    "github_repo": "graphql/graphql-js",
+    "npm_package": "graphql"
   },
   {
     "slug": "grpc",
@@ -4005,7 +4059,8 @@
       "streaming"
     ],
     "logo_url": "https://cdn.simpleicons.org/grpc",
-    "github_repo": "grpc/grpc-java"
+    "github_repo": "grpc/grpc-java",
+    "maven_artifact": "io.grpc:grpc-core"
   },
   {
     "slug": "trpc",
@@ -4034,7 +4089,8 @@
       "fullstack"
     ],
     "logo_url": "https://cdn.simpleicons.org/trpc",
-    "github_repo": "trpc/trpc"
+    "github_repo": "trpc/trpc",
+    "npm_package": "@trpc/server"
   },
   {
     "slug": "openapi",
@@ -4235,7 +4291,8 @@
       "mocking"
     ],
     "logo_url": "https://cdn.simpleicons.org/jest",
-    "github_repo": "jestjs/jest"
+    "github_repo": "jestjs/jest",
+    "npm_package": "jest"
   },
   {
     "slug": "pytest",
@@ -4264,7 +4321,8 @@
       "parametrize"
     ],
     "logo_url": "https://cdn.simpleicons.org/pytest",
-    "github_repo": "pytest-dev/pytest"
+    "github_repo": "pytest-dev/pytest",
+    "pypi_package": "pytest"
   },
   {
     "slug": "cypress",
@@ -4350,7 +4408,8 @@
       "jest-compatible"
     ],
     "logo_url": "https://cdn.simpleicons.org/vitest",
-    "github_repo": "vitest-dev/vitest"
+    "github_repo": "vitest-dev/vitest",
+    "npm_package": "vitest"
   },
   {
     "slug": "vite",
@@ -4380,7 +4439,8 @@
       "frontend"
     ],
     "logo_url": "https://cdn.simpleicons.org/vite",
-    "github_repo": "vitejs/vite"
+    "github_repo": "vitejs/vite",
+    "npm_package": "vite"
   },
   {
     "slug": "webpack",
@@ -4409,7 +4469,8 @@
       "loaders"
     ],
     "logo_url": "https://cdn.simpleicons.org/webpack",
-    "github_repo": "webpack/webpack"
+    "github_repo": "webpack/webpack",
+    "npm_package": "webpack"
   },
   {
     "slug": "esbuild",
@@ -4438,7 +4499,8 @@
       "minifier"
     ],
     "logo_url": "https://cdn.simpleicons.org/esbuild",
-    "github_repo": "evanw/esbuild"
+    "github_repo": "evanw/esbuild",
+    "npm_package": "esbuild"
   },
   {
     "slug": "rollup",
@@ -4467,7 +4529,8 @@
       "library"
     ],
     "logo_url": "https://cdn.simpleicons.org/rollupdotjs",
-    "github_repo": "rollup/rollup"
+    "github_repo": "rollup/rollup",
+    "npm_package": "rollup"
   },
   {
     "slug": "bun",
@@ -4497,7 +4560,8 @@
       "fast"
     ],
     "logo_url": "https://cdn.simpleicons.org/bun",
-    "github_repo": "oven-sh/bun"
+    "github_repo": "oven-sh/bun",
+    "npm_package": "bun"
   },
   {
     "slug": "aws",
@@ -5312,7 +5376,8 @@
       "python"
     ],
     "logo_url": "https://cdn.simpleicons.org/apachespark",
-    "github_repo": "apache/spark"
+    "github_repo": "apache/spark",
+    "maven_artifact": "org.apache.spark:spark-core_2.13"
   },
   {
     "slug": "apache-kafka",
@@ -5345,7 +5410,8 @@
       "log"
     ],
     "logo_url": "https://cdn.simpleicons.org/apachekafka",
-    "github_repo": "apache/kafka"
+    "github_repo": "apache/kafka",
+    "maven_artifact": "org.apache.kafka:kafka-clients"
   },
   {
     "slug": "apache-hive",
@@ -5440,7 +5506,8 @@
       "version-control"
     ],
     "logo_url": "https://cdn.simpleicons.org/dbt",
-    "github_repo": "dbt-labs/dbt-core"
+    "github_repo": "dbt-labs/dbt-core",
+    "pypi_package": "dbt-core"
   },
   {
     "slug": "apache-airflow",
@@ -5472,7 +5539,8 @@
       "data-pipelines"
     ],
     "logo_url": "https://cdn.simpleicons.org/apacheairflow",
-    "github_repo": "apache/airflow"
+    "github_repo": "apache/airflow",
+    "pypi_package": "apache-airflow"
   },
   {
     "slug": "delta-lake",
@@ -5784,6 +5852,7 @@
       "reproducibility"
     ],
     "logo_url": "https://cdn.simpleicons.org/mlflow",
-    "github_repo": "mlflow/mlflow"
+    "github_repo": "mlflow/mlflow",
+    "pypi_package": "mlflow"
   }
 ]
