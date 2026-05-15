@@ -44,13 +44,16 @@ function readURL() {
   state.category = p.get('cat') || 'all';
   state.sort     = p.get('sort') || 'default';
   state.search   = p.get('q') || '';
+  const cmp = p.get('compare');
+  if (cmp) state.compare = cmp.split(',').filter(Boolean).slice(0, 3);
 }
 
 function writeURL() {
   const p = new URLSearchParams();
-  if (state.category !== 'all')    p.set('cat',  state.category);
-  if (state.sort     !== 'default') p.set('sort', state.sort);
-  if (state.search)                p.set('q',    state.search);
+  if (state.category !== 'all')     p.set('cat',     state.category);
+  if (state.sort     !== 'default') p.set('sort',    state.sort);
+  if (state.search)                 p.set('q',       state.search);
+  if (state.compare.length)         p.set('compare', state.compare.join(','));
   const qs = p.toString();
   history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
 }
@@ -67,6 +70,11 @@ async function fetchFrameworks() {
   syncFilterUI();
   applyFilters();
   observer.observe(sentinel);
+
+  if (state.compare.length) {
+    updateCompareTray();
+    if (state.compare.length >= 2) openCompareModal();
+  }
 }
 
 // ── Category filter bar ────────────────────────────────────────────────────
@@ -337,6 +345,7 @@ function toggleCompare(fw, btn) {
 }
 
 function updateCompareTray() {
+  writeURL();
   const count = state.compare.length;
   compareTray.hidden = count === 0;
   compareBtn.disabled = count < 2;
