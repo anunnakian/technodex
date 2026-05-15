@@ -392,16 +392,23 @@ a.cardContainer {
 
 .links {
   flex-shrink: 0;
+  padding-top: 8px;
 }
 
 .repo-link {
-  font-size: 0.8rem;
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 500;
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 6px 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--cat-color);
+  background: var(--cat-bg);
+  border-radius: 10px;
   gap: 4px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
 }
 
 /* ── Badge ────────────────────────────────────────────── */
