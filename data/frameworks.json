@@ -5883,7 +5883,7 @@
       "ai-agents",
       "java"
     ],
-    "logo_url": "./assets/images/placeholder.png",
+    "logo_url": "./assets/images/tech/langchain4j.svg",
     "github_repo": "langchain4j/langchain4j",
     "maven_artifact": "dev.langchain4j:langchain4j"
   }
