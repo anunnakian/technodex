@@ -369,6 +369,7 @@ a.cardContainer {
   gap: 4px;
   overflow: hidden;
   flex-shrink: 0;
+  padding-top: 4px;
 }
 
 .tag {
