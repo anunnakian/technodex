@@ -137,8 +137,8 @@ const displayFrameworkDetails = (fw, allFrameworks) => {
     <div class="names">
       <span class="japaneseName">${primary_category}</span>
       <div class="name">${name}</div>
-      <span class="status-badge-detail" style="background:${meta.bg};color:${meta.color}">
-        <span class="status-dot-detail${meta.pulse ? " pulse" : ""}" style="background:${meta.dot}"></span>
+      <span class="status-badge ${current_status}">
+        <span class="status-dot"></span>
         ${meta.label}
       </span>
       ${latest_stable_version
@@ -191,8 +191,8 @@ const displayFrameworkDetails = (fw, allFrameworks) => {
     <div class="about">
       <div class="about-row">
         <span class="about-label">Status</span>
-        <span class="status-badge-detail" style="background:${meta.bg};color:${meta.color}">
-          <span class="status-dot-detail${meta.pulse ? " pulse" : ""}" style="background:${meta.dot}"></span>
+        <span class="status-badge ${current_status}">
+          <span class="status-dot"></span>
           ${meta.label}
         </span>
       </div>
