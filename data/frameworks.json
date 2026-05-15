@@ -22,7 +22,8 @@
       "spring",
       "web"
     ],
-    "logo_url": "./assets/images/tech/spring.png"
+    "logo_url": "./assets/images/tech/spring.png",
+    "github_repo": "spring-projects/spring-framework"
   },
   {
     "slug": "apache-struts",
@@ -44,7 +45,8 @@
       "mvc",
       "legacy"
     ],
-    "logo_url": "./assets/images/tech/apache_struts.png"
+    "logo_url": "./assets/images/tech/apache_struts.png",
+    "github_repo": "apache/struts"
   },
   {
     "slug": "apache-struts-2",
@@ -67,7 +69,8 @@
       "mvc",
       "web"
     ],
-    "logo_url": "./assets/images/tech/apache_struts.png"
+    "logo_url": "./assets/images/tech/apache_struts.png",
+    "github_repo": "apache/struts"
   },
   {
     "slug": "jakarta-faces",
@@ -113,7 +116,8 @@
       "component",
       "web"
     ],
-    "logo_url": "./assets/images/tech/apache_wicket.png"
+    "logo_url": "./assets/images/tech/apache_wicket.png",
+    "github_repo": "apache/wicket"
   },
   {
     "slug": "apache-tapestry",
@@ -133,7 +137,8 @@
       "component",
       "mvc"
     ],
-    "logo_url": "./assets/images/tech/apache_tapestry.svg"
+    "logo_url": "./assets/images/tech/apache_tapestry.svg",
+    "github_repo": "apache/tapestry-5"
   },
   {
     "slug": "play-framework",
@@ -158,7 +163,8 @@
       "mvc",
       "scala‑java"
     ],
-    "logo_url": "./assets/images/tech/play_framework.png"
+    "logo_url": "./assets/images/tech/play_framework.png",
+    "github_repo": "playframework/playframework"
   },
   {
     "slug": "grails",
@@ -182,7 +188,8 @@
       "mvc",
       "rapid"
     ],
-    "logo_url": "./assets/images/tech/grails.png"
+    "logo_url": "./assets/images/tech/grails.png",
+    "github_repo": "grails/grails-core"
   },
   {
     "slug": "dropwizard",
@@ -205,7 +212,8 @@
       "rest",
       "microservice"
     ],
-    "logo_url": "./assets/images/tech/dropwizard.png"
+    "logo_url": "./assets/images/tech/dropwizard.png",
+    "github_repo": "dropwizard/dropwizard"
   },
   {
     "slug": "micronaut",
@@ -230,7 +238,8 @@
       "cloud",
       "di"
     ],
-    "logo_url": "./assets/images/tech/micronaut.png"
+    "logo_url": "./assets/images/tech/micronaut.png",
+    "github_repo": "micronaut-projects/micronaut-core"
   },
   {
     "slug": "quarkus",
@@ -255,7 +264,8 @@
       "cloud",
       "microservice"
     ],
-    "logo_url": "./assets/images/tech/quarkus.png"
+    "logo_url": "./assets/images/tech/quarkus.png",
+    "github_repo": "quarkusio/quarkus"
   },
   {
     "slug": "helidon",
@@ -278,7 +288,8 @@
       "microprofile",
       "microservice"
     ],
-    "logo_url": "./assets/images/tech/helidon.png"
+    "logo_url": "./assets/images/tech/helidon.png",
+    "github_repo": "helidon-io/helidon"
   },
   {
     "slug": "spark-java",
@@ -301,7 +312,8 @@
       "lightweight",
       "rest"
     ],
-    "logo_url": "./assets/images/tech/spark.png"
+    "logo_url": "./assets/images/tech/spark.png",
+    "github_repo": "perwendel/spark"
   },
   {
     "slug": "jfinal",
@@ -344,7 +356,8 @@
       "mvc",
       "rapid"
     ],
-    "logo_url": "./assets/images/tech/ninja_framework.png"
+    "logo_url": "./assets/images/tech/ninja_framework.png",
+    "github_repo": "ninjaframework/ninja"
   },
   {
     "slug": "restlet",
@@ -366,7 +379,8 @@
     "tags": [
       "rest"
     ],
-    "logo_url": "./assets/images/tech/restlet.png"
+    "logo_url": "./assets/images/tech/restlet.png",
+    "github_repo": "restlet/restlet-framework-java"
   },
   {
     "slug": "apache-click",
@@ -385,7 +399,8 @@
     "tags": [
       "mvc"
     ],
-    "logo_url": "./assets/images/tech/apache_click.png"
+    "logo_url": "./assets/images/tech/apache_click.png",
+    "github_repo": "apache/click"
   },
   {
     "slug": "ratpack",
@@ -408,7 +423,8 @@
       "reactive",
       "netty"
     ],
-    "logo_url": "./assets/images/tech/ratpack.png"
+    "logo_url": "./assets/images/tech/ratpack.png",
+    "github_repo": "ratpack/ratpack"
   },
   {
     "slug": "vertx-web",
@@ -430,7 +446,8 @@
       "reactive",
       "web"
     ],
-    "logo_url": "./assets/images/tech/vertx.png"
+    "logo_url": "./assets/images/tech/vertx.png",
+    "github_repo": "eclipse-vertx/vert.x"
   },
   {
     "slug": "vaadin",
@@ -454,7 +471,8 @@
       "web",
       "components"
     ],
-    "logo_url": "./assets/images/tech/vaadin.png"
+    "logo_url": "./assets/images/tech/vaadin.png",
+    "github_repo": "vaadin/flow"
   },
   {
     "slug": "apache-sling",
@@ -476,7 +494,8 @@
       "cms",
       "content"
     ],
-    "logo_url": "./assets/images/tech/apache_sling.png"
+    "logo_url": "./assets/images/tech/apache_sling.png",
+    "github_repo": "apache/sling"
   },
   {
     "slug": "google-web-toolkit",
@@ -521,7 +540,8 @@
       "ui",
       "desktop"
     ],
-    "logo_url": "./assets/images/tech/java_fx.png"
+    "logo_url": "./assets/images/tech/java_fx.png",
+    "github_repo": "openjdk/jfx"
   },
   {
     "slug": "swing",
@@ -585,7 +605,8 @@
     "tags": [
       "ui"
     ],
-    "logo_url": "./assets/images/tech/apache_pivot.png"
+    "logo_url": "./assets/images/tech/apache_pivot.png",
+    "github_repo": "apache/pivot"
   },
   {
     "slug": "primefaces",
@@ -607,7 +628,8 @@
       "jsf",
       "components"
     ],
-    "logo_url": "./assets/images/tech/primefaces.png"
+    "logo_url": "./assets/images/tech/primefaces.png",
+    "github_repo": "primefaces/primefaces"
   },
   {
     "slug": "richfaces",
@@ -629,7 +651,8 @@
       "jsf",
       "ajax"
     ],
-    "logo_url": "./assets/images/tech/richfaces.png"
+    "logo_url": "./assets/images/tech/richfaces.png",
+    "github_repo": "richfaces/core"
   },
   {
     "slug": "icefaces",
@@ -673,7 +696,8 @@
       "ui",
       "widgets"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "java-swingx/swingx"
   },
   {
     "slug": "spring-framework",
@@ -697,7 +721,8 @@
       "di",
       "spring"
     ],
-    "logo_url": "./assets/images/tech/spring.png"
+    "logo_url": "./assets/images/tech/spring.png",
+    "github_repo": "spring-projects/spring-framework"
   },
   {
     "slug": "google-guice",
@@ -719,7 +744,8 @@
       "ioc",
       "di"
     ],
-    "logo_url": "https://cdn.simpleicons.org/google"
+    "logo_url": "https://cdn.simpleicons.org/google",
+    "github_repo": "google/guice"
   },
   {
     "slug": "dagger",
@@ -742,7 +768,8 @@
       "aot",
       "di"
     ],
-    "logo_url": "https://cdn.simpleicons.org/dagger"
+    "logo_url": "https://cdn.simpleicons.org/dagger",
+    "github_repo": "google/dagger"
   },
   {
     "slug": "weld",
@@ -764,7 +791,8 @@
       "cdi",
       "di"
     ],
-    "logo_url": "https://cdn.simpleicons.org/redhat"
+    "logo_url": "https://cdn.simpleicons.org/redhat",
+    "github_repo": "weld/core"
   },
   {
     "slug": "picocontainer",
@@ -786,7 +814,8 @@
       "ioc",
       "lightweight"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "picocontainer/picocontainer"
   },
   {
     "slug": "hk2",
@@ -808,7 +837,8 @@
       "di",
       "service‑locator"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "eclipse-ee4j/hk2"
   },
   {
     "slug": "seasar2",
@@ -827,7 +857,8 @@
     "tags": [
       "ioc"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "seasarorg/seasar2"
   },
   {
     "slug": "hibernate-orm",
@@ -850,7 +881,8 @@
       "orm",
       "jpa"
     ],
-    "logo_url": "https://cdn.simpleicons.org/hibernate"
+    "logo_url": "https://cdn.simpleicons.org/hibernate",
+    "github_repo": "hibernate/hibernate-orm"
   },
   {
     "slug": "mybatis",
@@ -872,7 +904,8 @@
       "sql",
       "mapper"
     ],
-    "logo_url": "https://cdn.simpleicons.org/mybatis"
+    "logo_url": "https://cdn.simpleicons.org/mybatis",
+    "github_repo": "mybatis/mybatis-3"
   },
   {
     "slug": "eclipselink",
@@ -895,7 +928,8 @@
       "jpa",
       "orm"
     ],
-    "logo_url": "https://cdn.simpleicons.org/eclipseide"
+    "logo_url": "https://cdn.simpleicons.org/eclipseide",
+    "github_repo": "eclipse-ee4j/eclipselink"
   },
   {
     "slug": "apache-openjpa",
@@ -916,7 +950,8 @@
     "tags": [
       "jpa"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apache"
+    "logo_url": "https://cdn.simpleicons.org/apache",
+    "github_repo": "apache/openjpa"
   },
   {
     "slug": "apache-cayenne",
@@ -935,7 +970,8 @@
     "tags": [
       "orm"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apache"
+    "logo_url": "https://cdn.simpleicons.org/apache",
+    "github_repo": "apache/cayenne"
   },
   {
     "slug": "datanucleus",
@@ -956,7 +992,8 @@
       "jpa",
       "nosql"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "datanucleus/datanucleus-core"
   },
   {
     "slug": "jooq",
@@ -976,7 +1013,8 @@
       "sql",
       "dsl"
     ],
-    "logo_url": "https://cdn.simpleicons.org/jooq"
+    "logo_url": "https://cdn.simpleicons.org/jooq",
+    "github_repo": "jOOQ/jOOQ"
   },
   {
     "slug": "apache-torque",
@@ -996,7 +1034,8 @@
       "orm",
       "codegen"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apache"
+    "logo_url": "https://cdn.simpleicons.org/apache",
+    "github_repo": "apache/db-torque"
   },
   {
     "slug": "apache-ojb",
@@ -1035,7 +1074,8 @@
       "mongodb",
       "odm"
     ],
-    "logo_url": "https://cdn.simpleicons.org/mongodb"
+    "logo_url": "https://cdn.simpleicons.org/mongodb",
+    "github_repo": "MorphiaOrg/morphia"
   },
   {
     "slug": "kundera",
@@ -1055,7 +1095,8 @@
       "nosql",
       "jpa"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "impetus-opensource/Kundera"
   },
   {
     "slug": "oracle-toplink",
@@ -1098,7 +1139,8 @@
       "sql",
       "mapper"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "mybatis/ibatis-2"
   },
   {
     "slug": "project-reactor",
@@ -1121,7 +1163,8 @@
       "reactive",
       "streams"
     ],
-    "logo_url": "https://cdn.simpleicons.org/reactivex"
+    "logo_url": "https://cdn.simpleicons.org/reactivex",
+    "github_repo": "reactor/reactor-core"
   },
   {
     "slug": "rxjava",
@@ -1143,7 +1186,8 @@
       "reactive",
       "observables"
     ],
-    "logo_url": "https://cdn.simpleicons.org/reactivex"
+    "logo_url": "https://cdn.simpleicons.org/reactivex",
+    "github_repo": "ReactiveX/RxJava"
   },
   {
     "slug": "eclipse-vertx",
@@ -1165,7 +1209,8 @@
       "reactive",
       "event‑loop"
     ],
-    "logo_url": "https://cdn.simpleicons.org/eclipsevertx"
+    "logo_url": "https://cdn.simpleicons.org/eclipsevertx",
+    "github_repo": "eclipse-vertx/vert.x"
   },
   {
     "slug": "akka",
@@ -1188,7 +1233,8 @@
       "actors",
       "concurrency"
     ],
-    "logo_url": "https://cdn.simpleicons.org/akka"
+    "logo_url": "https://cdn.simpleicons.org/akka",
+    "github_repo": "akka/akka"
   },
   {
     "slug": "akka-streams",
@@ -1210,7 +1256,8 @@
       "streams",
       "reactive"
     ],
-    "logo_url": "https://cdn.simpleicons.org/scala"
+    "logo_url": "https://cdn.simpleicons.org/scala",
+    "github_repo": "akka/akka"
   },
   {
     "slug": "lagom",
@@ -1233,7 +1280,8 @@
       "microservice",
       "reactive"
     ],
-    "logo_url": "https://cdn.simpleicons.org/scala"
+    "logo_url": "https://cdn.simpleicons.org/scala",
+    "github_repo": "lagom/lagom"
   },
   {
     "slug": "netty",
@@ -1255,7 +1303,8 @@
       "nio",
       "network"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apachenetbeans"
+    "logo_url": "https://cdn.simpleicons.org/apachenetbeans",
+    "github_repo": "netty/netty"
   },
   {
     "slug": "mutiny",
@@ -1276,7 +1325,8 @@
     "tags": [
       "reactive"
     ],
-    "logo_url": "https://cdn.simpleicons.org/redhat"
+    "logo_url": "https://cdn.simpleicons.org/redhat",
+    "github_repo": "smallrye/smallrye-mutiny"
   },
   {
     "slug": "quasar",
@@ -1296,7 +1346,8 @@
       "fibers",
       "concurrency"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "puniverse/quasar"
   },
   {
     "slug": "spring-security",
@@ -1319,7 +1370,8 @@
       "security",
       "oauth2"
     ],
-    "logo_url": "./assets/images/tech/spring.png"
+    "logo_url": "./assets/images/tech/spring.png",
+    "github_repo": "spring-projects/spring-security"
   },
   {
     "slug": "apache-shiro",
@@ -1338,7 +1390,8 @@
     "tags": [
       "security"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apache"
+    "logo_url": "https://cdn.simpleicons.org/apache",
+    "github_repo": "apache/shiro"
   },
   {
     "slug": "keycloak",
@@ -1358,7 +1411,8 @@
       "iam",
       "oauth2"
     ],
-    "logo_url": "https://cdn.simpleicons.org/keycloak"
+    "logo_url": "https://cdn.simpleicons.org/keycloak",
+    "github_repo": "keycloak/keycloak"
   },
   {
     "slug": "pac4j",
@@ -1378,7 +1432,8 @@
       "security",
       "sso"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "pac4j/pac4j"
   },
   {
     "slug": "jaas",
@@ -1438,7 +1493,8 @@
       "mobile",
       "cross‑platform"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "codenameone/CodenameOne"
   },
   {
     "slug": "robovm",
@@ -1458,7 +1514,8 @@
       "ios",
       "aot"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "MobiDevelop/robovm"
   },
   {
     "slug": "gluon-mobile",
@@ -1544,7 +1601,8 @@
       "game",
       "opengl"
     ],
-    "logo_url": "https://cdn.simpleicons.org/libgdx"
+    "logo_url": "https://cdn.simpleicons.org/libgdx",
+    "github_repo": "libgdx/libgdx"
   },
   {
     "slug": "jmonkeyengine",
@@ -1565,7 +1623,8 @@
       "game",
       "3d"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "jMonkeyEngine/jmonkeyengine"
   },
   {
     "slug": "lwjgl",
@@ -1588,7 +1647,8 @@
       "opengl",
       "vulkan"
     ],
-    "logo_url": "https://cdn.simpleicons.org/opengl"
+    "logo_url": "https://cdn.simpleicons.org/opengl",
+    "github_repo": "LWJGL/lwjgl3"
   },
   {
     "slug": "slick2d",
@@ -1610,7 +1670,8 @@
       "game",
       "2d"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "Itends/slick2d"
   },
   {
     "slug": "ardor3d",
@@ -1632,7 +1693,8 @@
       "game",
       "3d"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "Renanse/Ardor3D"
   },
   {
     "slug": "playn",
@@ -1652,7 +1714,8 @@
       "game",
       "cross‑platform"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "playn/playn"
   },
   {
     "slug": "bdx",
@@ -1672,7 +1735,8 @@
       "game",
       "blender"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "GoranM/bdx"
   },
   {
     "slug": "apache-maven",
@@ -1694,7 +1758,8 @@
       "build",
       "dependency"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apachemaven"
+    "logo_url": "https://cdn.simpleicons.org/apachemaven",
+    "github_repo": "apache/maven"
   },
   {
     "slug": "gradle",
@@ -1717,7 +1782,8 @@
       "build",
       "automation"
     ],
-    "logo_url": "https://cdn.simpleicons.org/gradle"
+    "logo_url": "https://cdn.simpleicons.org/gradle",
+    "github_repo": "gradle/gradle"
   },
   {
     "slug": "apache-ant",
@@ -1738,7 +1804,8 @@
     "tags": [
       "build"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apache"
+    "logo_url": "https://cdn.simpleicons.org/apache",
+    "github_repo": "apache/ant"
   },
   {
     "slug": "sbt",
@@ -1760,7 +1827,8 @@
       "build",
       "scala"
     ],
-    "logo_url": "https://cdn.simpleicons.org/scala"
+    "logo_url": "https://cdn.simpleicons.org/scala",
+    "github_repo": "sbt/sbt"
   },
   {
     "slug": "bazel",
@@ -1782,7 +1850,8 @@
       "build",
       "monorepo"
     ],
-    "logo_url": "https://cdn.simpleicons.org/bazel"
+    "logo_url": "https://cdn.simpleicons.org/bazel",
+    "github_repo": "bazelbuild/bazel"
   },
   {
     "slug": "buck",
@@ -1825,7 +1894,8 @@
       "build",
       "monorepo"
     ],
-    "logo_url": "https://cdn.simpleicons.org/python"
+    "logo_url": "https://cdn.simpleicons.org/python",
+    "github_repo": "pantsbuild/pants"
   },
   {
     "slug": "apache-ivy",
@@ -1846,7 +1916,8 @@
     "tags": [
       "dependency"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apache"
+    "logo_url": "https://cdn.simpleicons.org/apache",
+    "github_repo": "apache/ant-ivy"
   },
   {
     "slug": "buildr",
@@ -1889,7 +1960,8 @@
       "testing",
       "unit"
     ],
-    "logo_url": "https://cdn.simpleicons.org/junit5"
+    "logo_url": "https://cdn.simpleicons.org/junit5",
+    "github_repo": "junit-team/junit5"
   },
   {
     "slug": "testng",
@@ -1910,7 +1982,8 @@
     "tags": [
       "testing"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "cbeust/testng"
   },
   {
     "slug": "spock",
@@ -1932,7 +2005,8 @@
       "bdd",
       "testing"
     ],
-    "logo_url": "https://cdn.simpleicons.org/groovy"
+    "logo_url": "https://cdn.simpleicons.org/groovy",
+    "github_repo": "spockframework/spock"
   },
   {
     "slug": "mockito",
@@ -1952,7 +2026,8 @@
       "mocking",
       "testing"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "mockito/mockito"
   },
   {
     "slug": "easymock",
@@ -1973,7 +2048,8 @@
     "tags": [
       "mocking"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "easymock/easymock"
   },
   {
     "slug": "powermock",
@@ -1996,7 +2072,8 @@
       "mocking",
       "bytecode"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "powermock/powermock"
   },
   {
     "slug": "jmockit",
@@ -2015,7 +2092,8 @@
     "tags": [
       "mocking"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "jmockit/jmockit1"
   },
   {
     "slug": "arquillian",
@@ -2035,7 +2113,8 @@
       "integration",
       "testing"
     ],
-    "logo_url": "https://cdn.simpleicons.org/redhat"
+    "logo_url": "https://cdn.simpleicons.org/redhat",
+    "github_repo": "arquillian/arquillian-core"
   },
   {
     "slug": "cucumber-jvm",
@@ -2055,7 +2134,8 @@
       "bdd",
       "gherkin"
     ],
-    "logo_url": "https://cdn.simpleicons.org/cucumber"
+    "logo_url": "https://cdn.simpleicons.org/cucumber",
+    "github_repo": "cucumber/cucumber-jvm"
   },
   {
     "slug": "serenity-bdd",
@@ -2077,7 +2157,8 @@
       "bdd",
       "reporting"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "serenity-bdd/serenity-core"
   },
   {
     "slug": "spring-cloud",
@@ -2100,7 +2181,8 @@
       "cloud",
       "microservice"
     ],
-    "logo_url": "./assets/images/tech/spring.png"
+    "logo_url": "./assets/images/tech/spring.png",
+    "github_repo": "spring-cloud/spring-cloud-build"
   },
   {
     "slug": "apache-brooklyn",
@@ -2120,7 +2202,8 @@
       "orchestration",
       "iac"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apache"
+    "logo_url": "https://cdn.simpleicons.org/apache",
+    "github_repo": "apache/brooklyn"
   },
   {
     "slug": "netflix-hystrix",
@@ -2141,7 +2224,8 @@
     "tags": [
       "circuit‑breaker"
     ],
-    "logo_url": "https://cdn.simpleicons.org/netflix"
+    "logo_url": "https://cdn.simpleicons.org/netflix",
+    "github_repo": "Netflix/Hystrix"
   },
   {
     "slug": "apache-camel",
@@ -2164,7 +2248,8 @@
       "integration",
       "eip"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apache"
+    "logo_url": "https://cdn.simpleicons.org/apache",
+    "github_repo": "apache/camel"
   },
   {
     "slug": "mule-esb",
@@ -2229,7 +2314,8 @@
       "rules",
       "brms"
     ],
-    "logo_url": "https://cdn.simpleicons.org/redhat"
+    "logo_url": "https://cdn.simpleicons.org/redhat",
+    "github_repo": "apache/incubator-kie-drools"
   },
   {
     "slug": "optaplanner",
@@ -2252,7 +2338,8 @@
       "optimization",
       "solver"
     ],
-    "logo_url": "https://cdn.simpleicons.org/redhat"
+    "logo_url": "https://cdn.simpleicons.org/redhat",
+    "github_repo": "apache/incubator-kie-optaplanner"
   },
   {
     "slug": "osgi",
@@ -2297,7 +2384,8 @@
       "container",
       "osgi"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apache"
+    "logo_url": "https://cdn.simpleicons.org/apache",
+    "github_repo": "apache/karaf"
   },
   {
     "slug": "apache-hadoop-mapreduce",
@@ -2319,7 +2407,8 @@
       "bigdata",
       "mapreduce"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apachehadoop"
+    "logo_url": "https://cdn.simpleicons.org/apachehadoop",
+    "github_repo": "apache/hadoop"
   },
   {
     "slug": "apache-storm",
@@ -2340,7 +2429,8 @@
     "tags": [
       "streaming"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apachestorm"
+    "logo_url": "https://cdn.simpleicons.org/apachestorm",
+    "github_repo": "apache/storm"
   },
   {
     "slug": "apache-flink",
@@ -2362,7 +2452,8 @@
       "streaming",
       "bigdata"
     ],
-    "logo_url": "./assets/images/tech/apache_flink.png"
+    "logo_url": "./assets/images/tech/apache_flink.png",
+    "github_repo": "apache/flink"
   },
   {
     "slug": "python",
@@ -2392,7 +2483,8 @@
       "dynamic",
       "general-purpose"
     ],
-    "logo_url": "https://cdn.simpleicons.org/python"
+    "logo_url": "https://cdn.simpleicons.org/python",
+    "github_repo": "python/cpython"
   },
   {
     "slug": "javascript",
@@ -2447,7 +2539,8 @@
       "compiled",
       "superset"
     ],
-    "logo_url": "https://cdn.simpleicons.org/typescript"
+    "logo_url": "https://cdn.simpleicons.org/typescript",
+    "github_repo": "microsoft/TypeScript"
   },
   {
     "slug": "rust",
@@ -2472,7 +2565,8 @@
       "compiled",
       "no-gc"
     ],
-    "logo_url": "https://cdn.simpleicons.org/rust"
+    "logo_url": "https://cdn.simpleicons.org/rust",
+    "github_repo": "rust-lang/rust"
   },
   {
     "slug": "go",
@@ -2500,7 +2594,8 @@
       "concurrent",
       "statically-typed"
     ],
-    "logo_url": "https://cdn.simpleicons.org/go"
+    "logo_url": "https://cdn.simpleicons.org/go",
+    "github_repo": "golang/go"
   },
   {
     "slug": "kotlin",
@@ -2526,7 +2621,8 @@
       "multiplatform",
       "null-safe"
     ],
-    "logo_url": "https://cdn.simpleicons.org/kotlin"
+    "logo_url": "https://cdn.simpleicons.org/kotlin",
+    "github_repo": "JetBrains/kotlin"
   },
   {
     "slug": "swift",
@@ -2549,7 +2645,8 @@
       "type-safe",
       "apple"
     ],
-    "logo_url": "https://cdn.simpleicons.org/swift"
+    "logo_url": "https://cdn.simpleicons.org/swift",
+    "github_repo": "swiftlang/swift"
   },
   {
     "slug": "csharp",
@@ -2601,7 +2698,8 @@
       "dynamic",
       "metaprogramming"
     ],
-    "logo_url": "https://cdn.simpleicons.org/ruby"
+    "logo_url": "https://cdn.simpleicons.org/ruby",
+    "github_repo": "ruby/ruby"
   },
   {
     "slug": "php",
@@ -2626,7 +2724,8 @@
       "server-side",
       "web"
     ],
-    "logo_url": "https://cdn.simpleicons.org/php"
+    "logo_url": "https://cdn.simpleicons.org/php",
+    "github_repo": "php/php-src"
   },
   {
     "slug": "dart",
@@ -2649,7 +2748,8 @@
       "aot",
       "cross-platform"
     ],
-    "logo_url": "https://cdn.simpleicons.org/dart"
+    "logo_url": "https://cdn.simpleicons.org/dart",
+    "github_repo": "dart-lang/sdk"
   },
   {
     "slug": "scala",
@@ -2675,7 +2775,8 @@
       "functional",
       "strongly-typed"
     ],
-    "logo_url": "https://cdn.simpleicons.org/scala"
+    "logo_url": "https://cdn.simpleicons.org/scala",
+    "github_repo": "scala/scala"
   },
   {
     "slug": "elixir",
@@ -2699,7 +2800,8 @@
       "beam",
       "fault-tolerant"
     ],
-    "logo_url": "https://cdn.simpleicons.org/elixir"
+    "logo_url": "https://cdn.simpleicons.org/elixir",
+    "github_repo": "elixir-lang/elixir"
   },
   {
     "slug": "haskell",
@@ -2778,7 +2880,8 @@
       "orm",
       "batteries-included"
     ],
-    "logo_url": "https://cdn.simpleicons.org/django"
+    "logo_url": "https://cdn.simpleicons.org/django",
+    "github_repo": "django/django"
   },
   {
     "slug": "flask",
@@ -2805,7 +2908,8 @@
       "micro-framework",
       "wsgi"
     ],
-    "logo_url": "https://cdn.simpleicons.org/flask"
+    "logo_url": "https://cdn.simpleicons.org/flask",
+    "github_repo": "pallets/flask"
   },
   {
     "slug": "fastapi",
@@ -2834,7 +2938,8 @@
       "openapi",
       "type-hints"
     ],
-    "logo_url": "https://cdn.simpleicons.org/fastapi"
+    "logo_url": "https://cdn.simpleicons.org/fastapi",
+    "github_repo": "fastapi/fastapi"
   },
   {
     "slug": "starlette",
@@ -2860,7 +2965,8 @@
       "asgi",
       "async"
     ],
-    "logo_url": "https://cdn.simpleicons.org/python"
+    "logo_url": "https://cdn.simpleicons.org/python",
+    "github_repo": "encode/starlette"
   },
   {
     "slug": "expressjs",
@@ -2888,7 +2994,8 @@
       "rest",
       "middleware"
     ],
-    "logo_url": "https://cdn.simpleicons.org/express"
+    "logo_url": "https://cdn.simpleicons.org/express",
+    "github_repo": "expressjs/express"
   },
   {
     "slug": "fastify",
@@ -2915,7 +3022,8 @@
       "high-performance",
       "schema"
     ],
-    "logo_url": "https://cdn.simpleicons.org/fastify"
+    "logo_url": "https://cdn.simpleicons.org/fastify",
+    "github_repo": "fastify/fastify"
   },
   {
     "slug": "nestjs",
@@ -2943,7 +3051,8 @@
       "decorators",
       "modular"
     ],
-    "logo_url": "https://cdn.simpleicons.org/nestjs"
+    "logo_url": "https://cdn.simpleicons.org/nestjs",
+    "github_repo": "nestjs/nest"
   },
   {
     "slug": "nextjs",
@@ -2973,7 +3082,8 @@
       "fullstack",
       "typescript"
     ],
-    "logo_url": "https://cdn.simpleicons.org/nextdotjs"
+    "logo_url": "https://cdn.simpleicons.org/nextdotjs",
+    "github_repo": "vercel/next.js"
   },
   {
     "slug": "nuxtjs",
@@ -3000,7 +3110,8 @@
       "ssg",
       "fullstack"
     ],
-    "logo_url": "https://cdn.simpleicons.org/nuxtdotjs"
+    "logo_url": "https://cdn.simpleicons.org/nuxtdotjs",
+    "github_repo": "nuxt/nuxt"
   },
   {
     "slug": "sveltekit",
@@ -3028,7 +3139,8 @@
       "ssg",
       "compiled"
     ],
-    "logo_url": "https://cdn.simpleicons.org/svelte"
+    "logo_url": "https://cdn.simpleicons.org/svelte",
+    "github_repo": "sveltejs/kit"
   },
   {
     "slug": "astro",
@@ -3056,7 +3168,8 @@
       "performance",
       "content"
     ],
-    "logo_url": "https://cdn.simpleicons.org/astro"
+    "logo_url": "https://cdn.simpleicons.org/astro",
+    "github_repo": "withastro/astro"
   },
   {
     "slug": "remix",
@@ -3083,7 +3196,8 @@
       "web-standards",
       "ssr"
     ],
-    "logo_url": "https://cdn.simpleicons.org/remix"
+    "logo_url": "https://cdn.simpleicons.org/remix",
+    "github_repo": "remix-run/remix"
   },
   {
     "slug": "ruby-on-rails",
@@ -3110,7 +3224,8 @@
       "orm",
       "convention-over-configuration"
     ],
-    "logo_url": "https://cdn.simpleicons.org/rubyonrails"
+    "logo_url": "https://cdn.simpleicons.org/rubyonrails",
+    "github_repo": "rails/rails"
   },
   {
     "slug": "laravel",
@@ -3137,7 +3252,8 @@
       "orm",
       "eloquent"
     ],
-    "logo_url": "https://cdn.simpleicons.org/laravel"
+    "logo_url": "https://cdn.simpleicons.org/laravel",
+    "github_repo": "laravel/framework"
   },
   {
     "slug": "aspnet-core",
@@ -3163,7 +3279,8 @@
       "cross-platform",
       "high-performance"
     ],
-    "logo_url": "https://cdn.simpleicons.org/dotnet"
+    "logo_url": "https://cdn.simpleicons.org/dotnet",
+    "github_repo": "dotnet/aspnetcore"
   },
   {
     "slug": "gin",
@@ -3191,7 +3308,8 @@
       "high-performance",
       "router"
     ],
-    "logo_url": "https://cdn.simpleicons.org/go"
+    "logo_url": "https://cdn.simpleicons.org/go",
+    "github_repo": "gin-gonic/gin"
   },
   {
     "slug": "fiber",
@@ -3218,7 +3336,8 @@
       "express-like",
       "performance"
     ],
-    "logo_url": "https://cdn.simpleicons.org/go"
+    "logo_url": "https://cdn.simpleicons.org/go",
+    "github_repo": "gofiber/fiber"
   },
   {
     "slug": "echo",
@@ -3244,7 +3363,8 @@
       "minimalist",
       "middleware"
     ],
-    "logo_url": "https://cdn.simpleicons.org/go"
+    "logo_url": "https://cdn.simpleicons.org/go",
+    "github_repo": "labstack/echo"
   },
   {
     "slug": "docker",
@@ -3272,7 +3392,8 @@
       "devops",
       "linux"
     ],
-    "logo_url": "https://cdn.simpleicons.org/docker"
+    "logo_url": "https://cdn.simpleicons.org/docker",
+    "github_repo": "moby/moby"
   },
   {
     "slug": "kubernetes",
@@ -3301,7 +3422,8 @@
       "cloud-native",
       "k8s"
     ],
-    "logo_url": "https://cdn.simpleicons.org/kubernetes"
+    "logo_url": "https://cdn.simpleicons.org/kubernetes",
+    "github_repo": "kubernetes/kubernetes"
   },
   {
     "slug": "terraform",
@@ -3329,7 +3451,8 @@
       "hashicorp",
       "declarative"
     ],
-    "logo_url": "https://cdn.simpleicons.org/terraform"
+    "logo_url": "https://cdn.simpleicons.org/terraform",
+    "github_repo": "hashicorp/terraform"
   },
   {
     "slug": "ansible",
@@ -3355,7 +3478,8 @@
       "ssh",
       "configuration-management"
     ],
-    "logo_url": "https://cdn.simpleicons.org/ansible"
+    "logo_url": "https://cdn.simpleicons.org/ansible",
+    "github_repo": "ansible/ansible"
   },
   {
     "slug": "helm",
@@ -3382,7 +3506,8 @@
       "packaging",
       "templating"
     ],
-    "logo_url": "https://cdn.simpleicons.org/helm"
+    "logo_url": "https://cdn.simpleicons.org/helm",
+    "github_repo": "helm/helm"
   },
   {
     "slug": "jenkins",
@@ -3409,7 +3534,8 @@
       "self-hosted",
       "pipelines"
     ],
-    "logo_url": "https://cdn.simpleicons.org/jenkins"
+    "logo_url": "https://cdn.simpleicons.org/jenkins",
+    "github_repo": "jenkinsci/jenkins"
   },
   {
     "slug": "github-actions",
@@ -3437,7 +3563,8 @@
       "yaml",
       "automation"
     ],
-    "logo_url": "https://cdn.simpleicons.org/githubactions"
+    "logo_url": "https://cdn.simpleicons.org/githubactions",
+    "github_repo": "features/actions"
   },
   {
     "slug": "argocd",
@@ -3465,7 +3592,8 @@
       "cd",
       "declarative"
     ],
-    "logo_url": "https://cdn.simpleicons.org/argo"
+    "logo_url": "https://cdn.simpleicons.org/argo",
+    "github_repo": "argoproj/argo-cd"
   },
   {
     "slug": "tensorflow",
@@ -3494,7 +3622,8 @@
       "google",
       "gpu"
     ],
-    "logo_url": "https://cdn.simpleicons.org/tensorflow"
+    "logo_url": "https://cdn.simpleicons.org/tensorflow",
+    "github_repo": "tensorflow/tensorflow"
   },
   {
     "slug": "pytorch",
@@ -3523,7 +3652,8 @@
       "meta",
       "gpu"
     ],
-    "logo_url": "https://cdn.simpleicons.org/pytorch"
+    "logo_url": "https://cdn.simpleicons.org/pytorch",
+    "github_repo": "pytorch/pytorch"
   },
   {
     "slug": "scikit-learn",
@@ -3552,7 +3682,8 @@
       "tabular",
       "sklearn"
     ],
-    "logo_url": "https://cdn.simpleicons.org/scikitlearn"
+    "logo_url": "https://cdn.simpleicons.org/scikitlearn",
+    "github_repo": "scikit-learn/scikit-learn"
   },
   {
     "slug": "keras",
@@ -3579,7 +3710,8 @@
       "high-level",
       "multi-backend"
     ],
-    "logo_url": "https://cdn.simpleicons.org/keras"
+    "logo_url": "https://cdn.simpleicons.org/keras",
+    "github_repo": "keras-team/keras"
   },
   {
     "slug": "hugging-face-transformers",
@@ -3608,7 +3740,8 @@
       "nlp",
       "pre-trained"
     ],
-    "logo_url": "https://cdn.simpleicons.org/huggingface"
+    "logo_url": "https://cdn.simpleicons.org/huggingface",
+    "github_repo": "huggingface/transformers"
   },
   {
     "slug": "langchain",
@@ -3636,7 +3769,8 @@
       "agents",
       "genai"
     ],
-    "logo_url": "https://cdn.simpleicons.org/langchain"
+    "logo_url": "https://cdn.simpleicons.org/langchain",
+    "github_repo": "langchain-ai/langchain"
   },
   {
     "slug": "opencv",
@@ -3665,7 +3799,8 @@
       "cpp",
       "python"
     ],
-    "logo_url": "https://cdn.simpleicons.org/opencv"
+    "logo_url": "https://cdn.simpleicons.org/opencv",
+    "github_repo": "opencv/opencv"
   },
   {
     "slug": "sqlalchemy",
@@ -3692,7 +3827,8 @@
       "sql",
       "database"
     ],
-    "logo_url": "https://cdn.simpleicons.org/sqlalchemy"
+    "logo_url": "https://cdn.simpleicons.org/sqlalchemy",
+    "github_repo": "sqlalchemy/sqlalchemy"
   },
   {
     "slug": "prisma",
@@ -3720,7 +3856,8 @@
       "schema-first",
       "type-safe"
     ],
-    "logo_url": "https://cdn.simpleicons.org/prisma"
+    "logo_url": "https://cdn.simpleicons.org/prisma",
+    "github_repo": "prisma/prisma"
   },
   {
     "slug": "typeorm",
@@ -3748,7 +3885,8 @@
       "active-record",
       "data-mapper"
     ],
-    "logo_url": "https://cdn.simpleicons.org/typescript"
+    "logo_url": "https://cdn.simpleicons.org/typescript",
+    "github_repo": "typeorm/typeorm"
   },
   {
     "slug": "sequelize",
@@ -3775,7 +3913,8 @@
       "orm",
       "sql"
     ],
-    "logo_url": "https://cdn.simpleicons.org/sequelize"
+    "logo_url": "https://cdn.simpleicons.org/sequelize",
+    "github_repo": "sequelize/sequelize"
   },
   {
     "slug": "gorm",
@@ -3803,7 +3942,8 @@
       "database",
       "associations"
     ],
-    "logo_url": "https://cdn.simpleicons.org/go"
+    "logo_url": "https://cdn.simpleicons.org/go",
+    "github_repo": "go-gorm/gorm"
   },
   {
     "slug": "graphql",
@@ -3829,7 +3969,8 @@
       "schema",
       "meta"
     ],
-    "logo_url": "https://cdn.simpleicons.org/graphql"
+    "logo_url": "https://cdn.simpleicons.org/graphql",
+    "github_repo": "graphql/graphql-js"
   },
   {
     "slug": "grpc",
@@ -3855,7 +3996,8 @@
       "protobuf",
       "streaming"
     ],
-    "logo_url": "https://cdn.simpleicons.org/grpc"
+    "logo_url": "https://cdn.simpleicons.org/grpc",
+    "github_repo": "grpc/grpc-java"
   },
   {
     "slug": "trpc",
@@ -3883,7 +4025,8 @@
       "rpc",
       "fullstack"
     ],
-    "logo_url": "https://cdn.simpleicons.org/trpc"
+    "logo_url": "https://cdn.simpleicons.org/trpc",
+    "github_repo": "trpc/trpc"
   },
   {
     "slug": "openapi",
@@ -3938,7 +4081,8 @@
       "cloud",
       "cdk"
     ],
-    "logo_url": "https://cdn.simpleicons.org/amazonaws"
+    "logo_url": "https://cdn.simpleicons.org/amazonaws",
+    "github_repo": "aws/aws-cdk"
   },
   {
     "slug": "pulumi",
@@ -3966,7 +4110,8 @@
       "typescript",
       "python"
     ],
-    "logo_url": "https://cdn.simpleicons.org/pulumi"
+    "logo_url": "https://cdn.simpleicons.org/pulumi",
+    "github_repo": "pulumi/pulumi"
   },
   {
     "slug": "serverless-framework",
@@ -3993,7 +4138,8 @@
       "faas",
       "cloud"
     ],
-    "logo_url": "https://cdn.simpleicons.org/serverless"
+    "logo_url": "https://cdn.simpleicons.org/serverless",
+    "github_repo": "serverless/serverless"
   },
   {
     "slug": "firebase",
@@ -4050,7 +4196,8 @@
       "realtime",
       "open-source"
     ],
-    "logo_url": "https://cdn.simpleicons.org/supabase"
+    "logo_url": "https://cdn.simpleicons.org/supabase",
+    "github_repo": "supabase/supabase"
   },
   {
     "slug": "jest",
@@ -4078,7 +4225,8 @@
       "snapshot",
       "mocking"
     ],
-    "logo_url": "https://cdn.simpleicons.org/jest"
+    "logo_url": "https://cdn.simpleicons.org/jest",
+    "github_repo": "jestjs/jest"
   },
   {
     "slug": "pytest",
@@ -4106,7 +4254,8 @@
       "fixtures",
       "parametrize"
     ],
-    "logo_url": "https://cdn.simpleicons.org/pytest"
+    "logo_url": "https://cdn.simpleicons.org/pytest",
+    "github_repo": "pytest-dev/pytest"
   },
   {
     "slug": "cypress",
@@ -4134,7 +4283,8 @@
       "visual-testing",
       "javascript"
     ],
-    "logo_url": "https://cdn.simpleicons.org/cypress"
+    "logo_url": "https://cdn.simpleicons.org/cypress",
+    "github_repo": "cypress-io/cypress"
   },
   {
     "slug": "playwright",
@@ -4162,7 +4312,8 @@
       "microsoft",
       "browser-automation"
     ],
-    "logo_url": "https://cdn.simpleicons.org/playwright"
+    "logo_url": "https://cdn.simpleicons.org/playwright",
+    "github_repo": "microsoft/playwright"
   },
   {
     "slug": "vitest",
@@ -4189,7 +4340,8 @@
       "vite",
       "jest-compatible"
     ],
-    "logo_url": "https://cdn.simpleicons.org/vitest"
+    "logo_url": "https://cdn.simpleicons.org/vitest",
+    "github_repo": "vitest-dev/vitest"
   },
   {
     "slug": "vite",
@@ -4218,7 +4370,8 @@
       "hot-reload",
       "frontend"
     ],
-    "logo_url": "https://cdn.simpleicons.org/vite"
+    "logo_url": "https://cdn.simpleicons.org/vite",
+    "github_repo": "vitejs/vite"
   },
   {
     "slug": "webpack",
@@ -4246,7 +4399,8 @@
       "code-splitting",
       "loaders"
     ],
-    "logo_url": "https://cdn.simpleicons.org/webpack"
+    "logo_url": "https://cdn.simpleicons.org/webpack",
+    "github_repo": "webpack/webpack"
   },
   {
     "slug": "esbuild",
@@ -4274,7 +4428,8 @@
       "fast",
       "minifier"
     ],
-    "logo_url": "https://cdn.simpleicons.org/esbuild"
+    "logo_url": "https://cdn.simpleicons.org/esbuild",
+    "github_repo": "evanw/esbuild"
   },
   {
     "slug": "rollup",
@@ -4302,7 +4457,8 @@
       "esm",
       "library"
     ],
-    "logo_url": "https://cdn.simpleicons.org/rollupdotjs"
+    "logo_url": "https://cdn.simpleicons.org/rollupdotjs",
+    "github_repo": "rollup/rollup"
   },
   {
     "slug": "bun",
@@ -4331,7 +4487,8 @@
       "zig",
       "fast"
     ],
-    "logo_url": "https://cdn.simpleicons.org/bun"
+    "logo_url": "https://cdn.simpleicons.org/bun",
+    "github_repo": "oven-sh/bun"
   },
   {
     "slug": "aws",
@@ -5145,7 +5302,8 @@
       "scala",
       "python"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apachespark"
+    "logo_url": "https://cdn.simpleicons.org/apachespark",
+    "github_repo": "apache/spark"
   },
   {
     "slug": "apache-kafka",
@@ -5177,7 +5335,8 @@
       "message-broker",
       "log"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apachekafka"
+    "logo_url": "https://cdn.simpleicons.org/apachekafka",
+    "github_repo": "apache/kafka"
   },
   {
     "slug": "apache-hive",
@@ -5207,7 +5366,8 @@
       "data-warehouse",
       "batch"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apachehive"
+    "logo_url": "https://cdn.simpleicons.org/apachehive",
+    "github_repo": "apache/hive"
   },
   {
     "slug": "trino",
@@ -5238,7 +5398,8 @@
       "analytics",
       "presto"
     ],
-    "logo_url": "https://cdn.simpleicons.org/trino"
+    "logo_url": "https://cdn.simpleicons.org/trino",
+    "github_repo": "trinodb/trino"
   },
   {
     "slug": "dbt",
@@ -5269,7 +5430,8 @@
       "analytics-engineering",
       "version-control"
     ],
-    "logo_url": "https://cdn.simpleicons.org/dbt"
+    "logo_url": "https://cdn.simpleicons.org/dbt",
+    "github_repo": "dbt-labs/dbt-core"
   },
   {
     "slug": "apache-airflow",
@@ -5300,7 +5462,8 @@
       "python",
       "data-pipelines"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apacheairflow"
+    "logo_url": "https://cdn.simpleicons.org/apacheairflow",
+    "github_repo": "apache/airflow"
   },
   {
     "slug": "delta-lake",
@@ -5330,7 +5493,8 @@
       "spark",
       "time-travel"
     ],
-    "logo_url": "https://cdn.simpleicons.org/databricks"
+    "logo_url": "https://cdn.simpleicons.org/databricks",
+    "github_repo": "delta-io/delta"
   },
   {
     "slug": "apache-iceberg",
@@ -5360,7 +5524,8 @@
       "acid",
       "big-data"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apacheiceberg"
+    "logo_url": "https://cdn.simpleicons.org/apacheiceberg",
+    "github_repo": "apache/iceberg"
   },
   {
     "slug": "postgresql",
@@ -5391,7 +5556,8 @@
       "open-source",
       "jsonb"
     ],
-    "logo_url": "https://cdn.simpleicons.org/postgresql"
+    "logo_url": "https://cdn.simpleicons.org/postgresql",
+    "github_repo": "postgres/postgres"
   },
   {
     "slug": "mysql",
@@ -5421,7 +5587,8 @@
       "lamp-stack",
       "open-source"
     ],
-    "logo_url": "https://cdn.simpleicons.org/mysql"
+    "logo_url": "https://cdn.simpleicons.org/mysql",
+    "github_repo": "mysql/mysql-server"
   },
   {
     "slug": "mongodb",
@@ -5451,7 +5618,8 @@
       "sharding",
       "atlas"
     ],
-    "logo_url": "https://cdn.simpleicons.org/mongodb"
+    "logo_url": "https://cdn.simpleicons.org/mongodb",
+    "github_repo": "mongodb/mongo"
   },
   {
     "slug": "redis",
@@ -5481,7 +5649,8 @@
       "key-value",
       "fast"
     ],
-    "logo_url": "https://cdn.simpleicons.org/redis"
+    "logo_url": "https://cdn.simpleicons.org/redis",
+    "github_repo": "redis/redis"
   },
   {
     "slug": "elasticsearch",
@@ -5512,7 +5681,8 @@
       "elk-stack",
       "distributed"
     ],
-    "logo_url": "https://cdn.simpleicons.org/elasticsearch"
+    "logo_url": "https://cdn.simpleicons.org/elasticsearch",
+    "github_repo": "elastic/elasticsearch"
   },
   {
     "slug": "clickhouse",
@@ -5542,7 +5712,8 @@
       "real-time",
       "sql"
     ],
-    "logo_url": "https://cdn.simpleicons.org/clickhouse"
+    "logo_url": "https://cdn.simpleicons.org/clickhouse",
+    "github_repo": "ClickHouse/ClickHouse"
   },
   {
     "slug": "apache-cassandra",
@@ -5572,7 +5743,8 @@
       "high-availability",
       "write-optimised"
     ],
-    "logo_url": "https://cdn.simpleicons.org/apachecassandra"
+    "logo_url": "https://cdn.simpleicons.org/apachecassandra",
+    "github_repo": "apache/cassandra"
   },
   {
     "slug": "mlflow",
@@ -5602,6 +5774,7 @@
       "model-registry",
       "reproducibility"
     ],
-    "logo_url": "https://cdn.simpleicons.org/mlflow"
+    "logo_url": "https://cdn.simpleicons.org/mlflow",
+    "github_repo": "mlflow/mlflow"
   }
 ]
