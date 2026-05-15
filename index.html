@@ -13,7 +13,6 @@
   <body>
     <div id="page">
       <div class="header">
-
         <div class="logo">
           <img class="img" src="./assets/icons/default/icon.png" alt="Technodex logo" />
           <span class="header-title">Technodex</span>
@@ -25,10 +24,30 @@
             id="searchbar"
             oninput="search_frameworks()"
             type="text"
-            placeholder="Search frameworks…"
+            placeholder="Search frameworks and tools…"
           />
         </div>
+      </div>
 
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <div class="filter-bar" id="filterBar" role="group" aria-label="Filter by category">
+            <button class="filter-btn active" data-category="all">All</button>
+          </div>
+        </div>
+        <div class="toolbar-right">
+          <span id="toolCount" class="tool-count"></span>
+          <div class="toolbar-divider"></div>
+          <label for="sortSelect" class="sr-only">Sort by</label>
+          <select id="sortSelect" class="sort-select" aria-label="Sort frameworks">
+            <option value="default">Default</option>
+            <option value="az">Name A → Z</option>
+            <option value="za">Name Z → A</option>
+            <option value="year-asc">Oldest first</option>
+            <option value="year-desc">Newest first</option>
+            <option value="status">Status</option>
+          </select>
+        </div>
       </div>
 
       <div class="framework-grid" id="framework-grid"></div>
@@ -41,6 +60,24 @@
       </div>
       <button id="scrollToTopBtn" aria-label="Scroll to top"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
       <button id="scrollToDownBtn" aria-label="Scroll to bottom"><i class="fas fa-chevron-down" aria-hidden="true"></i></button>
+    </div>
+
+    <!-- Comparison tray -->
+    <div id="compareTray" class="compare-tray" aria-live="polite" hidden>
+      <div class="compare-tray-inner">
+        <span class="compare-tray-label">Compare:</span>
+        <div id="compareSlots" class="compare-slots"></div>
+        <button id="compareBtn" class="compare-go-btn" disabled>Compare</button>
+        <button id="compareClearBtn" class="compare-clear-btn" aria-label="Clear comparison">✕</button>
+      </div>
+    </div>
+
+    <!-- Comparison modal -->
+    <div id="compareModal" class="compare-modal" hidden role="dialog" aria-modal="true" aria-label="Framework comparison">
+      <div class="compare-modal-inner">
+        <button class="compare-modal-close" id="compareModalClose" aria-label="Close comparison">✕</button>
+        <div id="compareModalContent" class="compare-modal-content"></div>
+      </div>
     </div>
 
     <footer class="site-footer" role="contentinfo">

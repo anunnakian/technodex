@@ -22,6 +22,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from datetime import datetime, timezone
 
 DATA_FILE = "data/frameworks.json"
 SEMVER_RE = re.compile(r"^\d+\.\d+")
@@ -150,8 +151,9 @@ def main() -> int:
         current = fw.get("latest_stable_version", "")
         if version != current:
             src = next(k for k in ("npm_package", "pypi_package", "maven_artifact", "rubygems_package", "github_repo") if fw.get(k))
-            print(f"  {fw['name']}: {current!r} → {version!r}  [{src}]")
+            print(f"  {fw['name']}: {current!r} -> {version!r}  [{src}]")
             fw["latest_stable_version"] = version
+            fw["version_updated_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
             changed += 1
 
     if changed:
