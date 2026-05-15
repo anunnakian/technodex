@@ -5854,5 +5854,37 @@
     "logo_url": "./assets/images/tech/mlflow.svg",
     "github_repo": "mlflow/mlflow",
     "pypi_package": "mlflow"
+  },
+  {
+    "slug": "langchain4j",
+    "name": "LangChain4j",
+    "primary_category": "AI",
+    "description": "Java library for building LLM-powered applications. Provides integrations with major AI providers, vector stores, and tools for building RAG pipelines, AI agents, and chatbots.",
+    "initial_release_year": 2023,
+    "current_status": "active",
+    "latest_stable_version": "1.14.1",
+    "website_or_repo": "https://docs.langchain4j.dev",
+    "license": "Apache-2.0",
+    "notable_use_cases": [
+      "LLM integration",
+      "RAG pipelines",
+      "AI agents",
+      "chatbots",
+      "embeddings"
+    ],
+    "related_frameworks": [
+      "LangChain",
+      "Spring AI",
+      "Quarkus"
+    ],
+    "tags": [
+      "llm",
+      "rag",
+      "ai-agents",
+      "java"
+    ],
+    "logo_url": "./assets/images/placeholder.png",
+    "github_repo": "langchain4j/langchain4j",
+    "maven_artifact": "dev.langchain4j:langchain4j"
   }
 ]
