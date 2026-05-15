@@ -230,7 +230,7 @@ a.cardContainer {
   width: 74px;
   height: 74px;
   border-radius: 50%;
-  background: var(--logo-bg);
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
