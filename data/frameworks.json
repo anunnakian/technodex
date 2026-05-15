@@ -95,7 +95,8 @@
       "ui",
       "component"
     ],
-    "logo_url": "./assets/images/tech/jakarta.png"
+    "logo_url": "./assets/images/tech/jakarta.png",
+    "github_repo": "eclipse-ee4j/mojarra"
   },
   {
     "slug": "apache-wicket",
@@ -517,7 +518,8 @@
       "javascript",
       "compiler"
     ],
-    "logo_url": "./assets/images/tech/gwt.webp"
+    "logo_url": "./assets/images/tech/gwt.webp",
+    "github_repo": "gwtproject/gwt"
   },
   {
     "slug": "javafx",
@@ -586,7 +588,8 @@
       "ui",
       "desktop"
     ],
-    "logo_url": "./assets/images/tech/eclipse.svg"
+    "logo_url": "./assets/images/tech/eclipse.svg",
+    "github_repo": "eclipse-platform/eclipse.platform.swt"
   },
   {
     "slug": "apache-pivot",
@@ -1537,7 +1540,8 @@
       "mobile",
       "javafx"
     ],
-    "logo_url": "https://cdn.simpleicons.org/openjdk"
+    "logo_url": "https://cdn.simpleicons.org/openjdk",
+    "github_repo": "gluonhq/mobile"
   },
   {
     "slug": "lwuit",
@@ -1872,7 +1876,8 @@
     "tags": [
       "build"
     ],
-    "logo_url": "https://cdn.simpleicons.org/meta"
+    "logo_url": "https://cdn.simpleicons.org/meta",
+    "github_repo": "facebook/buck2"
   },
   {
     "slug": "pants",
@@ -1939,7 +1944,8 @@
       "build",
       "ruby"
     ],
-    "logo_url": "https://cdn.simpleicons.org/ruby"
+    "logo_url": "https://cdn.simpleicons.org/ruby",
+    "github_repo": "apache/buildr"
   },
   {
     "slug": "junit",
@@ -2271,7 +2277,8 @@
       "esb",
       "integration"
     ],
-    "logo_url": "https://cdn.simpleicons.org/mulesoft"
+    "logo_url": "https://cdn.simpleicons.org/mulesoft",
+    "github_repo": "mulesoft/mule"
   },
   {
     "slug": "wso2-esb",
@@ -2292,7 +2299,8 @@
     "tags": [
       "esb"
     ],
-    "logo_url": "https://cdn.simpleicons.org/java"
+    "logo_url": "https://cdn.simpleicons.org/java",
+    "github_repo": "wso2/micro-integrator"
   },
   {
     "slug": "drools",
@@ -4053,7 +4061,8 @@
       "documentation",
       "code-generation"
     ],
-    "logo_url": "https://cdn.simpleicons.org/swagger"
+    "logo_url": "https://cdn.simpleicons.org/swagger",
+    "github_repo": "OAI/OpenAPI-Specification"
   },
   {
     "slug": "aws-cdk",
