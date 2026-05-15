@@ -2,19 +2,34 @@ const frameworkGrid = document.getElementById("framework-grid");
 const loader = document.querySelector(".lds-ring");
 let allFrameworks = [];
 
+const PAGE_SIZE = 20;
+let renderedCount = 0;
+let isSearchActive = false;
+
+// Sentinel element that triggers the next batch when scrolled into view
+const sentinel = document.createElement("div");
+sentinel.id = "scroll-sentinel";
+frameworkGrid.after(sentinel);
+
+const observer = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) renderNextBatch();
+}, { rootMargin: "300px" });
+
+const renderNextBatch = () => {
+  if (isSearchActive || renderedCount >= allFrameworks.length) return;
+  const batch = allFrameworks.slice(renderedCount, renderedCount + PAGE_SIZE);
+  batch.forEach(createFrameworkCard);
+  renderedCount += batch.length;
+  if (renderedCount >= allFrameworks.length) observer.disconnect();
+};
+
 const fetchFrameworks = async () => {
   loader.classList.add("ring-active");
-
   const res = await fetch('./data/frameworks.json');
   allFrameworks = await res.json();
   loader.classList.remove('ring-active');
-
-  for (let i = 0; i < allFrameworks.length; i++) {
-    const data = allFrameworks[i];
-    if (!data) break;
-    createFrameworkCard(data);
-    await new Promise(r => setTimeout(r, 150));
-  }
+  renderNextBatch();
+  observer.observe(sentinel);
 };
 
 const createFrameworkCard = (fw) => {
@@ -134,11 +149,13 @@ function search_frameworks() {
   const resultsEl = document.getElementById("search-results");
 
   if (!input) {
+    isSearchActive = false;
     frameworkGrid.style.display = "";
     resultsEl.style.display = "none";
     return;
   }
 
+  isSearchActive = true;
   const matches = allFrameworks.filter(fw => fw.name.toLowerCase().includes(input));
 
   frameworkGrid.style.display = "none";
