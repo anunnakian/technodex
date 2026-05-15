@@ -173,12 +173,26 @@ function isNew(fw) {
 }
 
 // ── Helpers ────────────────────────────────────────────────────────────────
-const STATUS_LABELS = {
-  'active':           'Active',
-  'deprecated':       'Deprecated',
-  'maintenance-only': 'Maintenance',
-};
-const statusLabel = s => STATUS_LABELS[s] || s;
+function daysSince(dateStr) {
+  if (!dateStr) return null;
+  return Math.floor((Date.now() - new Date(dateStr).getTime()) / 86400000);
+}
+
+function healthSignal(fw) {
+  const { current_status, version_updated_at } = fw;
+  if (current_status === 'deprecated') {
+    return { label: 'End of life',          color: '#b91c1c', bg: '#fef2f2', dot: '#ef4444', pulse: false };
+  }
+  if (current_status === 'maintenance-only') {
+    return { label: 'Maintenance',   color: '#c2410c', bg: '#fff7ed', dot: '#f97316', pulse: false };
+  }
+  const days = daysSince(version_updated_at);
+  if (days === null) return { label: 'Active',       color: '#15803d', bg: '#f0fdf4', dot: '#22c55e', pulse: true  };
+  if (days <= 30)    return { label: 'Just updated', color: '#15803d', bg: '#f0fdf4', dot: '#22c55e', pulse: true  };
+  if (days <= 180)   return { label: 'Active',       color: '#15803d', bg: '#f0fdf4', dot: '#22c55e', pulse: true  };
+  if (days <= 365)   return { label: 'Slowing down', color: '#4d7c0f', bg: '#f7fee7', dot: '#84cc16', pulse: false };
+  return { label: `${Math.floor(days / 30)}mo stale`, color: '#b45309', bg: '#fffbeb', dot: '#f59e0b', pulse: false };
+}
 
 // ── Card creation ──────────────────────────────────────────────────────────
 function createFrameworkCard(fw) {
@@ -197,6 +211,7 @@ function createFrameworkCard(fw) {
 
   const catSlug = primary_category.toLowerCase().replace(/[^a-z0-9]/g, '-');
   const cardId  = fw.slug || name.toLowerCase().replace(/\s+/g, '-');
+  const h       = healthSignal(fw);
 
   // Wrapper
   const wrapper = document.createElement('div');
@@ -233,8 +248,8 @@ function createFrameworkCard(fw) {
         <div class="framework__category__bg ${catSlug}">${primary_category.toUpperCase()}</div>
       </div>
       <div class="status-indicator">
-        <span class="status-badge ${current_status}">
-          <span class="status-dot"></span>${statusLabel(current_status)}
+        <span class="status-badge" style="background:${h.bg};color:${h.color}">
+          <span class="status-dot${h.pulse ? ' pulse' : ''}" style="background:${h.dot}"></span>${h.label}
         </span>
       </div>
     </div>
