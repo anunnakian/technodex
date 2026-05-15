@@ -53,17 +53,17 @@ function daysSince(dateStr) {
 function healthSignal(fw) {
   const { current_status, version_updated_at } = fw;
   if (current_status === "deprecated") {
-    return { label: "End of life", color: "#b91c1c", icon: "🔴" };
+    return { label: "End of life",             color: "#b91c1c", bg: "#fef2f2", dot: "#ef4444", pulse: false };
   }
   if (current_status === "maintenance-only") {
-    return { label: "Maintenance mode — no new features", color: "#c2410c", icon: "🟠" };
+    return { label: "Maintenance mode",        color: "#c2410c", bg: "#fff7ed", dot: "#f97316", pulse: false };
   }
   const days = daysSince(version_updated_at);
-  if (days === null) return { label: "Status: Active", color: "#15803d", icon: "🟢" };
-  if (days <= 30)  return { label: "Recently updated", color: "#15803d", icon: "🟢" };
-  if (days <= 180) return { label: "Actively maintained", color: "#15803d", icon: "🟢" };
-  if (days <= 365) return { label: "Receiving updates", color: "#4d7c0f", icon: "🟡" };
-  return { label: `Last updated ${Math.floor(days / 30)} months ago`, color: "#b45309", icon: "🟡" };
+  if (days === null) return { label: "Active",              color: "#15803d", bg: "#f0fdf4", dot: "#22c55e", pulse: true  };
+  if (days <= 30)    return { label: "Recently updated",    color: "#15803d", bg: "#f0fdf4", dot: "#22c55e", pulse: true  };
+  if (days <= 180)   return { label: "Actively maintained", color: "#15803d", bg: "#f0fdf4", dot: "#22c55e", pulse: true  };
+  if (days <= 365)   return { label: "Receiving updates",   color: "#4d7c0f", bg: "#f7fee7", dot: "#84cc16", pulse: false };
+  return { label: `Last updated ${Math.floor(days / 30)}mo ago`, color: "#b45309", bg: "#fffbeb", dot: "#f59e0b", pulse: false };
 }
 
 function buildVersionBadgeUrl(slug, name) {
@@ -137,16 +137,13 @@ const displayFrameworkDetails = (fw, allFrameworks) => {
     <div class="names">
       <span class="japaneseName">${primary_category}</span>
       <div class="name">${name}</div>
-      <span class="status-badge ${current_status}">
-        <span class="status-dot"></span>
-        ${meta.label}
+      <span class="status-badge" style="background:${health.bg};color:${health.color}">
+        <span class="status-dot${health.pulse ? " pulse" : ""}" style="background:${health.dot}"></span>
+        ${health.label}
       </span>
       ${latest_stable_version
         ? `<span class="version-tag">v${latest_stable_version}</span>`
         : ""}
-      <span class="health-signal" style="color:${health.color}">
-        ${health.icon} ${health.label}${days !== null ? ` <span class="health-date">(${version_updated_at})</span>` : ""}
-      </span>
     </div>
     <div class="top">
       <div class="image">
