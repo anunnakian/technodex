@@ -42,7 +42,7 @@ const createFrameworkCard = (fw) => {
   const cardInnerHTML = `
     <div class="front side">
         <div class="img-container">
-            <img class="image" src="${logo_url || './assets/images/placeholder.png'}" alt="${name} logo">
+            <img class="image" src="${logo_url || './assets/images/placeholder.png'}" alt="${name} logo" onerror="this.src='./assets/images/placeholder.png';this.onerror=null;">
         </div>
         <div class="number">
         <span>${latest_stable_version || 'N/A'}</span>
