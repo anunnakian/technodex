@@ -479,7 +479,7 @@
     "description": "Server‑side Java UI framework generating modern web components.",
     "initial_release_year": 2002,
     "current_status": "active",
-    "latest_stable_version": "25.1.7",
+    "latest_stable_version": "25.1.9",
     "website_or_repo": "https://vaadin.com",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -496,7 +496,7 @@
     ],
     "logo_url": "./assets/images/tech/vaadin.png",
     "github_repo": "vaadin/flow",
-    "version_updated_at": "2026-06-01"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "apache-sling",
@@ -1001,7 +1001,7 @@
     "description": "Full‑featured ORM and persistence services server.",
     "initial_release_year": 2002,
     "current_status": "active",
-    "latest_stable_version": "3.2M1",
+    "latest_stable_version": "5.0-M2",
     "website_or_repo": "https://cayenne.apache.org",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -1013,7 +1013,7 @@
     ],
     "logo_url": "./assets/images/placeholder.png",
     "github_repo": "apache/cayenne",
-    "version_updated_at": "2026-05-18"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "datanucleus",
@@ -1273,7 +1273,7 @@
     "description": "Toolkit and runtime for building concurrent, distributed, resilient actors.",
     "initial_release_year": 2010,
     "current_status": "maintenance-only",
-    "latest_stable_version": "2.10.18",
+    "latest_stable_version": "2.10.19",
     "website_or_repo": "https://akka.io",
     "license": "BusinessSource-1.1",
     "notable_use_cases": [
@@ -1289,7 +1289,7 @@
     ],
     "logo_url": "./assets/images/placeholder.png",
     "github_repo": "akka/akka",
-    "version_updated_at": "2026-05-25"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "akka-streams",
@@ -1298,7 +1298,7 @@
     "description": "Streaming API on top of Akka actors complying with Reactive Streams.",
     "initial_release_year": 2015,
     "current_status": "maintenance-only",
-    "latest_stable_version": "2.10.18",
+    "latest_stable_version": "2.10.19",
     "website_or_repo": "https://doc.akka.io/docs/akka/current/stream",
     "license": "BusinessSource-1.1",
     "notable_use_cases": [
@@ -1313,7 +1313,7 @@
     ],
     "logo_url": "./assets/images/placeholder.png",
     "github_repo": "akka/akka",
-    "version_updated_at": "2026-05-25"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "lagom",
@@ -1549,7 +1549,7 @@
     "description": "Write once, deploy native mobile apps with Java.",
     "initial_release_year": 2013,
     "current_status": "active",
-    "latest_stable_version": "7.0.247",
+    "latest_stable_version": "7.0.250",
     "website_or_repo": "https://www.codenameone.com",
     "license": "GPL-2.0-with-classpath-exception",
     "notable_use_cases": [
@@ -1562,7 +1562,7 @@
     ],
     "logo_url": "./assets/images/placeholder.png",
     "github_repo": "codenameone/CodenameOne",
-    "version_updated_at": "2026-06-01"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "robovm",
@@ -1658,7 +1658,7 @@
     "description": "Cross‑platform game development framework with OpenGL bindings.",
     "initial_release_year": 2011,
     "current_status": "active",
-    "latest_stable_version": "1.14.1",
+    "latest_stable_version": "1.14.2",
     "website_or_repo": "https://libgdx.com",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -1673,7 +1673,7 @@
     ],
     "logo_url": "./assets/images/tech/libgdx.svg",
     "github_repo": "libgdx/libgdx",
-    "version_updated_at": "2026-05-25"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "jmonkeyengine",
@@ -1917,7 +1917,7 @@
     "description": "Google’s fast, reproducible multi‑language build system.",
     "initial_release_year": 2015,
     "current_status": "active",
-    "latest_stable_version": "9.1.0",
+    "latest_stable_version": "9.1.1",
     "website_or_repo": "https://bazel.build",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -1932,7 +1932,7 @@
     ],
     "logo_url": "./assets/images/tech/bazel.svg",
     "github_repo": "bazelbuild/bazel",
-    "version_updated_at": "2026-05-18"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "buck",
@@ -1987,7 +1987,7 @@
     "description": "Dependency manager often used with Ant.",
     "initial_release_year": 2005,
     "current_status": "maintenance-only",
-    "latest_stable_version": "2.5.2",
+    "latest_stable_version": "2.5.3",
     "website_or_repo": "https://ant.apache.org/ivy",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -2000,7 +2000,8 @@
       "dependency"
     ],
     "logo_url": "./assets/images/tech/apache-ivy.svg",
-    "github_repo": "apache/ant-ivy"
+    "github_repo": "apache/ant-ivy",
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "buildr",
@@ -2576,7 +2577,7 @@
     "description": "High-level, interpreted language known for its readability and vast ecosystem. Dominant in data science, ML, scripting, and web backends.",
     "initial_release_year": 1991,
     "current_status": "active",
-    "latest_stable_version": "3.15.0b1",
+    "latest_stable_version": "3.15.0b2",
     "website_or_repo": "https://www.python.org",
     "license": "PSF-2.0",
     "notable_use_cases": [
@@ -2599,7 +2600,7 @@
     ],
     "logo_url": "./assets/images/tech/python.svg",
     "github_repo": "python/cpython",
-    "version_updated_at": "2026-05-18"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "javascript",
@@ -2722,7 +2723,7 @@
     "description": "Modern JVM language by JetBrains, fully interoperable with Java. Official language for Android development and a concise alternative on the server.",
     "initial_release_year": 2016,
     "current_status": "active",
-    "latest_stable_version": "2.3.21",
+    "latest_stable_version": "2.4.0",
     "website_or_repo": "https://kotlinlang.org",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -2741,7 +2742,7 @@
     ],
     "logo_url": "./assets/images/tech/kotlin.svg",
     "github_repo": "JetBrains/kotlin",
-    "version_updated_at": "2026-05-18"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "swift",
@@ -2750,7 +2751,7 @@
     "description": "Apple's modern compiled language replacing Objective-C for iOS, macOS, and other Apple platforms. Also runs on Linux for server-side use.",
     "initial_release_year": 2014,
     "current_status": "active",
-    "latest_stable_version": "6.3.1-RELEASE",
+    "latest_stable_version": "6.3.2-RELEASE",
     "website_or_repo": "https://swift.org",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -2766,7 +2767,7 @@
     ],
     "logo_url": "./assets/images/tech/swift.svg",
     "github_repo": "swiftlang/swift",
-    "version_updated_at": "2026-05-18"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "csharp",
@@ -2829,7 +2830,7 @@
     "description": "Server-side scripting language that powers a large share of the web, including WordPress. Modern PHP 8.x has strong typing, JIT compilation, and fibers.",
     "initial_release_year": 1994,
     "current_status": "active",
-    "latest_stable_version": "8.5.6",
+    "latest_stable_version": "8.5.7",
     "website_or_repo": "https://www.php.net",
     "license": "PHP-3.01",
     "notable_use_cases": [
@@ -2847,7 +2848,7 @@
     ],
     "logo_url": "./assets/images/tech/php.svg",
     "github_repo": "php/php-src",
-    "version_updated_at": "2026-05-18"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "dart",
@@ -2909,7 +2910,7 @@
     "description": "Functional language built on the Erlang VM (BEAM), designed for fault-tolerant, distributed, low-latency systems. Phoenix framework powers real-time web apps.",
     "initial_release_year": 2011,
     "current_status": "active",
-    "latest_stable_version": "1.19.5",
+    "latest_stable_version": "1.20.0",
     "website_or_repo": "https://elixir-lang.org",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -2926,7 +2927,7 @@
     ],
     "logo_url": "./assets/images/tech/elixir.svg",
     "github_repo": "elixir-lang/elixir",
-    "version_updated_at": "2026-05-18"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "haskell",
@@ -2985,7 +2986,7 @@
     "description": "High-level Python web framework following the 'batteries included' philosophy. Comes with ORM, admin panel, auth, and templating out of the box.",
     "initial_release_year": 2005,
     "current_status": "active",
-    "latest_stable_version": "6.0.5",
+    "latest_stable_version": "6.0.6",
     "website_or_repo": "https://www.djangoproject.com",
     "license": "BSD-3-Clause",
     "notable_use_cases": [
@@ -3008,7 +3009,7 @@
     "logo_url": "./assets/images/tech/django.svg",
     "github_repo": "django/django",
     "pypi_package": "Django",
-    "version_updated_at": "2026-05-18"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "flask",
@@ -3169,7 +3170,7 @@
     "description": "Progressive Node.js framework for building efficient, scalable server-side applications. Uses TypeScript, Angular-style decorators, and a modular architecture.",
     "initial_release_year": 2017,
     "current_status": "active",
-    "latest_stable_version": "11.1.24",
+    "latest_stable_version": "11.1.25",
     "website_or_repo": "https://nestjs.com",
     "license": "MIT",
     "notable_use_cases": [
@@ -3191,7 +3192,7 @@
     "logo_url": "./assets/images/tech/nestjs.svg",
     "github_repo": "nestjs/nest",
     "npm_package": "@nestjs/core",
-    "version_updated_at": "2026-05-25"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "nextjs",
@@ -3200,7 +3201,7 @@
     "description": "React framework by Vercel with file-system routing, SSR, static generation, and App Router. The dominant full-stack React solution.",
     "initial_release_year": 2016,
     "current_status": "active",
-    "latest_stable_version": "16.2.6",
+    "latest_stable_version": "16.2.7",
     "website_or_repo": "https://nextjs.org",
     "license": "MIT",
     "notable_use_cases": [
@@ -3224,7 +3225,7 @@
     "logo_url": "./assets/images/tech/nextjs.svg",
     "github_repo": "vercel/next.js",
     "npm_package": "next",
-    "version_updated_at": "2026-05-18"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "nuxtjs",
@@ -3233,7 +3234,7 @@
     "description": "Vue.js meta-framework offering file-system routing, SSR, SSG, and an auto-import system. The Vue equivalent of Next.js.",
     "initial_release_year": 2016,
     "current_status": "active",
-    "latest_stable_version": "4.4.6",
+    "latest_stable_version": "4.4.7",
     "website_or_repo": "https://nuxt.com",
     "license": "MIT",
     "notable_use_cases": [
@@ -3254,7 +3255,7 @@
     "logo_url": "./assets/images/tech/nuxtjs.svg",
     "github_repo": "nuxt/nuxt",
     "npm_package": "nuxt",
-    "version_updated_at": "2026-05-18"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "sveltekit",
@@ -3263,7 +3264,7 @@
     "description": "Full-stack framework for Svelte with file-based routing, SSR, and adapter-based deployment. Zero-cost reactivity via compiled components.",
     "initial_release_year": 2021,
     "current_status": "active",
-    "latest_stable_version": "2.61.1",
+    "latest_stable_version": "2.63.1",
     "website_or_repo": "https://kit.svelte.dev",
     "license": "MIT",
     "notable_use_cases": [
@@ -3285,7 +3286,7 @@
     "logo_url": "./assets/images/tech/sveltekit.svg",
     "github_repo": "sveltejs/kit",
     "npm_package": "@sveltejs/kit",
-    "version_updated_at": "2026-05-25"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "astro",
@@ -3294,7 +3295,7 @@
     "description": "Content-focused web framework that ships zero JS by default. Islands architecture allows embedding any UI framework (React, Vue, Svelte) selectively.",
     "initial_release_year": 2021,
     "current_status": "active",
-    "latest_stable_version": "6.4.2",
+    "latest_stable_version": "6.4.4",
     "website_or_repo": "https://astro.build",
     "license": "MIT",
     "notable_use_cases": [
@@ -3316,7 +3317,7 @@
     "logo_url": "./assets/images/tech/astro.svg",
     "github_repo": "withastro/astro",
     "npm_package": "astro",
-    "version_updated_at": "2026-06-01"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "remix",
@@ -3325,7 +3326,7 @@
     "description": "React full-stack framework that embraces web fundamentals (forms, HTTP, browser APIs). Uses loader/action model for data fetching close to the component.",
     "initial_release_year": 2021,
     "current_status": "active",
-    "latest_stable_version": "2.17.4",
+    "latest_stable_version": "2.17.5",
     "website_or_repo": "https://remix.run",
     "license": "MIT",
     "notable_use_cases": [
@@ -3346,7 +3347,7 @@
     "logo_url": "./assets/images/tech/remix.svg",
     "github_repo": "remix-run/remix",
     "npm_package": "@remix-run/node",
-    "version_updated_at": "2026-05-18"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "ruby-on-rails",
@@ -3385,7 +3386,7 @@
     "description": "Elegant PHP web framework with expressive syntax. Includes Eloquent ORM, Blade templating, queues, broadcasting, and a rich ecosystem.",
     "initial_release_year": 2011,
     "current_status": "active",
-    "latest_stable_version": "13.12.0",
+    "latest_stable_version": "13.14.0",
     "website_or_repo": "https://laravel.com",
     "license": "MIT",
     "notable_use_cases": [
@@ -3405,7 +3406,7 @@
     ],
     "logo_url": "./assets/images/tech/laravel.svg",
     "github_repo": "laravel/framework",
-    "version_updated_at": "2026-06-01"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "aspnet-core",
@@ -3529,7 +3530,7 @@
     "description": "Platform for building, packaging, and running applications in lightweight containers. Standardised the container image format and popularised containerisation.",
     "initial_release_year": 2013,
     "current_status": "active",
-    "latest_stable_version": "29.5.2",
+    "latest_stable_version": "29.5.3",
     "website_or_repo": "https://www.docker.com",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -3550,7 +3551,7 @@
     ],
     "logo_url": "./assets/images/tech/docker.svg",
     "github_repo": "moby/moby",
-    "version_updated_at": "2026-05-25"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "kubernetes",
@@ -3829,7 +3830,7 @@
     "description": "Python library for classical machine learning algorithms. Consistent API across classification, regression, clustering, and preprocessing. The ML workhorse for tabular data.",
     "initial_release_year": 2007,
     "current_status": "active",
-    "latest_stable_version": "1.8.0",
+    "latest_stable_version": "1.9.0",
     "website_or_repo": "https://scikit-learn.org",
     "license": "BSD-3-Clause",
     "notable_use_cases": [
@@ -3852,7 +3853,7 @@
     "logo_url": "./assets/images/tech/scikit-learn.svg",
     "github_repo": "scikit-learn/scikit-learn",
     "pypi_package": "scikit-learn",
-    "version_updated_at": "2026-05-18"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "keras",
@@ -3891,7 +3892,7 @@
     "description": "Library of pre-trained transformer models for NLP, vision, and audio. Hub hosts 500k+ models. The standard API for working with LLMs and foundation models.",
     "initial_release_year": 2018,
     "current_status": "active",
-    "latest_stable_version": "5.9.0",
+    "latest_stable_version": "5.10.2",
     "website_or_repo": "https://huggingface.co/docs/transformers",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -3914,7 +3915,7 @@
     "logo_url": "./assets/images/tech/hugging-face-transformers.svg",
     "github_repo": "huggingface/transformers",
     "pypi_package": "transformers",
-    "version_updated_at": "2026-05-25"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "langchain",
@@ -3923,7 +3924,7 @@
     "description": "Framework for building applications powered by large language models. Provides chains, agents, retrieval-augmented generation (RAG), and tool-calling abstractions.",
     "initial_release_year": 2022,
     "current_status": "active",
-    "latest_stable_version": "1.3.2",
+    "latest_stable_version": "1.3.4",
     "website_or_repo": "https://www.langchain.com",
     "license": "MIT",
     "notable_use_cases": [
@@ -3945,7 +3946,7 @@
     "logo_url": "./assets/images/tech/langchain.svg",
     "github_repo": "langchain-ai/langchain",
     "pypi_package": "langchain",
-    "version_updated_at": "2026-06-01"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "opencv",
@@ -4138,7 +4139,7 @@
     "description": "Query language for APIs and a runtime for executing those queries. Lets clients request exactly the data they need, avoiding over/under-fetching. Originally from Meta.",
     "initial_release_year": 2015,
     "current_status": "active",
-    "latest_stable_version": "16.14.0",
+    "latest_stable_version": "16.14.1",
     "website_or_repo": "https://graphql.org",
     "license": "MIT",
     "notable_use_cases": [
@@ -4158,7 +4159,7 @@
     "logo_url": "./assets/images/tech/graphql.svg",
     "github_repo": "graphql/graphql-js",
     "npm_package": "graphql",
-    "version_updated_at": "2026-05-18"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "grpc",
@@ -4256,7 +4257,7 @@
     "description": "AWS Cloud Development Kit. Define cloud infrastructure in TypeScript, Python, Java, or C# using familiar languages instead of raw CloudFormation YAML.",
     "initial_release_year": 2018,
     "current_status": "active",
-    "latest_stable_version": "2.257.0",
+    "latest_stable_version": "2.258.0",
     "website_or_repo": "https://aws.amazon.com/cdk/",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -4277,7 +4278,7 @@
     ],
     "logo_url": "./assets/images/tech/aws-cdk.svg",
     "github_repo": "aws/aws-cdk",
-    "version_updated_at": "2026-05-25"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "pulumi",
@@ -4286,7 +4287,7 @@
     "description": "Infrastructure as Code platform using general-purpose languages (TypeScript, Python, Go, C#). Multi-cloud with a rich provider ecosystem and state management.",
     "initial_release_year": 2017,
     "current_status": "active",
-    "latest_stable_version": "3.244.0",
+    "latest_stable_version": "3.245.0",
     "website_or_repo": "https://www.pulumi.com",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -4307,7 +4308,7 @@
     ],
     "logo_url": "./assets/images/tech/pulumi.svg",
     "github_repo": "pulumi/pulumi",
-    "version_updated_at": "2026-06-01"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "serverless-framework",
@@ -4650,7 +4651,7 @@
     "description": "JavaScript module bundler optimised for libraries. Tree-shaking removes unused code, and multiple output formats (ESM, CJS, UMD) support broad compatibility.",
     "initial_release_year": 2015,
     "current_status": "active",
-    "latest_stable_version": "4.61.0",
+    "latest_stable_version": "4.61.1",
     "website_or_repo": "https://rollupjs.org",
     "license": "MIT",
     "notable_use_cases": [
@@ -4672,7 +4673,7 @@
     "logo_url": "./assets/images/tech/rollup.svg",
     "github_repo": "rollup/rollup",
     "npm_package": "rollup",
-    "version_updated_at": "2026-06-01"
+    "version_updated_at": "2026-06-08"
   },
   {
     "slug": "bun",
