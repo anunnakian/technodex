@@ -81,7 +81,7 @@
     "description": "Specification and reference implementation for component‑based server‑side UI.",
     "initial_release_year": 2004,
     "current_status": "maintenance-only",
-    "latest_stable_version": "4.1.16-RELEASE",
+    "latest_stable_version": "4.1.17-RELEASE",
     "website_or_repo": "https://projects.eclipse.org/projects/ee4j.faces",
     "license": "EPL-2.0",
     "notable_use_cases": [
@@ -99,7 +99,7 @@
     ],
     "logo_url": "./assets/images/tech/jakarta.png",
     "github_repo": "eclipse-ee4j/mojarra",
-    "version_updated_at": "2026-09-07"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "apache-wicket",
@@ -1549,7 +1549,7 @@
     "description": "Write once, deploy native mobile apps with Java.",
     "initial_release_year": 2013,
     "current_status": "active",
-    "latest_stable_version": "7.0.271",
+    "latest_stable_version": "7.0.272",
     "website_or_repo": "https://www.codenameone.com",
     "license": "GPL-2.0-with-classpath-exception",
     "notable_use_cases": [
@@ -1562,7 +1562,7 @@
     ],
     "logo_url": "./assets/images/placeholder.png",
     "github_repo": "codenameone/CodenameOne",
-    "version_updated_at": "2026-09-14"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "robovm",
@@ -2751,7 +2751,7 @@
     "description": "Apple's modern compiled language replacing Objective-C for iOS, macOS, and other Apple platforms. Also runs on Linux for server-side use.",
     "initial_release_year": 2014,
     "current_status": "active",
-    "latest_stable_version": "6.3.3-RELEASE",
+    "latest_stable_version": "6.4.0-RELEASE",
     "website_or_repo": "https://swift.org",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -2767,7 +2767,7 @@
     ],
     "logo_url": "./assets/images/tech/swift.svg",
     "github_repo": "swiftlang/swift",
-    "version_updated_at": "2026-07-06"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "csharp",
@@ -2803,7 +2803,7 @@
     "description": "Dynamic, expressive language optimised for developer happiness. Powers Ruby on Rails and a rich ecosystem of gems. Widely used in startups and web development.",
     "initial_release_year": 1995,
     "current_status": "active",
-    "latest_stable_version": "4.0.6",
+    "latest_stable_version": "4.0.7",
     "website_or_repo": "https://www.ruby-lang.org",
     "license": "Ruby / BSD-2-Clause",
     "notable_use_cases": [
@@ -2821,7 +2821,7 @@
     ],
     "logo_url": "./assets/images/tech/ruby.svg",
     "github_repo": "ruby/ruby",
-    "version_updated_at": "2026-07-20"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "php",
@@ -3140,7 +3140,7 @@
     "description": "High-performance Node.js web framework with a plugin system and built-in schema-based serialisation. Significantly faster than Express in benchmarks.",
     "initial_release_year": 2016,
     "current_status": "active",
-    "latest_stable_version": "5.12.4",
+    "latest_stable_version": "5.12.5",
     "website_or_repo": "https://fastify.dev",
     "license": "MIT",
     "notable_use_cases": [
@@ -3161,7 +3161,7 @@
     "logo_url": "./assets/images/tech/fastify.svg",
     "github_repo": "fastify/fastify",
     "npm_package": "fastify",
-    "version_updated_at": "2026-09-14"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "nestjs",
@@ -3170,7 +3170,7 @@
     "description": "Progressive Node.js framework for building efficient, scalable server-side applications. Uses TypeScript, Angular-style decorators, and a modular architecture.",
     "initial_release_year": 2017,
     "current_status": "active",
-    "latest_stable_version": "12.0.1",
+    "latest_stable_version": "12.0.4",
     "website_or_repo": "https://nestjs.com",
     "license": "MIT",
     "notable_use_cases": [
@@ -3192,7 +3192,7 @@
     "logo_url": "./assets/images/tech/nestjs.svg",
     "github_repo": "nestjs/nest",
     "npm_package": "@nestjs/core",
-    "version_updated_at": "2026-08-31"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "nextjs",
@@ -3295,7 +3295,7 @@
     "description": "Content-focused web framework that ships zero JS by default. Islands architecture allows embedding any UI framework (React, Vue, Svelte) selectively.",
     "initial_release_year": 2021,
     "current_status": "active",
-    "latest_stable_version": "7.3.2",
+    "latest_stable_version": "7.3.3",
     "website_or_repo": "https://astro.build",
     "license": "MIT",
     "notable_use_cases": [
@@ -3317,7 +3317,7 @@
     "logo_url": "./assets/images/tech/astro.svg",
     "github_repo": "withastro/astro",
     "npm_package": "astro",
-    "version_updated_at": "2026-09-14"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "remix",
@@ -3386,7 +3386,7 @@
     "description": "Elegant PHP web framework with expressive syntax. Includes Eloquent ORM, Blade templating, queues, broadcasting, and a rich ecosystem.",
     "initial_release_year": 2011,
     "current_status": "active",
-    "latest_stable_version": "13.31.0",
+    "latest_stable_version": "13.32.0",
     "website_or_repo": "https://laravel.com",
     "license": "MIT",
     "notable_use_cases": [
@@ -3406,7 +3406,7 @@
     ],
     "logo_url": "./assets/images/tech/laravel.svg",
     "github_repo": "laravel/framework",
-    "version_updated_at": "2026-09-14"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "aspnet-core",
@@ -3530,7 +3530,7 @@
     "description": "Platform for building, packaging, and running applications in lightweight containers. Standardised the container image format and popularised containerisation.",
     "initial_release_year": 2013,
     "current_status": "active",
-    "latest_stable_version": "29.8.0",
+    "latest_stable_version": "29.8.1",
     "website_or_repo": "https://www.docker.com",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -3551,7 +3551,7 @@
     ],
     "logo_url": "./assets/images/tech/docker.svg",
     "github_repo": "moby/moby",
-    "version_updated_at": "2026-09-07"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "kubernetes",
@@ -3591,7 +3591,7 @@
     "description": "Infrastructure as Code tool by HashiCorp. Declarative HCL language to provision cloud resources across AWS, Azure, GCP, and 1000+ providers.",
     "initial_release_year": 2014,
     "current_status": "active",
-    "latest_stable_version": "1.16.2",
+    "latest_stable_version": "1.16.3",
     "website_or_repo": "https://www.terraform.io",
     "license": "BSL-1.1",
     "notable_use_cases": [
@@ -3612,7 +3612,7 @@
     ],
     "logo_url": "./assets/images/tech/terraform.svg",
     "github_repo": "hashicorp/terraform",
-    "version_updated_at": "2026-09-14"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "ansible",
@@ -3678,7 +3678,7 @@
     "description": "Self-hosted, open-source CI/CD automation server. Thousands of plugins cover build, test, and deployment pipelines.",
     "initial_release_year": 2011,
     "current_status": "active",
-    "latest_stable_version": "2.581",
+    "latest_stable_version": "2.582",
     "website_or_repo": "https://www.jenkins.io",
     "license": "MIT",
     "notable_use_cases": [
@@ -3698,7 +3698,7 @@
     ],
     "logo_url": "./assets/images/tech/jenkins.svg",
     "github_repo": "jenkinsci/jenkins",
-    "version_updated_at": "2026-09-14"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "github-actions",
@@ -3924,7 +3924,7 @@
     "description": "Framework for building applications powered by large language models. Provides chains, agents, retrieval-augmented generation (RAG), and tool-calling abstractions.",
     "initial_release_year": 2022,
     "current_status": "active",
-    "latest_stable_version": "1.4.0",
+    "latest_stable_version": "1.4.2",
     "website_or_repo": "https://www.langchain.com",
     "license": "MIT",
     "notable_use_cases": [
@@ -3946,7 +3946,7 @@
     "logo_url": "./assets/images/tech/langchain.svg",
     "github_repo": "langchain-ai/langchain",
     "pypi_package": "langchain",
-    "version_updated_at": "2026-09-07"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "opencv",
@@ -3987,7 +3987,7 @@
     "description": "Python SQL toolkit and ORM. Provides both a Core expression language for raw SQL and a full ORM layer. The de-facto Python ORM for production.",
     "initial_release_year": 2006,
     "current_status": "active",
-    "latest_stable_version": "2.0.52",
+    "latest_stable_version": "2.0.54",
     "website_or_repo": "https://www.sqlalchemy.org",
     "license": "MIT",
     "notable_use_cases": [
@@ -4008,7 +4008,7 @@
     "logo_url": "./assets/images/tech/sqlalchemy.svg",
     "github_repo": "sqlalchemy/sqlalchemy",
     "pypi_package": "SQLAlchemy",
-    "version_updated_at": "2026-08-17"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "prisma",
@@ -4197,7 +4197,7 @@
     "description": "Type-safe API layer for TypeScript full-stack apps. Eliminates the API schema layer by sharing types directly between server and client. Zero code generation.",
     "initial_release_year": 2021,
     "current_status": "active",
-    "latest_stable_version": "11.18.0",
+    "latest_stable_version": "11.19.0",
     "website_or_repo": "https://trpc.io",
     "license": "MIT",
     "notable_use_cases": [
@@ -4219,7 +4219,7 @@
     "logo_url": "./assets/images/tech/trpc.svg",
     "github_repo": "trpc/trpc",
     "npm_package": "@trpc/server",
-    "version_updated_at": "2026-06-22"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "openapi",
@@ -4257,7 +4257,7 @@
     "description": "AWS Cloud Development Kit. Define cloud infrastructure in TypeScript, Python, Java, or C# using familiar languages instead of raw CloudFormation YAML.",
     "initial_release_year": 2018,
     "current_status": "active",
-    "latest_stable_version": "2.269.0",
+    "latest_stable_version": "2.270.0",
     "website_or_repo": "https://aws.amazon.com/cdk/",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -4278,7 +4278,7 @@
     ],
     "logo_url": "./assets/images/tech/aws-cdk.svg",
     "github_repo": "aws/aws-cdk",
-    "version_updated_at": "2026-09-14"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "pulumi",
@@ -4287,7 +4287,7 @@
     "description": "Infrastructure as Code platform using general-purpose languages (TypeScript, Python, Go, C#). Multi-cloud with a rich provider ecosystem and state management.",
     "initial_release_year": 2017,
     "current_status": "active",
-    "latest_stable_version": "3.262.0",
+    "latest_stable_version": "3.263.0",
     "website_or_repo": "https://www.pulumi.com",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -4308,7 +4308,7 @@
     ],
     "logo_url": "./assets/images/tech/pulumi.svg",
     "github_repo": "pulumi/pulumi",
-    "version_updated_at": "2026-09-14"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "serverless-framework",
@@ -4405,7 +4405,7 @@
     "description": "JavaScript testing framework by Meta with a focus on simplicity. Zero-config setup, built-in code coverage, snapshot testing, and mocking. Standard for React apps.",
     "initial_release_year": 2014,
     "current_status": "active",
-    "latest_stable_version": "30.5.1",
+    "latest_stable_version": "30.5.2",
     "website_or_repo": "https://jestjs.io",
     "license": "MIT",
     "notable_use_cases": [
@@ -4427,7 +4427,7 @@
     "logo_url": "./assets/images/tech/jest.svg",
     "github_repo": "jestjs/jest",
     "npm_package": "jest",
-    "version_updated_at": "2026-09-07"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "pytest",
@@ -4467,7 +4467,7 @@
     "description": "End-to-end testing framework that runs in-browser. Real-time reload, time-travel debugging, automatic waiting, and screenshots/video on failure.",
     "initial_release_year": 2014,
     "current_status": "active",
-    "latest_stable_version": "16.0.0",
+    "latest_stable_version": "16.1.0",
     "website_or_repo": "https://www.cypress.io",
     "license": "MIT",
     "notable_use_cases": [
@@ -4488,7 +4488,7 @@
     ],
     "logo_url": "./assets/images/tech/cypress.svg",
     "github_repo": "cypress-io/cypress",
-    "version_updated_at": "2026-09-07"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "playwright",
@@ -4527,7 +4527,7 @@
     "description": "Vite-native unit testing framework compatible with Jest's API. Near-instant startup using Vite's ESM pipeline, with first-class TypeScript and JSX support.",
     "initial_release_year": 2021,
     "current_status": "active",
-    "latest_stable_version": "5.0.0",
+    "latest_stable_version": "5.0.1",
     "website_or_repo": "https://vitest.dev",
     "license": "MIT",
     "notable_use_cases": [
@@ -4548,7 +4548,7 @@
     "logo_url": "./assets/images/tech/vitest.svg",
     "github_repo": "vitest-dev/vitest",
     "npm_package": "vitest",
-    "version_updated_at": "2026-09-07"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "vite",
@@ -4589,7 +4589,7 @@
     "description": "Powerful, highly configurable JavaScript module bundler. Underpins many production build pipelines. Extensive loader and plugin ecosystem.",
     "initial_release_year": 2012,
     "current_status": "active",
-    "latest_stable_version": "5.111.0",
+    "latest_stable_version": "5.111.1",
     "website_or_repo": "https://webpack.js.org",
     "license": "MIT",
     "notable_use_cases": [
@@ -4611,7 +4611,7 @@
     "logo_url": "./assets/images/tech/webpack.svg",
     "github_repo": "webpack/webpack",
     "npm_package": "webpack",
-    "version_updated_at": "2026-09-14"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "esbuild",
@@ -4651,7 +4651,7 @@
     "description": "JavaScript module bundler optimised for libraries. Tree-shaking removes unused code, and multiple output formats (ESM, CJS, UMD) support broad compatibility.",
     "initial_release_year": 2015,
     "current_status": "active",
-    "latest_stable_version": "4.63.2",
+    "latest_stable_version": "4.63.4",
     "website_or_repo": "https://rollupjs.org",
     "license": "MIT",
     "notable_use_cases": [
@@ -4673,7 +4673,7 @@
     "logo_url": "./assets/images/tech/rollup.svg",
     "github_repo": "rollup/rollup",
     "npm_package": "rollup",
-    "version_updated_at": "2026-09-14"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "bun",
@@ -5630,7 +5630,7 @@
     "description": "Data build tool that lets analytics engineers transform data in their warehouse using SQL SELECT statements. Brings software engineering practices (version control, testing, docs) to analytics.",
     "initial_release_year": 2016,
     "current_status": "active",
-    "latest_stable_version": "1.12.4",
+    "latest_stable_version": "1.12.5",
     "website_or_repo": "https://www.getdbt.com",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -5655,7 +5655,7 @@
     "logo_url": "./assets/images/tech/dbt.svg",
     "github_repo": "dbt-labs/dbt-core",
     "pypi_package": "dbt-core",
-    "version_updated_at": "2026-09-14"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "apache-airflow",
@@ -5664,7 +5664,7 @@
     "description": "Platform for programmatically authoring, scheduling, and monitoring data workflows (DAGs) written in Python. The de-facto standard for data pipeline orchestration.",
     "initial_release_year": 2015,
     "current_status": "active",
-    "latest_stable_version": "3.3.1",
+    "latest_stable_version": "3.3.2",
     "website_or_repo": "https://airflow.apache.org",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -5689,7 +5689,7 @@
     "logo_url": "./assets/images/tech/apache-airflow.svg",
     "github_repo": "apache/airflow",
     "pypi_package": "apache-airflow",
-    "version_updated_at": "2026-08-17"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "delta-lake",
@@ -5858,7 +5858,7 @@
     "description": "In-memory data structure store used as a cache, message broker, and database. Supports strings, hashes, lists, sets, sorted sets, streams, and pub/sub. Sub-millisecond latency.",
     "initial_release_year": 2009,
     "current_status": "active",
-    "latest_stable_version": "8.10.1",
+    "latest_stable_version": "8.10.2",
     "website_or_repo": "https://redis.io",
     "license": "RSALv2 / SSPLv1",
     "notable_use_cases": [
@@ -5881,7 +5881,7 @@
     ],
     "logo_url": "./assets/images/tech/redis.svg",
     "github_repo": "redis/redis",
-    "version_updated_at": "2026-08-24"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "elasticsearch",
@@ -5890,7 +5890,7 @@
     "description": "Distributed search and analytics engine built on Apache Lucene. The E in the ELK stack (with Logstash and Kibana). Powers full-text search, log analytics, and observability.",
     "initial_release_year": 2010,
     "current_status": "active",
-    "latest_stable_version": "9.5.3",
+    "latest_stable_version": "9.5.4",
     "website_or_repo": "https://www.elastic.co/elasticsearch",
     "license": "SSPL / Elastic-2.0",
     "notable_use_cases": [
@@ -5914,7 +5914,7 @@
     ],
     "logo_url": "./assets/images/tech/elasticsearch.svg",
     "github_repo": "elastic/elasticsearch",
-    "version_updated_at": "2026-09-07"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "clickhouse",
@@ -5923,7 +5923,7 @@
     "description": "Open-source column-oriented OLAP database for real-time analytics. Exceptionally fast for analytical queries over billions of rows. Used by major internet companies for clickstream and log data.",
     "initial_release_year": 2016,
     "current_status": "active",
-    "latest_stable_version": "26.8.3.105-lts",
+    "latest_stable_version": "26.8.9.10-lts",
     "website_or_repo": "https://clickhouse.com",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -5946,7 +5946,7 @@
     ],
     "logo_url": "./assets/images/tech/clickhouse.svg",
     "github_repo": "ClickHouse/ClickHouse",
-    "version_updated_at": "2026-09-14"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "apache-cassandra",
@@ -5987,7 +5987,7 @@
     "description": "Open-source platform for managing the ML lifecycle: experiment tracking, model registry, packaging, and serving. Backend-agnostic and works with any ML library.",
     "initial_release_year": 2018,
     "current_status": "active",
-    "latest_stable_version": "3.16.0",
+    "latest_stable_version": "3.16.1",
     "website_or_repo": "https://mlflow.org",
     "license": "Apache-2.0",
     "notable_use_cases": [
@@ -6011,7 +6011,7 @@
     "logo_url": "./assets/images/tech/mlflow.svg",
     "github_repo": "mlflow/mlflow",
     "pypi_package": "mlflow",
-    "version_updated_at": "2026-09-07"
+    "version_updated_at": "2026-09-21"
   },
   {
     "slug": "langchain4j",
